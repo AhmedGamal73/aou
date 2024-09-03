@@ -1,0 +1,60 @@
+/* Global */
+button {
+  font-family: tajwal;
+}
+
+:root {
+  --bs-primary: #002d57 !important;
+  --bg-light: #fcf9f0 !important;
+}
+/* Global */
+
+/* Padding */
+.px-105 {
+  padding-inline: 105px !important;
+}
+
+.py-18 {
+  padding-block: 18px;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.gap-158 {
+  gap: 158px !important;
+}
+/* Padding */
+
+/* Font Size */
+.fs-24 {
+  font-size: 24px !important;
+}
+/* Font Size */
+
+.container {
+  max-width: 1920px !important;
+}
+
+/* Custom classes */
+.active_nav_item {
+  color: white !important;
+  border-radius: 8px;
+  background-color: var(--bs-primary) !important;
+  padding-inline: 20px !important;
+  padding-block: 10px !important;
+}
+
+.lang_switcher_btn {
+  color: var(--bs-primary, #002d57);
+  background-color: var(--bg-light);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 8px;
+  border: 1px solid var(--bs-primary);
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+/* Custom classes */
