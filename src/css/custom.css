@@ -6,6 +6,11 @@ button {
 :root {
   --bs-primary: #002d57 !important;
   --bg-light: #fcf9f0 !important;
+  --bs-accent: #a11a16;
+}
+
+button {
+  border: none;
 }
 /* Global */
 
@@ -18,14 +23,28 @@ button {
   padding-block: 18px;
 }
 
+.py-32 {
+  padding-block: 32px;
+}
+
 .p-10 {
   padding: 10px !important;
 }
+/* Padding */
 
+/* Gap */
 .gap-158 {
   gap: 158px !important;
 }
-/* Padding */
+
+.gap-8 {
+  gap: 32px;
+}
+
+.gap-74 {
+  gap: 74px;
+}
+/* Gap */
 
 /* Font Size */
 .fs-24 {
