@@ -237,8 +237,6 @@
 .accreditation {
   display: flex;
   flex-direction: column;
-  padding-block: 150px;
-  padding-inline: 105px;
   gap: 64px;
 }
 
@@ -627,4 +625,58 @@ footer {
 }
 .success-stories__testamonial .wrapper span {
   font-family: var(--popins-b);
+}
+
+.our-channel-container {
+  padding-block: 140px;
+}
+
+.our-channel {
+  gap: 48px;
+}
+
+.our-channel p {
+  color: var(--bs-primary, #002d58);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-family: var(--popins-r);
+  line-height: normal;
+}
+
+.our-channel__stream {
+  border-radius: 8px;
+  border: 1px solid var(--bs-primary);
+  position: relative;
+  width: 100%;
+  max-width: 933px !important;
+  height: 523px !important;
+}
+
+.our-channel__stream iframe {
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.our-channel__video-slider .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.our-channel__video-slider .video {
+  width: 372px;
+  height: 225px;
+  border-radius: 18px;
+}
+
+.our-channel__video-slider .video img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
 }
