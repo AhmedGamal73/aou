@@ -432,6 +432,11 @@ footer {
   height: 45px;
 }
 
+.map-pin--active {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
 .map-pin-container.egypt {
   top: 40%;
   left: 46%;
@@ -465,6 +470,28 @@ footer {
   right: 25.5%;
 }
 
+.map-pin-container.jordan {
+  top: 32%;
+  right: 23%;
+}
+.map-pin-container.jordan .map-pin {
+  transform: rotate(0deg) !important;
+}
+.map-pin-container.jordan .map-pin img {
+  transform: rotate(0deg) !important;
+}
+
+.map-pin-container.palestine {
+  top: 31%;
+  right: 28.8%;
+}
+.map-pin-container.palestine .map-pin {
+  transform: rotate(-98deg) !important;
+}
+.map-pin-container.palestine .map-pin img {
+  transform: rotate(98deg) !important;
+}
+
 .map-pin img {
   width: 35px;
   transform: rotate(45deg);
@@ -482,6 +509,7 @@ footer {
 
 .map-pin:hover ~ .campus-map__item {
   opacity: 1;
+  z-index: 20;
 }
 
 .campus-map__item {
