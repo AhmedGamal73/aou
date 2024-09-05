@@ -234,22 +234,6 @@
   font-family: var(--popins-s) !important;
 }
 
-.success-stories-container {
-  padding-block: 75px;
-  padding-inline: 105px;
-}
-
-.success-stories {
-  gap: 48px;
-}
-
-.success-stories__img {
-  width: 884px !important;
-  height: 489px;
-  border-radius: 25px;
-  background: url("../img/success-stories.png") lightgray 51% / cover no-repeat;
-}
-
 .accreditation {
   display: flex;
   flex-direction: column;
@@ -386,4 +370,261 @@ footer {
 
 .upper-ftr__right {
   gap: 85px;
+}
+
+/* Campuses*/
+.campuses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 48px;
+  padding-inline: 48px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.campuses-container a:hover {
+  color: var(--bs-primary) !important;
+}
+.campuses-container a.active-campus-item:hover {
+  background-color: white;
+}
+
+.active-campus-item {
+  border: solid 1px var(--bs-primary);
+  border-radius: 8px;
+  padding-block: 14px;
+  padding-inline: 38.5px;
+  font-size: 32px;
+  color: var(--heading-green);
+  font-family: var(--popins-m);
+}
+
+.campuses-map {
+  position: relative;
+  width: 1430px !important;
+  height: 576px;
+  flex-shrink: 0;
+  background: url("../img/arabic-world-map.png") 51% / cover no-repeat;
+}
+
+.map-pin-container {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  flex-shrink: 0;
+  position: absolute;
+}
+
+.map-pin {
+  background-color: white;
+  fill: var(--white, #fff);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50% 50% 50% 0;
+  border: 4px solid #fff;
+  transform: rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+}
+
+.map-pin-container.egypt {
+  top: 40%;
+  left: 46%;
+}
+.map-pin-container.sudan {
+  bottom: 20%;
+  left: 46%;
+}
+.map-pin-container.saudi-arabia {
+  bottom: 40%;
+  right: 20%;
+}
+.map-pin-container.kuwait {
+  bottom: 54%;
+  right: 13%;
+}
+.map-pin-container.bahrain {
+  bottom: 44%;
+  right: 9%;
+}
+.map-pin-container.bahrain {
+  bottom: 39%;
+  right: 6%;
+}
+.map-pin-container.oman {
+  bottom: 27%;
+  right: 3%;
+}
+.map-pin-container.lebanon {
+  top: 22%;
+  right: 25.5%;
+}
+
+.map-pin img {
+  width: 35px;
+  transform: rotate(45deg);
+}
+
+.map-pin:hover {
+  width: 50px;
+  height: 53px;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.map-pin:hover img {
+  width: 40px;
+}
+
+.map-pin:hover ~ .campus-map__item {
+  opacity: 1;
+}
+
+.campus-map__item {
+  border-radius: 4px;
+  background-color: white;
+  width: 235px;
+  padding: 12px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.numbers {
+  background-color: var(--bs-primary);
+  padding-block: 50px;
+  padding-inline: 37px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.numbers-upper__line {
+  height: 1px;
+  background-color: white;
+}
+
+.numbers-upper__title h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.numbers-upper__title h2 img {
+  padding-bottom: 14px;
+}
+
+.numbers-upper__title span {
+  font-family: var(--popins-r);
+}
+
+.icon-number-box {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  align-items: center;
+  gap: 18px;
+  color: white;
+}
+
+.icon-number-box__no {
+  font-family: var(--popins-b) !important;
+  font-size: 48px !important;
+}
+
+.icon-number-box__title {
+  font-family: var(--popins-m) !important;
+  font-size: 32px !important;
+  text-align: center;
+}
+
+.stay-update {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-block: 33px;
+  padding-inline: 105px;
+}
+
+.heading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.heading-box p {
+  max-width: 1480px;
+  text-align: center;
+}
+
+.stay-update__posts {
+  display: flex;
+  gap: 26px;
+}
+
+.stay-update__posts img {
+  width: 33%;
+}
+
+.stay-update__btn button {
+  width: 682px !important;
+}
+
+.success-stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 60px;
+}
+
+.success-stories__banner img {
+  width: 884px;
+  height: 887px;
+}
+
+.success-stories__testamonial {
+  display: flex;
+  justify-content: center;
+}
+
+.success-stories__testamonial .wrapper {
+  display: flex;
+  width: 745px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 40px;
+  gap: 23px;
+}
+
+.success-stories__testamonial .wrapper div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 262px;
+  background: url("../img/icons/sc-pattern.svg") 100% / cover no-repeat;
+}
+
+.success-stories__testamonial .wrapper div img {
+  width: 298px;
+  height: 100px;
+}
+
+.success-stories__testamonial .wrapper p {
+  font-size: 32px;
+  font-style: normal;
+  font-family: var(--popins-m);
+  line-height: normal;
+}
+.success-stories__testamonial .wrapper span {
+  font-family: var(--popins-b);
 }

@@ -26,30 +26,14 @@
 /* Fonts */
 
 /* Global */
-a {
-  text-decoration: none !important;
-}
-
-ul {
-  list-style-type: none;
-}
-
-button {
-  font-family: tajwal;
-}
-
-.h-line-1 {
-  width: 1136px;
-  height: 1px;
-  background-color: white;
-}
-
 :root {
   /* Color */
   --bs-primary: #002d57 !important;
-  --bg-light: #fcf9f0 !important;
+  --bg-light-I: #fcf9f0 !important;
   --bs-accent: #a11a16;
   --bs-headline-dark: #1d1d1d;
+  --heading-gray: #929292;
+  --heading-green: #194c45;
 
   /* English Font (Popins) */
   --popins-l: "popins-light"; /* 300 */
@@ -61,8 +45,28 @@ button {
   /* Arabic Font (Tajwal) */
 }
 
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font-family: var(--popins-m);
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.h-line-1 {
+  width: 1136px;
+  height: 1px;
+  background-color: white;
+}
+
 body {
-  background-color: var(--bg-light);
+  background-color: var(--bg-light-I);
 }
 
 h1,
@@ -147,6 +151,10 @@ button {
   padding-block: 10px !important;
 }
 
+.text-heading-gray {
+  color: var(--heading-gray) !important;
+}
+
 .lang_switcher_btn {
   color: var(--bs-primary, #002d57);
   background-color: var(--bg-light);
@@ -157,5 +165,25 @@ button {
   border: 1px solid var(--bs-primary);
   padding-block: 10px;
   padding-inline: 20px;
+}
+
+.main-btn {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--bs-primary, #002d57);
+  color: white;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.bg-light-I {
+  background-color: var(--bg-light-I) !important;
 }
 /* Custom classes */
