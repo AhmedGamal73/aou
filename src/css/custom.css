@@ -1,12 +1,86 @@
+/* Fonts */
+@font-face {
+  font-family: "popins-light";
+  src: url("../fonts/popins/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "popins-reqular";
+  src: url("../fonts/popins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "popins-meduim";
+  src: url("../fonts/popins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "popins-semiBold";
+  src: url("../fonts/popins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "popins-bold";
+  src: url("../fonts/popins/Poppins-Bold.ttf");
+}
+/* Fonts */
+
 /* Global */
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
 button {
   font-family: tajwal;
 }
 
+.h-line-1 {
+  width: 1136px;
+  height: 1px;
+  background-color: white;
+}
+
 :root {
+  /* Color */
   --bs-primary: #002d57 !important;
   --bg-light: #fcf9f0 !important;
   --bs-accent: #a11a16;
+  --bs-headline-dark: #1d1d1d;
+
+  /* English Font (Popins) */
+  --popins-l: "popins-light"; /* 300 */
+  --popins-r: "popins-regular"; /* 400 */
+  --popins-m: "popins-meduim"; /* 500 */
+  --popins-s: "popins-semiBold"; /* 600*/
+  --popins-b: "popins-bold"; /* 700 */
+
+  /* Arabic Font (Tajwal) */
+}
+
+body {
+  background-color: var(--bg-light);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--popins-b);
+}
+
+h2 {
+  font-size: 64px;
+}
+
+span {
+  font-family: var(--popins-m);
+}
+
+a {
+  font-family: var(--popins-r);
 }
 
 button {
@@ -35,6 +109,14 @@ button {
 /* Gap */
 .gap-158 {
   gap: 158px !important;
+}
+
+.gap-48 {
+  gap: 48px;
+}
+
+.gap-24 {
+  gap: 24px;
 }
 
 .gap-8 {
