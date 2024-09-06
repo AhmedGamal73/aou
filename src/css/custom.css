@@ -31,6 +31,7 @@
   --bs-primary: #002d57 !important;
   --bg-light-I: #fcf9f0 !important;
   --bs-accent: #a11a16;
+  --accent-I: #850704;
   --bs-headline-dark: #1d1d1d;
   --heading-gray: #929292;
   --heading-green: #194c45;
@@ -155,7 +156,7 @@ button {
   color: var(--heading-gray) !important;
 }
 
-.lang_switcher_btn {
+.stroke-btn {
   color: var(--bs-primary, #002d57);
   background-color: var(--bg-light);
   font-size: 24px;
@@ -178,12 +179,98 @@ button {
   color: white;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+}
+
+.accent-btn {
+  border-radius: 8px;
+  background-color: var(--bs-accent);
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: background-color 0.1s ease-in;
+}
+
+.accent-btn:hover {
+  background-color: var(--accent-I);
 }
 
 .bg-light-I {
   background-color: var(--bg-light-I) !important;
 }
 /* Custom classes */
+
+/****** S-Slider ******/
+/* Slider container */
+.slider {
+  width: 1400px !important; /* Set width to display 3 images (3 * image width) */
+  overflow: hidden !important;
+  margin: auto;
+}
+
+/* Container for slides */
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  justify-content: space-between;
+}
+
+/* Individual slide */
+.slide {
+  min-width: calc(100% / 4);
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Navigation buttons */
+button.prev,
+button.next {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--bs-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.prev {
+  left: 6%;
+}
+
+button.next {
+  right: 6%;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Styles for devices with a width of 1024px or smaller */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for devices with a width of 768px or smaller (tablets) */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for devices with a width of 480px or smaller (phones) */
+}
+
+/****** E-Slider ******/

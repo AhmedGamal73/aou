@@ -98,18 +98,8 @@
 }
 
 .hero-btn {
-  border-radius: 8px;
-  background-color: var(--bs-accent);
   width: 473px;
   height: 53px;
-  flex-shrink: 0;
-  color: #fff;
-  font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: capitalize;
 }
 
 .navbar-nav {
@@ -583,6 +573,7 @@ a.active-campus-item:hover {
 }
 
 .stay-update {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -600,15 +591,6 @@ a.active-campus-item:hover {
 .heading-box p {
   max-width: 1480px;
   text-align: center;
-}
-
-.stay-update__posts {
-  display: flex;
-  gap: 26px;
-}
-
-.stay-update__posts img {
-  width: 33%;
 }
 
 .stay-update__btn button {
