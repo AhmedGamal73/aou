@@ -166,7 +166,7 @@
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
   color: var(--bs-headline-dark);
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .featured-pages__card:hover {
