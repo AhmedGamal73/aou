@@ -236,9 +236,9 @@ button {
 button.prev,
 button.next {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--bs-primary);
@@ -254,15 +254,25 @@ button.next {
 }
 
 button.prev {
-  left: 6%;
+  left: 10%;
 }
 
 button.next {
-  right: 6%;
+  right: 10%;
 }
 
 @media only screen and (max-width: 1024px) {
   /* Styles for devices with a width of 1024px or smaller */
+  .slide {
+    min-width: calc(100% / 2);
+  }
+  button.prev {
+    left: 6%;
+  }
+
+  button.next {
+    right: 6%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
