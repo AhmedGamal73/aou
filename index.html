@@ -28,10 +28,10 @@
     <!-- S-Header -->
     <header>
       <div class="container">
-        <div class="row align-items-center px-105 py-18">
+        <div class="row align-items-center px-0 px-md-105 py-18">
           <!-- Logo -->
-          <div class="col-md-2 col-6">
-            <a href="#" class="navbar-brand">
+          <div class="col-6 col-md-2 col-6">
+            <a href="#" class="navbar-logo">
               <img
                 src="./src/img/logo.png"
                 alt="AOU Logo"
@@ -42,9 +42,9 @@
           </div>
 
           <!-- Navbar -->
-          <div class="col-md-8 col-12 justify-content-center">
+          <div class="col-6 col-md-8 justify-content-center">
             <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
+              <div class="container-fluid justify-content-end">
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -206,7 +206,9 @@
           </div>
 
           <!-- Lang switcher -->
-          <div class="col-md-2 col-6 text-md-end align-items-center">
+          <div
+            class="col-md-2 d-none d-md-block text-md-end align-items-center"
+          >
             <img src="./src/img/flags/sudan.svg" alt="sudan flag" />
             <button class="stroke-btn">اللغة العربية</button>
           </div>
@@ -223,7 +225,7 @@
         <div
           class="col-12 d-flex justify-content-center align-items-center gap-74"
         >
-          <div class="row hero-upper">
+          <div class="w-sd-12 row hero-upper">
             <div class="col-12 hero-search">
               <div>
                 <i class="bx bx-search-alt-2"></i>
@@ -334,7 +336,7 @@
               <h2 class="double-title">AOU <span>Campuses</span></h2>
             </div>
             <div
-              class="col-12 w-100 d-flex justify-content-between align-items-center"
+              class="col-12 w-100 d-flex justify-content-between align-items-center campuses__branches"
             >
               <a href="#" class="text-heading-gray fs-5">Egypt</a>
               <a href="#" class="text-heading-gray fs-5">Oman</a>
@@ -446,7 +448,7 @@
                 class="row d-flex justify-content-center align-items-center numbers-upper"
               >
                 <div class="col-4 numbers-upper__line"></div>
-                <div class="col-4 numbers-upper__title">
+                <div class="col-12 col-md-4 p-0 numbers-upper__title">
                   <h2>
                     <span>AOU in </span
                     ><img
@@ -486,12 +488,12 @@
                   <span class="icon-number-box__no" data-target="70">0</span>
                   <span class="icon-number-box__title">Nationalities</span>
                 </div>
-                <div class="col-2 col-md-2 col-sm-6 icon-number-box">
+                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
                   <img src="./src/img/icons/numbers/graduates.svg" alt="" />
                   <span class="icon-number-box__no" data-target="100">0</span>
                   <span class="icon-number-box__title">Graduates</span>
                 </div>
-                <div class="col-2 col-md-2 col-sm-6 icon-number-box">
+                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
                   <img
                     src="./src/img/icons/numbers/served-students.svg"
                     alt=""
@@ -560,8 +562,10 @@
 
     <!-- S-Success-Story -->
     <div class="container p-0 bg-light-I">
-      <div class="w-100 success-stories d-flex justify-content-between">
-        <div class="w-50 success-stories__testamonial">
+      <div
+        class="w-100 flex-wrap success-stories d-flex justify-content-between"
+      >
+        <div class="success-stories__testamonial">
           <div class="wrapper">
             <h2 class="double-title">Success <span>Stories</span></h2>
             <div>
@@ -584,7 +588,7 @@
             </p>
           </div>
         </div>
-        <div class="w-50 d-flex justify-content-end success-stories__banner">
+        <div class="d-flex justify-content-end success-stories__banner">
           <div class="img"></div>
         </div>
       </div>

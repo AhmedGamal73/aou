@@ -66,6 +66,11 @@ button {
   background-color: white;
 }
 
+html,
+body {
+  overflow-x: hidden !important;
+}
+
 body {
   background-color: var(--bg-light-I);
 }
@@ -94,7 +99,7 @@ button {
 /* Global */
 
 /* Padding */
-.px-105 {
+.px-md-105 {
   padding-inline: 105px !important;
 }
 
@@ -277,6 +282,9 @@ button.next {
 
 @media only screen and (max-width: 768px) {
   /* Styles for devices with a width of 768px or smaller (tablets) */
+  .slide {
+    min-width: calc(100% / 1);
+  }
 }
 
 @media only screen and (max-width: 480px) {

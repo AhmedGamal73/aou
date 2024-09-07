@@ -1,5 +1,4 @@
 .hero_cont {
-  height: 664px;
   background-image: url(../img/hero.webp);
   background-size: cover;
   background-position: center;
@@ -605,7 +604,12 @@ a.active-campus-item:hover {
 }
 
 .success-stories__banner {
+  width: 50%;
   padding-inline-start: 80px;
+}
+
+.success-stories__testamonial {
+  width: 50%;
 }
 
 .success-stories__banner .img {
@@ -705,4 +709,64 @@ a.active-campus-item:hover {
   width: 100%;
   height: 100%;
   border-radius: 18px;
+}
+
+/* Styles for devices with a width of 1024px or smaller */
+@media only screen and (max-width: 1024px) {
+}
+
+/* Styles for devices with a width of 768px or smaller (tablets) */
+@media only screen and (max-width: 768px) {
+  .hero-upper {
+    width: 100%;
+  }
+
+  .icon-box {
+    height: auto !important;
+  }
+  .icon-box__card {
+    width: 175px !important;
+  }
+
+  .campuses-map {
+    width: 100% !important;
+  }
+
+  .campuses__branches {
+    display: none !important;
+  }
+
+  .campuses__branches,
+  .newsteller,
+  .map-pin-container,
+  .hero-content,
+  .numbers-upper__line {
+    display: none !important;
+  }
+
+  .campuses-map {
+    background: url("../img/phone-arabic-world-map.png") 50% / contain no-repeat;
+    height: 280px;
+  }
+
+  .stay-update,
+  .campuses-container {
+    padding-inline: 0;
+  }
+
+  .icon-box {
+    flex-direction: column;
+  }
+  .numbers-upper__title img {
+    width: 30px;
+  }
+
+  .success-stories__banner,
+  .success-stories__testamonial {
+    width: 100% !important;
+  }
+  .navbar-logo img {
+    width: 141px;
+    height: 54px;
+  }
 }
