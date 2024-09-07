@@ -347,6 +347,18 @@ button.next {
   /* Styles for devices with a width of 768px or smaller (tablets) */
   .slide {
     min-width: calc(100% / 1);
+    padding: 32px;
+  }
+  button.prev {
+    left: 2%;
+  }
+
+  button.next {
+    right: 2%;
+  }
+  button.prev,
+  button.next {
+    top: 68%;
   }
 }
 
