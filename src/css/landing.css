@@ -1,3 +1,11 @@
+.header {
+  padding-inline: 105px;
+}
+
+.lang-switcher__btn {
+  font-family: var(--tajawal-r) !important;
+}
+
 .hero_cont {
   background-image: url(../img/hero.webp);
   background-size: cover;
@@ -32,6 +40,15 @@
 .hero-search form input,
 .hero-search form input:active {
   border: none;
+}
+
+.hero-search__icon {
+  padding: 10px;
+}
+
+.hero-search__icon i {
+  font-size: 24px;
+  color: var(--heading-gray);
 }
 
 .icon-box {
@@ -102,7 +119,11 @@
 }
 
 .navbar-nav {
-  gap: 4px;
+  gap: 18px;
+}
+
+.nva-item li {
+  font-size: 20px !important;
 }
 
 .hero-content {
@@ -692,11 +713,16 @@ a.active-campus-item:hover {
   height: 100%;
 }
 
-.our-channel__video-slider .row {
+.our-channel__video-slider {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+.our-channel__video-slider .slide {
+  min-width: calc(100% / 3) !important;
 }
 
 .our-channel__video-slider .video {
@@ -717,6 +743,9 @@ a.active-campus-item:hover {
 
 /* Styles for devices with a width of 768px or smaller (tablets) */
 @media only screen and (max-width: 768px) {
+  .header {
+    padding-inline: 0;
+  }
   .hero-upper {
     width: 100%;
   }

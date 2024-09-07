@@ -1,4 +1,5 @@
-/* Fonts */
+/***** Fonts *****/
+/* English */
 @font-face {
   font-family: "popins-light";
   src: url("../fonts/popins/Poppins-Light.ttf");
@@ -23,7 +24,25 @@
   font-family: "popins-bold";
   src: url("../fonts/popins/Poppins-Bold.ttf");
 }
-/* Fonts */
+
+/* Arabic */
+@font-face {
+  font-family: "tajawal-light";
+  src: url("../fonts/tajawal/Tajawal-Light.ttf");
+}
+@font-face {
+  font-family: "tajawal-regular";
+  src: url("../fonts/tajawal/Tajawal-Regular.ttf");
+}
+@font-face {
+  font-family: "tajawal-meduim";
+  src: url("../fonts/tajawal/Tajawal-Medium.ttf");
+}
+@font-face {
+  font-family: "tajawal-bold";
+  src: url("../fonts/tajawal/Tajawal-Light.ttf");
+}
+/***** Fonts *****/
 
 /* Global */
 :root {
@@ -44,6 +63,10 @@
   --popins-b: "popins-bold"; /* 700 */
 
   /* Arabic Font (Tajwal) */
+  --tajawal-l: "tajawal-light";
+  --tajawal-r: "tajawal-regular";
+  --tajawal-m: "tajawal-meduim";
+  --tajawal-b: "tajawal-bold";
 }
 
 a {
@@ -58,6 +81,11 @@ button {
   font-family: var(--popins-m);
   text-transform: capitalize;
   font-size: 24px;
+}
+
+input,
+textarea {
+  font-family: var(--popins-r);
 }
 
 .h-line-1 {
@@ -163,7 +191,7 @@ button {
 
 .stroke-btn {
   color: var(--bs-primary, #002d57);
-  background-color: var(--bg-light);
+  background-color: var(--bg-light-I);
   font-size: 24px;
   font-weight: 400;
   line-height: normal;

@@ -28,7 +28,7 @@
     <!-- S-Header -->
     <header>
       <div class="container">
-        <div class="row align-items-center px-0 px-md-105 py-18">
+        <div class="row align-items-center py-18 header">
           <!-- Logo -->
           <div class="col-6 col-md-2 col-6">
             <a href="#" class="navbar-logo">
@@ -63,7 +63,7 @@
                   <ul class="navbar-nav d-flex">
                     <li class="nav-item">
                       <a
-                        class="nav-link p-10 fs-24 active_nav_item"
+                        class="nav-link p-10 fs-6 active_nav_item"
                         aria-current="page"
                         href="#"
                         >Home</a
@@ -71,7 +71,7 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a
-                        class="nav-link dropdown-toggle fs-24"
+                        class="nav-link dropdown-toggle"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -81,15 +81,15 @@
                       </a>
                       <ul class="dropdown-menu">
                         <li>
-                          <a class="dropdown-item fs-24" href="#">Action</a>
+                          <a class="dropdown-item fs-6" href="#">Action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item fs-24" href="#"
+                          <a class="dropdown-item fs-6" href="#"
                             >Another action</a
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item fs-24" href="#"
+                          <a class="dropdown-item fs-6" href="#"
                             >Something else here</a
                           >
                         </li>
@@ -97,7 +97,7 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a
-                        class="nav-link dropdown-toggle fs-24"
+                        class="nav-link dropdown-toggle"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -107,7 +107,7 @@
                       </a>
                       <ul class="dropdown-menu">
                         <li>
-                          <a class="dropdown-item fs-24" href="#">Action</a>
+                          <a class="dropdown-item fs-6" href="#">Action</a>
                         </li>
                         <li>
                           <a class="dropdown-item fs-24" href="#"
@@ -115,7 +115,7 @@
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item fs-24" href="#"
+                          <a class="dropdown-item fs-6" href="#"
                             >Something else here</a
                           >
                         </li>
@@ -123,7 +123,7 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a
-                        class="nav-link dropdown-toggle fs-24"
+                        class="nav-link dropdown-toggle"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -149,7 +149,7 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a
-                        class="nav-link dropdown-toggle fs-24"
+                        class="nav-link dropdown-toggle"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -175,7 +175,7 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a
-                        class="nav-link dropdown-toggle fs-24"
+                        class="nav-link dropdown-toggle"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -207,10 +207,10 @@
 
           <!-- Lang switcher -->
           <div
-            class="col-md-2 d-none d-md-block text-md-end align-items-center"
+            class="col-md-2 d-none d-md-block text-md-end align-items-center lang-switcher"
           >
             <img src="./src/img/flags/sudan.svg" alt="sudan flag" />
-            <button class="stroke-btn">اللغة العربية</button>
+            <button class="stroke-btn lang-switcher__btn">اللغة العربية</button>
           </div>
         </div>
       </div>
@@ -227,8 +227,8 @@
         >
           <div class="w-sd-12 row hero-upper">
             <div class="col-12 hero-search">
-              <div>
-                <i class="bx bx-search-alt-2"></i>
+              <div class="hero-search__icon">
+                <img src="./src/img/icons/search.svg" alt="" />
               </div>
               <form class="d-flex justify-content-center">
                 <input type="text" class="" placeholder="Search..." />
@@ -547,6 +547,15 @@
                 <div class="slide">
                   <img src="./src/img/insta-feed.wepb.webp" alt="" />
                 </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
               </div>
               <button class="next">❯</button>
               <button class="prev">❮</button>
@@ -619,18 +628,35 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div class="col-12 our-channel__video-slider">
-            <div class="row">
-              <button class="col-4 video p-0">
+          <div class="col-12 our-channel__video-slider slider">
+            <div class="slider-wrapper">
+              <div class="slide">
                 <img src="./src/img/hero-su.png" alt="" />
-              </button>
-              <button class="col-4 video p-0">
+              </div>
+              <div class="slide">
                 <img src="./src/img/hero-su.png" alt="" />
-              </button>
-              <button class="col-4 video p-0">
+              </div>
+              <div class="slide">
                 <img src="./src/img/hero-su.png" alt="" />
-              </button>
+              </div>
+              <div class="slide">
+                <img src="./src/img/hero-su.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/hero-su.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/hero-su.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/hero-su.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/hero-su.png" alt="" />
+              </div>
             </div>
+            <button class="next">❯</button>
+            <button class="prev">❮</button>
           </div>
 
           <div class="col-12 container accreditation">

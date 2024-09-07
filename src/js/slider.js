@@ -29,4 +29,5 @@ prevButton.addEventListener("click", () => {
     currentIndex--;
     updateSliderPosition();
   }
+  console.log("prev clicked");
 });
