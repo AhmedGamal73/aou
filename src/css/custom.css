@@ -119,6 +119,10 @@ textarea {
   font-family: var(--popins-r);
 }
 
+div {
+  font-family: var(--popins-m);
+}
+
 .h-line-1 {
   width: 1136px;
   height: 1px;
