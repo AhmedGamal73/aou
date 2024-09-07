@@ -798,4 +798,7 @@ a.active-campus-item:hover {
     width: 141px;
     height: 54px;
   }
+  .hero-btn {
+    width: 100%;
+  }
 }

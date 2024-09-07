@@ -2,46 +2,77 @@
 /* English */
 @font-face {
   font-family: "popins-light";
-  src: url("../fonts/popins/Poppins-Light.ttf");
+  src: url("../fonts/popins/Poppins-Light.woff2") format("woff2"),
+    url("../fonts/popins/Poppins-Light.otf") format("opentype"),
+    url("../fonts/popins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "popins-reqular";
-  src: url("../fonts/popins/Poppins-Regular.ttf");
+  font-family: "popins-regular";
+  src: url("../fonts/popins/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/popins/Poppins-Regular.otf") format("opentype"),
+    url("../fonts/popins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "popins-meduim";
-  src: url("../fonts/popins/Poppins-Medium.ttf");
+  font-family: "popins-medium";
+  src: url("../fonts/popins/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/popins/Poppins-Medium.otf") format("opentype"),
+    url("../fonts/popins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: "popins-semiBold";
-  src: url("../fonts/popins/Poppins-SemiBold.ttf");
+  font-family: "popins-semibold";
+  src: url("../fonts/popins/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/popins/Poppins-SemiBold.otf") format("opentype"),
+    url("../fonts/popins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
 }
 
 @font-face {
   font-family: "popins-bold";
-  src: url("../fonts/popins/Poppins-Bold.ttf");
+  src: url("../fonts/popins/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/popins/Poppins-Bold.otf") format("opentype"),
+    url("../fonts/popins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 /* Arabic */
 @font-face {
   font-family: "tajawal-light";
-  src: url("../fonts/tajawal/Tajawal-Light.ttf");
+  src: url("../fonts/tajawal/Tajawal-Light.woff2") format("woff2"),
+    url("../fonts/tajawal/Tajawal-Light.otf") format("opentype"),
+    url("../fonts/tajawal/Tajawal-Light.ttf") format("truetype");
+  font-weight: 300;
 }
+
 @font-face {
   font-family: "tajawal-regular";
-  src: url("../fonts/tajawal/Tajawal-Regular.ttf");
+  src: url("../fonts/tajawal/Tajawal-Regular.woff2") format("woff2"),
+    url("../fonts/tajawal/Tajawal-Regular.otf") format("opentype"),
+    url("../fonts/tajawal/Tajawal-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
+
 @font-face {
-  font-family: "tajawal-meduim";
-  src: url("../fonts/tajawal/Tajawal-Medium.ttf");
+  font-family: "tajawal-medium";
+  src: url("../fonts/tajawal/Tajawal-Medium.woff2") format("woff2"),
+    url("../fonts/tajawal/Tajawal-Medium.otf") format("opentype"),
+    url("../fonts/tajawal/Tajawal-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
+
 @font-face {
   font-family: "tajawal-bold";
-  src: url("../fonts/tajawal/Tajawal-Light.ttf");
+  src: url("../fonts/tajawal/Tajawal-Bold.woff2") format("woff2"),
+    url("../fonts/tajawal/Tajawal-Bold.otf") format("opentype"),
+    url("../fonts/tajawal/Tajawal-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
+
 /***** Fonts *****/
 
 /* Global */
