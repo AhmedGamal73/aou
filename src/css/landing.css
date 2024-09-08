@@ -836,6 +836,29 @@ a.active-campus-item:hover {
 
 /* Styles for devices with a width of 768px or smaller (tablets) */
 @media only screen and (max-width: 768px) {
+  .accreditation img {
+    width: 90px;
+    height: auto;
+  }
+
+  .accreditation {
+    gap: 40px;
+  }
+
+  .accreditation div {
+    gap: 24px;
+  }
+
+  .our-channel__video-slider .slide {
+    padding: 4px;
+    border-radius: 18px;
+  }
+
+  .our-channel__stream {
+    width: 261px !important;
+    height: 146px !important;
+  }
+
   .header {
     padding-inline: 0;
   }
@@ -901,6 +924,7 @@ a.active-campus-item:hover {
 
   .upper-ftr img {
     width: 100%;
+    height: auto;
   }
 
   .upper-ftr-container {
