@@ -2,6 +2,13 @@
   padding-inline: 105px;
 }
 
+.off-canvas-btn {
+  background: white;
+  text-align: end;
+  font-size: 36px;
+  color: var(--bs-primary);
+}
+
 .lang-switcher__btn {
   font-family: var(--tajawal-r) !important;
 }
@@ -570,6 +577,7 @@ a.active-campus-item:hover {
 
 .numbers-upper__title span {
   font-family: var(--popins-r);
+  white-space: nowrap;
 }
 
 .icon-number-box {
@@ -885,5 +893,59 @@ a.active-campus-item:hover {
   }
   .hero-btn {
     width: 100%;
+  }
+
+  .footer {
+    padding-inline: 12px;
+  }
+
+  .upper-ftr img {
+    width: 100%;
+  }
+
+  .upper-ftr-container {
+    flex-direction: column;
+  }
+  .newsteller {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .newsteller__input form {
+    flex-direction: column;
+    height: unset;
+    gap: 14px;
+    padding: 10px;
+  }
+
+  .img-box {
+    width: 100%;
+  }
+
+  .success-stories__banner .img {
+    height: 390px;
+  }
+
+  .success-stories__banner {
+    padding-inline-start: 3px;
+  }
+
+  .img-box-container {
+    padding-inline: 40px;
+  }
+
+  .upcoming-events__cards {
+    gap: 20px;
+  }
+
+  .success-stories__testamonial .wrapper {
+    padding-inline: 10px;
+    text-align: center;
+  }
+
+  .double-title {
+    font-size: 54px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 8px;
   }
 }

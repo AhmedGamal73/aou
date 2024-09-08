@@ -41,8 +41,91 @@
             </a>
           </div>
 
+          <!-- S-Off-Canvas -->
+          <button
+            class="col-6 d-block d-md-none off-canvas-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            <i class="bx bx-menu"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                Colored with scrolling
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasWithBackdrop"
+            aria-labelledby="offcanvasWithBackdropLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+                Offcanvas with backdrop
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>.....</p>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                Backdroped with scrolling
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p>
+            </div>
+          </div>
+          <!-- E-Off-Canvas -->
+
           <!-- Navbar -->
-          <div class="col-6 col-md-8 justify-content-center">
+          <div class="d-none d-md-block col-6 col-md-8 justify-content-center">
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid justify-content-end">
                 <button
@@ -585,7 +668,7 @@
               </div>
             </div>
             <div class="col-12">
-              <div class="row">
+              <div class="row upcoming-events__cards">
                 <div class="col-12 col-md-3 img-box-container">
                   <div class="img-box">
                     <img src="./src/img/insta-feed.png" class="img-box__img" />
@@ -767,7 +850,7 @@
             <div class="row upper-ftr-container">
               <!-- S-Left -->
               <div
-                class="col-4 d-flex flex-column justify-content-start upper-ftr"
+                class="col-12 col-md-4 d-flex flex-column justify-content-start upper-ftr"
               >
                 <img
                   src="./src/img/logos/aou-white-logo.png"
@@ -813,95 +896,106 @@
                 class="d-flex flex-column justify-content-start upper-ftr__right"
               >
                 <div class="col-12 d-flex">
-                  <div class="col-4 d-flex upper-ftr__nav">
-                    <span>Company</span>
-                    <ul class="p-0">
-                      <li>
-                        <a href="#"> Home </a>
-                      </li>
-                      <li>
-                        <a href="#"> Listing </a>
-                      </li>
-                      <li>
-                        <a href="#"> Property </a>
-                      </li>
-                      <li>
-                        <a href="#"> Services </a>
-                      </li>
-                      <li>
-                        <a href="#"> Blog </a>
-                      </li>
-                    </ul>
-                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4 d-flex upper-ftr__nav">
+                      <span>Company</span>
+                      <ul class="p-0">
+                        <li>
+                          <a href="#"> Home </a>
+                        </li>
+                        <li>
+                          <a href="#"> Listing </a>
+                        </li>
+                        <li>
+                          <a href="#"> Property </a>
+                        </li>
+                        <li>
+                          <a href="#"> Services </a>
+                        </li>
+                        <li>
+                          <a href="#"> Blog </a>
+                        </li>
+                      </ul>
+                    </div>
 
-                  <div class="col-4 d-flex upper-ftr__nav">
-                    <span>Help</span>
-                    <ul class="p-0">
-                      <li>
-                        <a href="#"> Customer Support </a>
-                      </li>
-                      <li>
-                        <a href="#"> Terms & Conditions </a>
-                      </li>
-                      <li>
-                        <a href="#"> Privacy Policy </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <div class="col-12 col-md-4 d-flex upper-ftr__nav">
+                      <span>Help</span>
+                      <ul class="p-0">
+                        <li>
+                          <a href="#"> Customer Support </a>
+                        </li>
+                        <li>
+                          <a href="#"> Terms & Conditions </a>
+                        </li>
+                        <li>
+                          <a href="#"> Privacy Policy </a>
+                        </li>
+                      </ul>
+                    </div>
 
-                  <div class="col-4 d-flex upper-ftr__nav">
-                    <span>Contact Us</span>
-                    <ul class="p-0">
-                      <li>
-                        <a class="h-icon-box" href="#">
-                          <img
-                            src="src/img/icons/contact-us/location.svg"
-                            alt=""
-                          />
-                          <span>
-                            Arab Open University - Sudan 21 Street Amarat,
-                            Khartoum, North Ebnseina Hospital
-                          </span>
-                        </a>
-                      </li>
+                    <div class="col-12 col-md-4 d-flex upper-ftr__nav">
+                      <span>Contact Us</span>
+                      <ul class="p-0">
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/location.svg"
+                              alt=""
+                            />
+                            <span>
+                              Arab Open University - Sudan 21 Street Amarat,
+                              Khartoum, North Ebnseina Hospital
+                            </span>
+                          </a>
+                        </li>
 
-                      <li>
-                        <a class="h-icon-box" href="#">
-                          <img src="src/img/icons/contact-us/map.svg" alt="" />
-                          <span> Veiw Map </span>
-                        </a>
-                      </li>
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/map.svg"
+                              alt=""
+                            />
+                            <span> Veiw Map </span>
+                          </a>
+                        </li>
 
-                      <li>
-                        <a class="h-icon-box" href="#">
-                          <img
-                            src="src/img/icons/contact-us/phone.svg"
-                            alt=""
-                          />
-                          <span> 00249154891834 </span>
-                        </a>
-                      </li>
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/phone.svg"
+                              alt=""
+                            />
+                            <span> 00249154891834 </span>
+                          </a>
+                        </li>
 
-                      <li>
-                        <a class="h-icon-box" href="#">
-                          <img src="src/img/icons/contact-us/fax.svg" alt="" />
-                          <span> 00249154891832 </span>
-                        </a>
-                      </li>
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/fax.svg"
+                              alt=""
+                            />
+                            <span> 00249154891832 </span>
+                          </a>
+                        </li>
 
-                      <li>
-                        <a class="h-icon-box" href="#">
-                          <img src="src/img/icons/contact-us/mail.svg" alt="" />
-                          <span> info@aou.edu.sd </span>
-                        </a>
-                      </li>
-                    </ul>
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/mail.svg"
+                              alt=""
+                            />
+                            <span> info@aou.edu.sd </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="d-flex newsteller">
-                    <span class="col-4">Contact With Us Naw ! </span>
-                    <div class="col-8 newsteller__input">
+                    <span class="col-21 col-md-4">Contact With Us Naw ! </span>
+                    <div class="col-12 col-md-8 newsteller__input">
                       <form action="">
                         <input type="text" placeholder="Enter Your E-mail..." />
                         <button>Submit</button>

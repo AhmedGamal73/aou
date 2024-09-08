@@ -360,6 +360,14 @@ button.next {
   button.next {
     top: 68%;
   }
+  .upcoming-events {
+    padding-inline: 0 !important;
+    padding-block: 0 !important;
+  }
+
+  .stay-update {
+    padding-block: 40px !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
