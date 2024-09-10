@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/custom.css" />
+    <link rel="stylesheet" href="src/css/landing.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- S-Header -->
+    <header>
+      <div class="container">
+        <div class="row align-items-center py-18 header">
+          <!-- Logo -->
+          <div class="col-6 col-md-2 col-6">
+            <a href="#" class="navbar-logo">
+              <img
+                src="./src/img/logo.png"
+                alt="AOU Logo"
+                width="218"
+                height="85"
+              />
+            </a>
+          </div>
+
+          <!-- S-Off-Canvas -->
+          <button
+            class="col-6 d-block d-md-none off-canvas-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            <i class="bx bx-menu"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                Colored with scrolling
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasWithBackdrop"
+            aria-labelledby="offcanvasWithBackdropLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+                Offcanvas with backdrop
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>.....</p>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                Backdroped with scrolling
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p>
+            </div>
+          </div>
+          <!-- E-Off-Canvas -->
+
+          <!-- Navbar -->
+          <div class="d-none d-md-block col-6 col-md-8 justify-content-center">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid justify-content-end">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse justify-content-center"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav d-flex">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link p-10 fs-6 active_nav_item"
+                        aria-current="page"
+                        href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        University
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item fs-6" href="#">Action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-6" href="#"
+                            >Another action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-6" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Student
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item fs-6" href="#">Action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-24" href="#"
+                            >Another action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-6" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Academics
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item fs-24" href="#">Action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-24" href="#"
+                            >Another action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-24" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Admission
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item fs-24" href="#">Action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-24" href="#"
+                            >Another action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-24" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Research
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item fs-24" href="#">Action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-24" href="#"
+                            >Another action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-24" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Lang switcher -->
+          <div
+            class="col-md-2 d-none d-md-block text-md-end align-items-center lang-switcher"
+          >
+            <img src="./src/img/flags/sudan.svg" alt="sudan flag" />
+            <button class="stroke-btn lang-switcher__btn">اللغة العربية</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- E-Header -->
+
+    <!-- S-Hero -->
+    <div class="w-100 container bg-primary hero_cont py-32 gap-74">
+      <div
+        class="row d-flex flex-column gap-8 justify-content-center align-items-center"
+      >
+        <div
+          class="col-12 d-flex justify-content-center align-items-center gap-74"
+        >
+          <div class="w-sd-12 row hero-upper">
+            <div class="col-12 hero-search">
+              <div class="hero-search__icon">
+                <img src="./src/img/icons/search.svg" alt="" />
+              </div>
+              <form class="d-flex justify-content-center">
+                <input type="text" class="" placeholder="Search..." />
+                <button class="d-none" type="submit"></button>
+              </form>
+            </div>
+            <div class="col-12">
+              <div class="icon-box">
+                <div class="icon-box__card">
+                  <img src="./src/img/icons/student-service.svg" alt="" />
+                  <div
+                    class="w-100 card-title position-relative text-center d-flex justify-content-center align-items-center"
+                  >
+                    <h5 class="card-title-main">STUDENT SERVICES</h5>
+                    <h5 class="card-title-secondary">STUDENذT SERVICES</h5>
+                  </div>
+                </div>
+                <div class="icon-box__card">
+                  <img src="./src/img/icons/employees-portal.svg" alt="" />
+                  <div
+                    class="w-100 card-title position-relative text-center d-flex justify-content-center align-items-center"
+                  >
+                    <h5 class="card-title-main">Employees portal</h5>
+                    <h5 class="card-title-secondary">Employees portal</h5>
+                  </div>
+                </div>
+                <div class="icon-box__card">
+                  <img src="./src/img/icons/help-desk.svg" alt="" />
+                  <div
+                    class="w-100 card-title position-relative text-center d-flex justify-content-center align-items-center"
+                  >
+                    <h5 class="card-title-main">Help Desk</h5>
+                    <h5 class="card-title-secondary">Help Desk</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button class="hero-btn accent-btn">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 hero-content">
+          <div class="hero-content__l">
+            <h1>Welcome to AOU</h1>
+            <span>We Shape the Shapers of the Future</span>
+          </div>
+          <div class="hero-content__line"></div>
+          <div class="hero-content__r">
+            <p>
+              Our British-accredited programmes and courses offer you the
+              flexibility to learn at your own pace,on a schedule that suits
+              your lifestyle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- E-Hero -->
+
+    <div class="container bg-light-I">
+      <div class="row">
+        <!-- S-Fetured-Pages -->
+        <div class="col-12">
+          <div
+            class="row featured-pages d-flex justify-content-center align-items-center"
+          >
+            <a href="#" class="col-md-3 col-12 featured-pages__card">
+              <img
+                width="60"
+                height="60"
+                src="./src/img/icons/Apply.png"
+                alt=""
+              />
+              <span>Apply Online</span>
+            </a>
+            <a href="#" class="col-md-3 col-12 featured-pages__card">
+              <img src="./src/img/icons/Machine Learning.png" alt="" />
+              <span>e-Learning (LMS)</span>
+            </a>
+            <a href="#" class="col-md-3 col-12 featured-pages__card">
+              <img src="./src/img/icons/featured-pages/exam.png" alt="" />
+              <span>Exam Schedule</span>
+            </a>
+            <a href="#" class="col-md-3 col-12 featured-pages__card">
+              <img src="./src/img/icons/featured-pages/Calendar.png" alt="" />
+              <span>Academic Calendar</span>
+            </a>
+            <a href="#" class="col-md-3 col-12 featured-pages__card">
+              <img src="./src/img/icons/featured-pages/Reinforce.png" alt="" />
+              <span>Reinforce</span>
+            </a>
+            <a href="#" class="col-md-3 col-12 featured-pages__card">
+              <img src="./src/img/icons/Email Sign.png" alt="" />
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+        <!-- E-Fetured-Pages -->
+
+        <!-- S-AOU-Campuses -->
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <div class="row campuses-container">
+            <div class="col-12">
+              <h2 class="double-title">AOU <span>Campuses</span></h2>
+            </div>
+            <div
+              class="col-12 w-100 d-none d-md-flex justify-content-between align-items-center campuses__branches"
+            >
+              <a href="#" class="text-heading-gray fs-5">Egypt</a>
+              <a href="#" class="text-heading-gray fs-5">Oman</a>
+              <a href="#" class="text-heading-gray fs-5">Sudan</a>
+              <a href="#" class="text-heading-gray fs-5">Jordan</a>
+              <a href="#" class="active-campus-item">Kuwait</a>
+              <a href="#" class="text-heading-gray fs-5">Bahrain</a>
+              <a href="#" class="text-heading-gray fs-5">Lebanon</a>
+              <a href="#" class="text-heading-gray fs-5">Saudi Arabia</a>
+              <a href="#" class="text-heading-gray fs-5">Palestine</a>
+            </div>
+            <div class="col-12 campuses-map">
+              <div class="map-pin-container egypt">
+                <a href="#" class="map-pin">
+                  <!-- <div class="country-flag"></div> -->
+                  <img src="./src/img/flags/egypt.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing and
+                  documenting scientific theses and academic research.
+                </div>
+              </div>
+
+              <div class="map-pin-container sudan">
+                <a href="#" class="map-pin">
+                  <img src="./src/img/flags/sudan.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing
+                  and.
+                </div>
+              </div>
+
+              <div class="map-pin-container saudi-arabia">
+                <a href="#" class="map-pin">
+                  <img src="./src/img/flags/saudi-arabia.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing
+                  and.
+                </div>
+              </div>
+
+              <div class="map-pin-container kuwait">
+                <a href="#" class="map-pin map-pin--active">
+                  <img src="./src/img/flags/kuwait.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing
+                  and.
+                </div>
+              </div>
+
+              <div class="map-pin-container bahrain">
+                <a href="#" class="map-pin">
+                  <img src="./src/img/flags/Bahrain.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing
+                  and.
+                </div>
+              </div>
+              <div class="map-pin-container oman">
+                <a href="#" class="map-pin">
+                  <img src="./src/img/flags/oman.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing
+                  and.
+                </div>
+              </div>
+              <div class="map-pin-container lebanon">
+                <a href="#" class="map-pin">
+                  <img src="./src/img/flags/lebanon.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing
+                  and.
+                </div>
+              </div>
+              <div class="map-pin-container jordan">
+                <a href="#" class="map-pin">
+                  <img src="./src/img/flags/Jordan.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing
+                  and.
+                </div>
+              </div>
+              <div class="map-pin-container palestine">
+                <a href="#" class="map-pin">
+                  <img src="./src/img/flags/Palestine.svg" alt="" />
+                </a>
+                <div class="campus-map__item">
+                  Our website is a digital library specialized in publishing
+                  and.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- E-AOU-Campuses -->
+
+        <!-- S-Numbers -->
+        <div class="col-12">
+          <div class="row numbers">
+            <div class="col-12">
+              <div
+                class="row d-flex justify-content-center align-items-center numbers-upper"
+              >
+                <div class="col-4 numbers-upper__line"></div>
+                <div class="col-12 col-md-4 p-0 numbers-upper__title">
+                  <h2>
+                    <span>AOU in </span
+                    ><img
+                      src="./src/img/icons/in.svg"
+                      alt=""
+                      width="53"
+                      height="70"
+                    />
+                    Numbers
+                  </h2>
+                </div>
+                <div class="col-4 numbers-upper__line"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row d-flex">
+                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                  <img src="./src/img/icons/numbers/campuses.svg" alt="" />
+                  <span class="icon-number-box__no" data-target="20">0</span>
+                  <span class="icon-number-box__title">Campuses</span>
+                </div>
+                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                  <img src="./src/img/icons/numbers/study-centers.svg" alt="" />
+                  <span class="icon-number-box__no" data-target="200">0</span>
+                  <span class="icon-number-box__title">Study Centers</span>
+                </div>
+                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                  <img
+                    src="./src/img/icons/numbers/major-rgrammes.svg"
+                    alt=""
+                  />
+                  <span class="icon-number-box__no" data-target="50">0</span>
+                  <span class="icon-number-box__title">Major Programmes</span>
+                </div>
+                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                  <img src="./src/img/icons/numbers/nationalities.svg" alt="" />
+                  <span class="icon-number-box__no" data-target="70">0</span>
+                  <span class="icon-number-box__title">Nationalities</span>
+                </div>
+                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                  <img src="./src/img/icons/numbers/graduates.svg" alt="" />
+                  <span class="icon-number-box__no" data-target="100">0</span>
+                  <span class="icon-number-box__title">Graduates</span>
+                </div>
+                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                  <img
+                    src="./src/img/icons/numbers/served-students.svg"
+                    alt=""
+                  />
+                  <span class="icon-number-box__no" data-target="30">0</span>
+                  <span class="icon-number-box__title">Served Students</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- E-Numbers -->
+
+        <!-- S-Stay-Update -->
+        <div class="col-12">
+          <div class="row stay-update">
+            <div class="col-12 heading-box">
+              <h2 class="double-title">
+                Stay
+                <span>Update</span>
+              </h2>
+              <p>
+                At Arab Open University, we value and celebrate the intellectual
+                contributions of our faculty. DSpace is our dedicated platform
+                for showcasing your research, providing a global audience with
+                access to your innovative work. This repository is designed to
+                increase the visibility and impact of your research, fostering a
+                collaborative and vibrant academic community
+              </p>
+            </div>
+            <div class="col-12 stay-update__posts slider">
+              <div class="slider-wrapper">
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./src/img/insta-feed.wepb.webp" alt="" />
+                </div>
+              </div>
+              <button class="next">❯</button>
+              <button class="prev">❮</button>
+            </div>
+          </div>
+        </div>
+        <!-- E-Stay-Update -->
+
+        <!-- S-Upcoming-Events -->
+        <div class="col-12">
+          <div class="row upcoming-events">
+            <div class="col-12">
+              <div class="col-12 heading-box">
+                <h2 class="double-title">
+                  Upcoming
+                  <span>Events</span>
+                </h2>
+                <p>
+                  At Arab Open University, we value and celebrate the
+                  intellectual contributions of our faculty. DSpace is our
+                  dedicated platform for showcasing your research, providing a
+                  global audience with access to your innovative work. This
+                  repository is designed to increase the visibility and impact
+                  of your research, fostering a collaborative and vibrant
+                  academic community
+                </p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row upcoming-events__cards">
+                <div class="col-12 col-md-3 img-box-container">
+                  <div class="img-box">
+                    <img src="./src/img/insta-feed.png" class="img-box__img" />
+                    <div class="img-box__data">
+                      <div class="img-box__date">May <span>21</span></div>
+                      <a href="#" class="img-box__content">
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <span>Show More</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 img-box-container">
+                  <div class="img-box">
+                    <img src="./src/img/insta-feed.png" class="img-box__img" />
+                    <div class="img-box__data">
+                      <div class="img-box__date">May <span>21</span></div>
+                      <a href="#" class="img-box__content">
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <span>Show More</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 img-box-container">
+                  <div class="img-box">
+                    <img src="./src/img/insta-feed.png" class="img-box__img" />
+                    <div class="img-box__data">
+                      <div class="img-box__date">May <span>21</span></div>
+                      <a href="#" class="img-box__content">
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <span>Show More</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 img-box-container">
+                  <div class="img-box">
+                    <img src="./src/img/insta-feed.png" class="img-box__img" />
+                    <div class="img-box__data">
+                      <div class="img-box__date">May <span>21</span></div>
+                      <a href="#" class="img-box__content">
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <span>Show More</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center stay-update__btn">
+              <button class="main-btn">View all events</button>
+            </div>
+          </div>
+        </div>
+        <!-- E-Upcoming-Events -->
+      </div>
+    </div>
+
+    <!-- S-Success-Story -->
+    <div class="container p-0 bg-light-I">
+      <div
+        class="w-100 flex-wrap success-stories d-flex justify-content-between"
+      >
+        <div class="success-stories__testamonial">
+          <div class="wrapper">
+            <h2 class="double-title">Success <span>Stories</span></h2>
+            <div>
+              <img
+                class="text-center"
+                src="src/img/success-stories-avatars.png"
+                alt=""
+              />
+            </div>
+            <p>
+              <span>
+                Our Students are Our Future<br />
+                Dr. Nour Dakkak</span
+              >
+              is Assistant Professor of English Literature at AOU, Kuwait
+              Branch. She graduated from AOU with is Assistant Professor of
+              English Literature at AOUis Assistant Professor of English
+              Literature at AOUis Assistant Professor of English Literature at
+              AOU...
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end success-stories__banner">
+          <div class="img"></div>
+        </div>
+      </div>
+    </div>
+    <!-- E-Success-Story -->
+
+    <!-- S-Our-Channel -->
+    <div class="container p-0 bg-light-I">
+      <div class="col-12 container our-channel-container">
+        <div
+          class="row d-flex justify-content-center align-items-center our-channel"
+        >
+          <div class="col-12">
+            <h2 class="double-title">
+              Our
+              <span> Channel</span>
+            </h2>
+            <p class="text-center">Stay Updated with our latest videos</p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-center our-channel__stream"
+          >
+            <iframe
+              id="youtubeVideo"
+              src="https://www.youtube.com/embed/aBYM-wWE6i4"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-12 our-channel__video-slider">
+            <div class="slider-wrapper">
+              <button class="slide">
+                <img src="./src/img/videos/1.png" alt="" />
+              </button>
+              <button class="slide">
+                <img src="./src/img/videos/2.png" alt="" />
+              </button>
+              <button class="slide">
+                <img src="./src/img/videos/3.png" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 container accreditation">
+            <h2 class="text-center">ACCREDITATION</h2>
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./src/img/logos/logo-ou.png" alt="" />
+              <img src="./src/img/logos/image.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- E-Our-Channel -->
+
+    <footer>
+      <div class="container">
+        <div class="row footer">
+          <!-- S-Upper -->
+          <div class="col-12">
+            <div class="row upper-ftr-container">
+              <!-- S-Left -->
+              <div
+                class="col-12 col-md-4 d-flex flex-column justify-content-start upper-ftr"
+              >
+                <img
+                  src="./src/img/logos/aou-white-logo.png"
+                  width="220"
+                  height="85"
+                  alt=""
+                />
+                <p>
+                  Our website is a digital library specialized in publishing and
+                  documenting scientific theses and academic research.
+                </p>
+                <img src="./src/img/map.png" width="430" alt="" />
+                <div
+                  class="d-flex justify-content-start align-items-center gap-24 social-media"
+                >
+                  <a href="#">
+                    <img
+                      src="./src/img/icons/social-media/facebook.svg"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./src/img/icons/social-media/instagram.svg"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./src/img/icons/social-media/linkedin.svg"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#">
+                    <img src="./src/img/icons/social-media/x.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!-- E-Left -->
+
+              <!-- S-Right -->
+              <div
+                class="d-flex flex-column justify-content-start upper-ftr__right"
+              >
+                <div class="col-12 d-flex">
+                  <div class="row">
+                    <div class="col-12 col-md-4 d-flex upper-ftr__nav">
+                      <span>Company</span>
+                      <ul class="p-0">
+                        <li>
+                          <a href="#"> Home </a>
+                        </li>
+                        <li>
+                          <a href="#"> Listing </a>
+                        </li>
+                        <li>
+                          <a href="#"> Property </a>
+                        </li>
+                        <li>
+                          <a href="#"> Services </a>
+                        </li>
+                        <li>
+                          <a href="#"> Blog </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-12 col-md-4 d-flex upper-ftr__nav">
+                      <span>Help</span>
+                      <ul class="p-0">
+                        <li>
+                          <a href="#"> Customer Support </a>
+                        </li>
+                        <li>
+                          <a href="#"> Terms & Conditions </a>
+                        </li>
+                        <li>
+                          <a href="#"> Privacy Policy </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-12 col-md-4 d-flex upper-ftr__nav">
+                      <span>Contact Us</span>
+                      <ul class="p-0">
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/location.svg"
+                              alt=""
+                            />
+                            <span>
+                              Arab Open University - Sudan 21 Street Amarat,
+                              Khartoum, North Ebnseina Hospital
+                            </span>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/map.svg"
+                              alt=""
+                            />
+                            <span> Veiw Map </span>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/phone.svg"
+                              alt=""
+                            />
+                            <span> 00249154891834 </span>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/fax.svg"
+                              alt=""
+                            />
+                            <span> 00249154891832 </span>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="h-icon-box" href="#">
+                            <img
+                              src="src/img/icons/contact-us/mail.svg"
+                              alt=""
+                            />
+                            <span> info@aou.edu.sd </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex newsteller">
+                    <span class="col-21 col-md-4">Contact With Us Naw ! </span>
+                    <div class="col-12 col-md-8 newsteller__input">
+                      <form action="">
+                        <input type="text" placeholder="Enter Your E-mail..." />
+                        <button>Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- E-Right -->
+            </div>
+          </div>
+          <!-- E-Upper -->
+
+          <!-- S-Lower -->
+          <div
+            class="col-12 d-flex flex-column text-center justify-content-center align-items-center bottom-ftr"
+          >
+            <div class="h-line-1"></div>
+            <span
+              >Copyright 2022 © Arab Open University - Sudan. All Rights
+              Reserved.</span
+            >
+          </div>
+          <!-- E-Lower -->
+        </div>
+      </div>
+    </footer>
+    <script src="./src/js/numbers-counter.js"></script>
+    <script src="./src/js/slider.js"></script>
+  </body>
+</html>
