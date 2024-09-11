@@ -14,10 +14,37 @@
 }
 
 .hero_cont {
-  background-image: url(../img/hero.webp);
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  background: url("../img/hero.webp") 51% / cover no-repeat;
 }
+
+/* Keyframes for zoom effect */
+/* @keyframes zoomIn {
+  0% {
+    background-size: 100% auto;
+    background-position: left top;
+  }
+  50% {
+    background-size: 120% auto;
+    background-position: left bottom;
+  }
+  100% {
+    background-size: 100% auto;
+    background-position: left top;
+  }
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("../img/hero.webp");
+  }
+  50% {
+    background-image: url("../img/post-2.png");
+  }
+  100% {
+    background-image: url("../img/hero.webp");
+  }
+} */
 
 .hero-upper {
   display: flex;

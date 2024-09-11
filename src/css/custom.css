@@ -89,14 +89,14 @@
   /* English Font (Popins) */
   --popins-l: "popins-light"; /* 300 */
   --popins-r: "popins-regular"; /* 400 */
-  --popins-m: "popins-meduim"; /* 500 */
+  --popins-m: "popins-medium"; /* 500 */
   --popins-s: "popins-semiBold"; /* 600*/
   --popins-b: "popins-bold"; /* 700 */
 
   /* Arabic Font (Tajwal) */
   --tajawal-l: "tajawal-light";
   --tajawal-r: "tajawal-regular";
-  --tajawal-m: "tajawal-meduim";
+  --tajawal-m: "tajawal-medium";
   --tajawal-b: "tajawal-bold";
 }
 
@@ -109,18 +109,18 @@ ul {
 }
 
 button {
-  font-family: var(--popins-m);
+  font-family: var(--popins-m) !important;
   text-transform: capitalize;
   font-size: 24px;
 }
 
 input,
 textarea {
-  font-family: var(--popins-r);
+  font-family: var(--popins-r) !important;
 }
 
 div {
-  font-family: var(--popins-m);
+  font-family: var(--popins-m) !important;
 }
 
 .h-line-1 {
@@ -140,20 +140,24 @@ body {
 
 h1,
 h2,
-h3 {
-  font-family: var(--popins-b);
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--popins-b) !important;
 }
 
 h2 {
   font-size: 64px;
 }
 
-span {
-  font-family: var(--popins-m);
+span,
+p {
+  font-family: var(--popins-m) !important;
 }
 
 a {
-  font-family: var(--popins-r);
+  font-family: var(--popins-r) !important;
 }
 
 button {
