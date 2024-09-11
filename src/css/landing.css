@@ -959,8 +959,7 @@ a.active-campus-item:hover {
     width: 100% !important;
   }
   .navbar-logo img {
-    width: 141px;
-    height: 54px;
+    width: 80%;
   }
   .hero-btn {
     width: 100%;

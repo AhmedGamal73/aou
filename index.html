@@ -32,19 +32,14 @@
         <div class="row align-items-center py-18 header">
           <!-- Logo -->
           <div class="col-6 col-md-2 col-6">
-            <a href="#" class="navbar-logo">
-              <img
-                src="./src/img/logo.png"
-                alt="AOU Logo"
-                width="218"
-                height="85"
-              />
+            <a href="#" class="navbar-logo w-100">
+              <img src="./src/img/logo.png" alt="AOU Logo" />
             </a>
           </div>
 
           <!-- S-Off-Canvas -->
           <button
-            class="col-6 d-block d-md-none off-canvas-btn"
+            class="col-6 d-block d-lg-none off-canvas-btn"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasScrolling"
@@ -126,7 +121,7 @@
           <!-- E-Off-Canvas -->
 
           <!-- Navbar -->
-          <div class="d-none d-md-block col-6 col-md-8 justify-content-center">
+          <div class="d-none d-lg-block col-6 col-md-8 justify-content-center">
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid justify-content-end">
                 <button
@@ -291,7 +286,7 @@
 
           <!-- Lang switcher -->
           <div
-            class="col-md-2 d-none d-md-block text-md-end align-items-center lang-switcher"
+            class="col-md-2 d-none d-lg-block text-md-end align-items-center lang-switcher"
           >
             <img src="./src/img/flags/sudan.svg" alt="sudan flag" />
             <button class="stroke-btn lang-switcher__btn">اللغة العربية</button>
@@ -315,7 +310,7 @@
                 <img src="./src/img/icons/search.svg" alt="" />
               </div>
               <form class="d-flex justify-content-center">
-                <input type="text" class="" placeholder="Search..." />
+                <input type="text" id="hero-search__input" />
                 <button class="d-none" type="submit"></button>
               </form>
             </div>
@@ -327,7 +322,7 @@
                     class="w-100 card-title position-relative text-center d-flex justify-content-center align-items-center"
                   >
                     <h5 class="card-title-main">STUDENT SERVICES</h5>
-                    <h5 class="card-title-secondary">STUDENذT SERVICES</h5>
+                    <h5 class="card-title-secondary">STUDENT SERVICES</h5>
                   </div>
                 </div>
                 <div class="icon-box__card">
@@ -1018,5 +1013,6 @@
     </footer>
     <script src="./src/js/numbers-counter.js"></script>
     <script src="./src/js/slider.js"></script>
+    <script src="./src/js/typing-effect.js"></script>
   </body>
 </html>
