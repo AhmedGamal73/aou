@@ -15,16 +15,11 @@
 
 .hero_cont {
   width: 100%;
-  height: 100vh;
-  background-size: 100% auto;
-  background-position: center;
-  background-attachment: fixed;
-  animation: zoomIn 30s infinite, changeBackground 30s infinite;
-  transition: background-image 10s ease-in-out;
+  background: url("../img/hero.webp") 51% / cover no-repeat;
 }
 
 /* Keyframes for zoom effect */
-@keyframes zoomIn {
+/* @keyframes zoomIn {
   0% {
     background-size: 100% auto;
     background-position: left top;
@@ -39,7 +34,6 @@
   }
 }
 
-/* Keyframes for background image change */
 @keyframes changeBackground {
   0% {
     background-image: url("../img/hero.webp");
@@ -50,7 +44,7 @@
   100% {
     background-image: url("../img/hero.webp");
   }
-}
+} */
 
 .hero-upper {
   display: flex;
