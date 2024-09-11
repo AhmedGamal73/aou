@@ -176,6 +176,54 @@
   column-gap: 8px;
 }
 
+.change-words-container {
+  display: flex;
+}
+
+.change-words-wrapper {
+  display: flex;
+  box-sizing: content-box;
+  flex-direction: column;
+  height: 70px;
+  padding-inline-start: 15px;
+  overflow: hidden !important;
+}
+
+.change-words__word {
+  font-family: var(--popins-b) !important;
+  display: block;
+  height: 100%;
+  animation: spin_words 6s infinite;
+  font-size: 43px !important;
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-120%);
+  }
+  25% {
+    transform: translateY(-90%);
+  }
+  35% {
+    transform: translateY(-220%);
+  }
+  50% {
+    transform: translateY(-190%);
+  }
+  60% {
+    transform: translateY(-320%);
+  }
+  75% {
+    transform: translateY(-290%);
+  }
+  85% {
+    transform: translateY(-420%);
+  }
+  100% {
+    transform: translateY(-390%);
+  }
+}
+
 .hero-content__line {
   width: 20px;
   height: 128px;
@@ -638,7 +686,7 @@ a.active-campus-item:hover {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  padding-block: 160px;
+  padding-block: 60px;
   padding-inline: 105px;
 }
 
@@ -779,7 +827,7 @@ a.active-campus-item:hover {
 }
 
 .upcoming-events {
-  padding-block: 90px;
+  padding-block: 60px;
   padding-inline: 105px;
   gap: 44px;
 }
@@ -944,8 +992,7 @@ a.active-campus-item:hover {
     width: 100% !important;
   }
   .navbar-logo img {
-    width: 141px;
-    height: 54px;
+    width: 80%;
   }
   .hero-btn {
     width: 100%;
