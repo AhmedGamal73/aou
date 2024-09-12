@@ -1,3 +1,18 @@
-hr{
-    font-size: 20px;
+hr {
+  font-size: 20px;
+}
+
+.TXT {
+  color: #1d1d1d;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.TXT2 {
+  color: #002d57;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  word-wrap: break-word;
 }
