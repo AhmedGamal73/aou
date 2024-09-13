@@ -16,3 +16,39 @@ hr {
   font-weight: 600;
   word-wrap: break-word;
 }
+link-txt {
+  color: #002d57;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Personal-info-card-v */
+.card-custom {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 18rem;
+}
+
+.card-text-custom {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn-custom {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.image-circle {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
