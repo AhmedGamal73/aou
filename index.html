@@ -23,15 +23,96 @@
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <style type="text/css">
+      .navbar .megamenu {
+        padding: 1rem;
+        padding-inline-start: 3rem;
+      }
+      /* ============ desktop view ============ */
+      @media all and (min-width: 992px) {
+        .mega-menu__item {
+          transform: translateX(0px);
+          transition: transform 0.1s ease-in-out;
+          padding-top: 8px;
+        }
+        .mega-menu__item a {
+          font-size: 14px !important;
+        }
+        .mega-menu__item:hover {
+          transform: translateX(10px);
+        }
+        .navbar .has-megamenu {
+          position: relative !important;
+        }
+        .navbar .megamenu {
+          transition: top 0.2s ease;
+          display: none;
+          position: absolute;
+          width: 60vw;
+          top: 130%;
+          margin-top: 0;
+          left: -30vw;
+          right: 0;
+          margin: auto;
+          transform: translateY(30px);
+          transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth fade and upward movement */
+        }
+        .navbar .has-megamenu:hover .megamenu {
+          display: block !important;
+          top: 100%;
+          transform: translateY(0);
+        }
+
+        .nav-link {
+          border-radius: 8px;
+          transition: background-color 0.1s ease-in-out;
+        }
+
+        .navbar .has-megamenu:hover .dropdown-toggle::after {
+          transform: rotate(0deg) !important;
+        }
+
+        .navbar .has-megamenu:hover .nav-link {
+          background-color: var(--primary-II);
+          color: white !important;
+          border-radius: 8px;
+        }
+      }
+      /* ============ desktop view .end// ============ */
+
+      /* ============ mobile view ============ */
+      @media (max-width: 991px) {
+        .navbar.fixed-top .navbar-collapse,
+        .navbar.sticky-top .navbar-collapse {
+          overflow-y: auto;
+          max-height: 90vh;
+          margin-top: 10px;
+        }
+      }
+      /* ============ mobile view .end// ============ */
+    </style>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll(".dropdown-menu").forEach(function (element) {
+          element.addEventListener("click", function (e) {
+            e.stopPropagation();
+          });
+        });
+      });
+      // DOMContentLoaded  end
+    </script>
+
     <title>Home</title>
   </head>
   <body>
     <!-- S-Header -->
     <header>
       <div class="container">
-        <div class="row align-items-center py-18 header">
+        <div class="row align-items-center py-18 header position-relative">
           <!-- Logo -->
-          <div class="col-6 col-md-2 col-6">
+          <div class="col-6 col-lg-2">
             <a href="#" class="navbar-logo w-100">
               <img src="./src/img/logo.png" alt="AOU Logo" />
             </a>
@@ -121,166 +202,691 @@
           <!-- E-Off-Canvas -->
 
           <!-- Navbar -->
-          <div
-            class="d-block d-sm-none d-xs-none col-6 col-md-8 justify-content-center"
-          >
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid justify-content-end">
-                <div
-                  class="collapse navbar-collapse justify-content-center"
-                  id="navbarNavDropdown"
+          <div class="col-6 col-md-8 d-none d-md-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#main_nav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
-                  <ul class="navbar-nav d-flex">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link p-10 fs-6 active_nav_item"
-                        aria-current="page"
-                        href="#"
-                        >Home</a
-                      >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav">
+                    <!-- S-Home -->
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home </a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
+                    <!-- E-Home -->
+
+                    <!-- S-University -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
                         University
                       </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item fs-6" href="#">Action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-6" href="#"
-                            >Another action</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-6" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <!-- S-col-2 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Student
+                    <!-- E-University -->
+
+                    <!-- S-Student -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        University
                       </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item fs-6" href="#">Action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-24" href="#"
-                            >Another action</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-6" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <!-- S-col-2 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Academics
+                    <!-- E-Student -->
+
+                    <!-- S-Academics -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        University
                       </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item fs-24" href="#">Action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-24" href="#"
-                            >Another action</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-24" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <!-- S-col-2 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Admission
+                    <!-- E-Academics -->
+
+                    <!-- S-Admission -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        University
                       </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item fs-24" href="#">Action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-24" href="#"
-                            >Another action</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-24" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <!-- S-col-2 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Research
+                    <!-- E-Admission -->
+
+                    <!-- S-Research -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        University
                       </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item fs-24" href="#">Action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-24" href="#"
-                            >Another action</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item fs-24" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <!-- S-col-2 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
                     </li>
+                    <!-- E-Research -->
                   </ul>
                 </div>
+                <!-- navbar-collapse.// -->
               </div>
+              <!-- container-fluid.// -->
             </nav>
           </div>
 
           <!-- Lang switcher -->
-          <div
-            class="col-md-2 d-none d-lg-block text-md-end align-items-center lang-switcher"
-          >
-            <img src="./src/img/flags/sudan.svg" alt="sudan flag" />
-            <button class="stroke-btn lang-switcher__btn">اللغة العربية</button>
+          <div class="col-12 col-md-2 d-flex align-items-center lang-switcher">
+            <img
+              src="./src/img/flags/sudan.svg"
+              alt="sudan flag"
+              class="me-2"
+            />
+            <button
+              class="btn btn-outline-secondary lang-switcher__btn btn-sm btn-md-lg w-100 w-md-auto"
+            >
+              اللغة العربية
+            </button>
           </div>
         </div>
       </div>
@@ -414,9 +1020,7 @@
             <div class="col-12">
               <h2 class="double-title">AOU <span>Campuses</span></h2>
             </div>
-            <div
-              class="col-12 w-100 d-none d-md-flex justify-content-between align-items-center campuses__branches"
-            >
+            <div class="col-12 campuses__branches">
               <a href="#" class="text-heading-gray fs-5">Egypt</a>
               <a href="#" class="text-heading-gray fs-5">Oman</a>
               <a href="#" class="text-heading-gray fs-5">Sudan</a>
@@ -586,6 +1190,272 @@
         </div>
         <!-- E-Numbers -->
 
+        <!-- S-Latest-News -->
+        <div class="col-12">
+          <div class="row upcoming-events">
+            <div class="col-12">
+              <div class="col-12 heading-box">
+                <h2 class="double-title">
+                  Latest
+                  <span>News</span>
+                </h2>
+                <p>
+                  At Arab Open University, we value and celebrate the
+                  intellectual contributions of our faculty. DSpace is our
+                  dedicated platform for showcasing your research, providing a
+                  global audience with access to your innovative work. This
+                  repository is designed to increase the visibility and impact
+                  of your research, fostering a collaborative and vibrant
+                  academic community
+                </p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row upcoming-events__cards position-relative">
+                <div class="col-12 col-sm-6 col-md-3 img-box-container">
+                  <div class="img-box">
+                    <div class="img-box__img">
+                      <div class="img-box__date">May <span>21</span></div>
+                    </div>
+                    <div class="img-box__data">
+                      <div href="#" class="img-box__content">
+                        <h5>Information Technology & Computing</h5>
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <a>Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 img-box-container">
+                  <div class="img-box">
+                    <div class="img-box__img">
+                      <div class="img-box__date">May <span>21</span></div>
+                    </div>
+                    <div class="img-box__data">
+                      <div href="#" class="img-box__content">
+                        <h5>Information Technology & Computing</h5>
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <a>Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 img-box-container">
+                  <div class="img-box">
+                    <div class="img-box__img">
+                      <div class="img-box__date">May <span>21</span></div>
+                    </div>
+                    <div class="img-box__data">
+                      <div href="#" class="img-box__content">
+                        <h5>Information Technology & Computing</h5>
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <a>Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 img-box-container">
+                  <div class="img-box">
+                    <div class="img-box__img">
+                      <div class="img-box__date">May <span>21</span></div>
+                    </div>
+                    <div class="img-box__data">
+                      <div href="#" class="img-box__content">
+                        <h5>Information Technology & Computing</h5>
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <a>Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- E-Latest- -->
+
+        <!-- S-Events-&-Announcements -->
+        <div class="col-12">
+          <div class="row events-announcements">
+            <div class="col-12">
+              <h2 class="double-title">Events <span>Announcements</span></h2>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="card">
+                    <div class="card-body gap-5">
+                      <div class="icon-box-h">
+                        <img
+                          src="./src/img/main-landing/mingcute_announcement-line.svg"
+                          width="48"
+                          height="48"
+                          alt=""
+                        />
+                        <span>Announcements</span>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="col-12">
+                          <div class="row event-info py-3">
+                            <div class="col-2 event-info__date">
+                              <div class="date-box-v">
+                                <span class="date-box-v__day">02</span>
+                                <span class="date-box-v__month">Sep</span>
+                              </div>
+                            </div>
+                            <div class="col-10 event-info__content">
+                              It’s all about Passion, self Confidence and
+                              Perseverance
+                            </div>
+                          </div>
+                          <hr class="m-0" />
+                        </div>
+                        <div class="col-12">
+                          <div class="row event-info py-3">
+                            <div class="col-2 event-info__date">
+                              <div class="date-box-v">
+                                <span class="date-box-v__day">02</span>
+                                <span class="date-box-v__month">Sep</span>
+                              </div>
+                            </div>
+                            <div class="col-10 event-info__content">
+                              It’s all about Passion, self Confidence and
+                              Perseverance
+                            </div>
+                          </div>
+                          <hr class="m-0" />
+                        </div>
+                        <div class="col-12">
+                          <div class="row event-info py-3">
+                            <div class="col-2 event-info__date">
+                              <div class="date-box-v">
+                                <span class="date-box-v__day">02</span>
+                                <span class="date-box-v__month">Sep</span>
+                              </div>
+                            </div>
+                            <div class="col-10 event-info__content">
+                              It’s all about Passion, self Confidence and
+                              Perseverance
+                            </div>
+                          </div>
+                          <hr class="m-0" />
+                        </div>
+                        <div class="col-12">
+                          <div class="row event-info py-3">
+                            <div class="col-2 event-info__date">
+                              <div class="date-box-v">
+                                <span class="date-box-v__day">02</span>
+                                <span class="date-box-v__month">Sep</span>
+                              </div>
+                            </div>
+                            <div class="col-10 event-info__content">
+                              It’s all about Passion, self Confidence and
+                              Perseverance
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card">
+                    <div class="card-body gap-5">
+                      <div class="icon-box-h">
+                        <img
+                          src="./src/img/main-landing/mdi_events.svg"
+                          width="48"
+                          height="48"
+                          alt=""
+                        />
+                        <span>Upconmming Events</span>
+                      </div>
+                      <div class="col-12">
+                        <div class="col-12">
+                          <div class="row event-info py-3">
+                            <div class="col-2 event-info__date">
+                              <div class="date-box-v">
+                                <span class="date-box-v__day">02</span>
+                                <span class="date-box-v__month">Sep</span>
+                              </div>
+                            </div>
+                            <div class="col-10 event-info__content">
+                              It’s all about Passion, self Confidence and
+                              Perseverance
+                            </div>
+                          </div>
+                          <hr class="m-0" />
+                        </div>
+                        <div class="col-12">
+                          <div class="row event-info py-3">
+                            <div class="col-2 event-info__date">
+                              <div class="date-box-v">
+                                <span class="date-box-v__day">02</span>
+                                <span class="date-box-v__month">Sep</span>
+                              </div>
+                            </div>
+                            <div class="col-10 event-info__content">
+                              It’s all about Passion, self Confidence and
+                              Perseverance
+                            </div>
+                          </div>
+                          <hr class="m-0" />
+                        </div>
+                        <div class="col-12">
+                          <div class="row event-info py-3">
+                            <div class="col-2 event-info__date">
+                              <div class="date-box-v">
+                                <span class="date-box-v__day">02</span>
+                                <span class="date-box-v__month">Sep</span>
+                              </div>
+                            </div>
+                            <div class="col-10 event-info__content">
+                              It’s all about Passion, self Confidence and
+                              Perseverance
+                            </div>
+                          </div>
+                          <hr class="m-0" />
+                        </div>
+                        <div class="col-12">
+                          <div class="row event-info py-3">
+                            <div class="col-2 event-info__date">
+                              <div class="date-box-v">
+                                <span class="date-box-v__day">02</span>
+                                <span class="date-box-v__month">Sep</span>
+                              </div>
+                            </div>
+                            <div class="col-10 event-info__content">
+                              It’s all about Passion, self Confidence and
+                              Perseverance
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- E-Events-&-Announcements -->
+
         <!-- S-Stay-Update -->
         <div class="col-12">
           <div class="row stay-update">
@@ -596,11 +1466,7 @@
               </h2>
               <p>
                 At Arab Open University, we value and celebrate the intellectual
-                contributions of our faculty. DSpace is our dedicated platform
-                for showcasing your research, providing a global audience with
-                access to your innovative work. This repository is designed to
-                increase the visibility and impact of your research, fostering a
-                collaborative and vibrant academic community
+                contributions of our faculty.
               </p>
             </div>
             <div class="col-12 stay-update__posts slider">
@@ -643,183 +1509,219 @@
         </div>
         <!-- E-Stay-Update -->
 
-        <!-- S-Upcoming-Events -->
+        <!-- S-Success-Story -->
         <div class="col-12">
-          <div class="row upcoming-events">
+          <div class="row success-stories-wrapper">
             <div class="col-12">
-              <div class="col-12 heading-box">
-                <h2 class="double-title">
-                  Upcoming
-                  <span>Events</span>
-                </h2>
-                <p>
-                  At Arab Open University, we value and celebrate the
-                  intellectual contributions of our faculty. DSpace is our
-                  dedicated platform for showcasing your research, providing a
-                  global audience with access to your innovative work. This
-                  repository is designed to increase the visibility and impact
-                  of your research, fostering a collaborative and vibrant
-                  academic community
-                </p>
-              </div>
+              <h2 class="double-title">
+                Success
+                <span>Stories</span>
+              </h2>
             </div>
             <div class="col-12">
-              <div class="row upcoming-events__cards">
-                <div class="col-12 col-md-3 img-box-container">
-                  <div class="img-box">
-                    <img src="./src/img/insta-feed.png" class="img-box__img" />
-                    <div class="img-box__data">
-                      <div class="img-box__date">May <span>21</span></div>
-                      <a href="#" class="img-box__content">
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <span>Show More</span>
-                      </a>
+              <div class="row">
+                <div class="col-12 col-md-8 success-stories__testamonials">
+                  <div class="row">
+                    <div
+                      class="col-12 d-flex justify-content-start gap-5 align-items-center"
+                    >
+                      <img src="./src/img/success-stories-avatars.png" alt="" />
+                      <div
+                        class="d-flex flex-column justify-content-start align-items-start testamonial-title"
+                      >
+                        <span class="testamonial-title__slug"
+                          >Our Students are Our Future</span
+                        >
+                        <span class="testamonial-title__name"
+                          >Dr. Nour Dakkak</span
+                        >
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div
+                        class="row d-flex justify-content-center align-items-center testamonial-content-wrapper"
+                      >
+                        <div
+                          class="col-2 d-flex flex-column justify-content-center align-items-center testamonial-btn-wrapper"
+                        >
+                          <button class="testamonial-btn testamonial-btn__next">
+                            <img
+                              src="./src/img/icons/ic_round-navigate-next.svg"
+                              alt=""
+                            />
+                          </button>
+                          <button class="testamonial-btn active">1</button>
+                          <button class="testamonial-btn">2</button>
+
+                          <button class="testamonial-btn testamonial-btn__prev">
+                            <img
+                              src="./src//img/icons/ic_round-navigate-prev.svg"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12 test-card-h">
+                              <img
+                                width="174px"
+                                height="174px"
+                                src="./src/img/profile-img.png"
+                                alt=""
+                              />
+                              <div class="test-card-h__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                                <p class="light-text">
+                                  Rami Sarieddine is currently a Partner
+                                  Technical Evangelist at Microsoft Corporation.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-12 test-card-h">
+                              <img
+                                width="174px"
+                                height="174px"
+                                src="./src/img/profile-img.png"
+                                alt=""
+                              />
+                              <div class="test-card-h__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                                <p class="light-text">
+                                  Rami Sarieddine is currently a Partner
+                                  Technical Evangelist at Microsoft Corporation.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-3 img-box-container">
-                  <div class="img-box">
-                    <img src="./src/img/insta-feed.png" class="img-box__img" />
-                    <div class="img-box__data">
-                      <div class="img-box__date">May <span>21</span></div>
-                      <a href="#" class="img-box__content">
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <span>Show More</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-3 img-box-container">
-                  <div class="img-box">
-                    <img src="./src/img/insta-feed.png" class="img-box__img" />
-                    <div class="img-box__data">
-                      <div class="img-box__date">May <span>21</span></div>
-                      <a href="#" class="img-box__content">
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <span>Show More</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-3 img-box-container">
-                  <div class="img-box">
-                    <img src="./src/img/insta-feed.png" class="img-box__img" />
-                    <div class="img-box__data">
-                      <div class="img-box__date">May <span>21</span></div>
-                      <a href="#" class="img-box__content">
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <span>Show More</span>
-                      </a>
-                    </div>
-                  </div>
+                <div
+                  class="col-12 col-md-4 d-flex justify-content-center align-items-center p-0 success-stories__video"
+                >
+                  <img width="100%" src="./src/img/video.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="col-12 d-flex justify-content-center stay-update__btn">
-              <button class="main-btn">View all events</button>
-            </div>
+            <div class="col-12"></div>
           </div>
         </div>
-        <!-- E-Upcoming-Events -->
-      </div>
-    </div>
+        <!-- S-Success-Story -->
 
-    <!-- S-Success-Story -->
-    <div class="container p-0 bg-light-I">
-      <div
-        class="w-100 flex-wrap success-stories d-flex justify-content-between"
-      >
-        <div class="success-stories__testamonial">
-          <div class="wrapper">
-            <h2 class="double-title">Success <span>Stories</span></h2>
-            <div>
-              <img
-                class="text-center"
-                src="src/img/success-stories-avatars.png"
-                alt=""
-              />
-            </div>
-            <p>
-              <span>
-                Our Students are Our Future<br />
-                Dr. Nour Dakkak</span
-              >
-              is Assistant Professor of English Literature at AOU, Kuwait
-              Branch. She graduated from AOU with is Assistant Professor of
-              English Literature at AOUis Assistant Professor of English
-              Literature at AOUis Assistant Professor of English Literature at
-              AOU...
-            </p>
-          </div>
-        </div>
-        <div class="d-flex justify-content-end success-stories__banner">
-          <div class="img"></div>
-        </div>
-      </div>
-    </div>
-    <!-- E-Success-Story -->
-
-    <!-- S-Our-Channel -->
-    <div class="container p-0 bg-light-I">
-      <div class="col-12 container our-channel-container">
-        <div
-          class="row d-flex justify-content-center align-items-center our-channel"
-        >
-          <div class="col-12">
-            <h2 class="double-title">
-              Our
-              <span> Channel</span>
-            </h2>
-            <p class="text-center">Stay Updated with our latest videos</p>
-          </div>
+        <!-- S-Our-Channel -->
+        <div class="col-12 container">
           <div
-            class="col-12 d-flex justify-content-center align-items-center our-channel__stream"
+            class="row d-flex justify-content-center align-items-center our-channel-wrapper"
           >
-            <iframe
-              id="youtubeVideo"
-              src="https://www.youtube.com/embed/aBYM-wWE6i4"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="col-12 our-channel__video-slider">
-            <div class="slider-wrapper">
-              <button class="slide">
-                <img src="./src/img/videos/1.png" alt="" />
-              </button>
-              <button class="slide">
-                <img src="./src/img/videos/2.png" alt="" />
-              </button>
-              <button class="slide">
-                <img src="./src/img/videos/3.png" alt="" />
-              </button>
+            <div class="col-12">
+              <h2 class="double-title">
+                Our
+                <span> Channel</span>
+              </h2>
+              <p class="text-center">Stay Updated with our latest videos</p>
             </div>
-          </div>
+            <div
+              class="col-12 d-flex justify-content-center align-items-center our-channel__banner"
+            >
+              <div class="banner">
+                <div class="help-box">
+                  <img src="./src/img/icons/video-play.svg" alt="" />
+                  <h5>How We Help?</h5>
+                  <p class="light-text">Stay Updated with our latest videos</p>
+                  <button class="stroke-grey-btn">
+                    <span>Partner With us</span>
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-          <div class="col-12 container accreditation">
-            <h2 class="text-center">ACCREDITATION</h2>
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="./src/img/logos/logo-ou.png" alt="" />
-              <img src="./src/img/logos/image.png" alt="" />
+            <div
+              class="col-12 cat-items d-flex justify-content-center align-items-center gap-3"
+            >
+              <button class="cat-item active">All</button>
+              <button class="cat-item">Students</button>
+              <button class="cat-item">Partners</button>
+              <button class="cat-item">University</button>
+            </div>
+
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 img-box-container">
+                  <div class="img-box">
+                    <div class="img-box__img">
+                      <img src="./src/img/video-1.png" alt="" />
+                    </div>
+                    <div class="img-box__data">
+                      <div href="#" class="img-box__content">
+                        <h5>Information Technology & Computing</h5>
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <a>Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 img-box-container">
+                  <div class="img-box">
+                    <div class="img-box__img">
+                      <div class="img-box__date">May <span>21</span></div>
+                    </div>
+                    <div class="img-box__data">
+                      <div href="#" class="img-box__content">
+                        <h5>Information Technology & Computing</h5>
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <a>Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 img-box-container">
+                  <div class="img-box">
+                    <div class="img-box__img">
+                      <div class="img-box__date">May <span>21</span></div>
+                    </div>
+                    <div class="img-box__data">
+                      <div href="#" class="img-box__content">
+                        <h5>Information Technology & Computing</h5>
+                        <p>
+                          Sharpening Your Essay Writing Skills: Tricks and Tips
+                          for Better Writing
+                        </p>
+                        <a>Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 container accreditation">
+              <h2 class="text-center">ACCREDITATION</h2>
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./src/img/logos/logo-ou.png" alt="" />
+                <img src="./src/img/logos/image.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
+        <!-- E-Our-Channel -->
       </div>
     </div>
-    <!-- E-Our-Channel -->
+
     <!-- S-Footer -->
     <footer>
       <div class="container">
