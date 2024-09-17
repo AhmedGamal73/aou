@@ -36,7 +36,10 @@
           padding-top: 8px;
         }
         .mega-menu__item a {
-          font-size: 14px !important;
+          font-size: 12px !important;
+        }
+        .header {
+          padding-inline: 80px !important;
         }
         .mega-menu__item:hover {
           transform: translateX(10px);
@@ -354,9 +357,7 @@
 
                     <!-- S-Student -->
                     <li class="nav-item dropdown has-megamenu">
-                      <a class="nav-link dropdown-toggle" href="#">
-                        University
-                      </a>
+                      <a class="nav-link dropdown-toggle" href="#"> Student </a>
                       <div class="dropdown-menu megamenu" role="menu">
                         <div class="row g-3">
                           <!-- S-col-2 -->
@@ -484,7 +485,7 @@
                     <!-- S-Academics -->
                     <li class="nav-item dropdown has-megamenu">
                       <a class="nav-link dropdown-toggle" href="#">
-                        University
+                        Academics
                       </a>
                       <div class="dropdown-menu megamenu" role="menu">
                         <div class="row g-3">
@@ -613,7 +614,7 @@
                     <!-- S-Admission -->
                     <li class="nav-item dropdown has-megamenu">
                       <a class="nav-link dropdown-toggle" href="#">
-                        University
+                        Admission
                       </a>
                       <div class="dropdown-menu megamenu" role="menu">
                         <div class="row g-3">
@@ -742,7 +743,7 @@
                     <!-- S-Research -->
                     <li class="nav-item dropdown has-megamenu">
                       <a class="nav-link dropdown-toggle" href="#">
-                        University
+                        Research
                       </a>
                       <div class="dropdown-menu megamenu" role="menu">
                         <div class="row g-3">
@@ -883,7 +884,7 @@
               class="me-2"
             />
             <button
-              class="btn btn-outline-secondary lang-switcher__btn btn-sm btn-md-lg w-100 w-md-auto"
+              class="btn btn-outline-secondary lang-switcher__btn btn-sm btn-md-lg w-md-auto"
             >
               اللغة العربية
             </button>
@@ -1021,15 +1022,15 @@
               <h2 class="double-title">AOU <span>Campuses</span></h2>
             </div>
             <div class="col-12 campuses__branches">
-              <a href="#" class="text-heading-gray fs-5">Egypt</a>
-              <a href="#" class="text-heading-gray fs-5">Oman</a>
-              <a href="#" class="text-heading-gray fs-5">Sudan</a>
-              <a href="#" class="text-heading-gray fs-5">Jordan</a>
-              <a href="#" class="active-campus-item">Kuwait</a>
-              <a href="#" class="text-heading-gray fs-5">Bahrain</a>
-              <a href="#" class="text-heading-gray fs-5">Lebanon</a>
-              <a href="#" class="text-heading-gray fs-5">Saudi Arabia</a>
-              <a href="#" class="text-heading-gray fs-5">Palestine</a>
+              <a href="#" class="campus-item text-heading-gray">Egypt</a>
+              <a href="#" class="campus-item text-heading-gray">Oman</a>
+              <a href="#" class="campus-item text-heading-gray">Sudan</a>
+              <a href="#" class="campus-item text-heading-gray">Jordan</a>
+              <a href="#" class="campus-item campus-item--active">Kuwait</a>
+              <a href="#" class="campus-item text-heading-gray">Bahrain</a>
+              <a href="#" class="campus-item text-heading-gray">Lebanon</a>
+              <a href="#" class="campus-item text-heading-gray">Saudi Arabia</a>
+              <a href="#" class="campus-item text-heading-gray">Palestine</a>
             </div>
             <div class="col-12 campuses-map">
               <div class="map-pin-container egypt">
@@ -1196,7 +1197,6 @@
             <div class="col-12">
               <div class="col-12 heading-box">
                 <h2 class="double-title">
-                  Latest
                   <span>News</span>
                 </h2>
                 <p>
