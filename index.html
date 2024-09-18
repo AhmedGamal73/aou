@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/custom.css" />
     <link rel="stylesheet" href="src/css/landing.css" />
+    <link rel="stylesheet" href="src/css/__responsive.css" />
 
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -38,8 +39,17 @@
         .mega-menu__item a {
           font-size: 12px !important;
         }
+
+        .mega-menu__item a i {
+          padding-top: 4px;
+        }
+        .mega-menu__item a {
+          display: flex;
+          justify-content: start;
+          align-items: start;
+        }
         .header {
-          padding-inline: 80px !important;
+          padding-inline: 20px !important;
         }
         .mega-menu__item:hover {
           transform: translateX(10px);
@@ -205,7 +215,7 @@
           <!-- E-Off-Canvas -->
 
           <!-- Navbar -->
-          <div class="col-6 col-md-8 d-none d-md-flex justify-content-center">
+          <div class="col-6 col-md-8 d-none d-lg-flex justify-content-center">
             <nav class="navbar navbar-expand-lg navbar-dark">
               <div class="container-fluid">
                 <button
@@ -877,7 +887,9 @@
           </div>
 
           <!-- Lang switcher -->
-          <div class="col-12 col-md-2 d-flex align-items-center lang-switcher">
+          <div
+            class="col-12 d-none d-lg-flex col-md-2 align-items-center lang-switcher"
+          >
             <img
               src="./src/img/flags/sudan.svg"
               alt="sudan flag"
@@ -980,9 +992,9 @@
         <!-- S-Fetured-Pages -->
         <div class="col-12">
           <div
-            class="row featured-pages d-flex justify-content-center align-items-center"
+            class="row sec-p featured-pages d-flex justify-content-center align-items-center"
           >
-            <a href="#" class="col-md-3 col-12 featured-pages__card">
+            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
               <img
                 width="60"
                 height="60"
@@ -991,23 +1003,23 @@
               />
               <span>Apply Online</span>
             </a>
-            <a href="#" class="col-md-3 col-12 featured-pages__card">
+            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
               <img src="./src/img/icons/Machine Learning.png" alt="" />
               <span>e-Learning (LMS)</span>
             </a>
-            <a href="#" class="col-md-3 col-12 featured-pages__card">
+            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
               <img src="./src/img/icons/featured-pages/exam.png" alt="" />
               <span>Exam Schedule</span>
             </a>
-            <a href="#" class="col-md-3 col-12 featured-pages__card">
+            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
               <img src="./src/img/icons/featured-pages/Calendar.png" alt="" />
               <span>Academic Calendar</span>
             </a>
-            <a href="#" class="col-md-3 col-12 featured-pages__card">
+            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
               <img src="./src/img/icons/featured-pages/Reinforce.png" alt="" />
               <span>Reinforce</span>
             </a>
-            <a href="#" class="col-md-3 col-12 featured-pages__card">
+            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
               <img src="./src/img/icons/Email Sign.png" alt="" />
               <span>Email</span>
             </a>
@@ -1016,8 +1028,10 @@
         <!-- E-Fetured-Pages -->
 
         <!-- S-AOU-Campuses -->
-        <div class="col-12 d-flex justify-content-center align-items-center">
-          <div class="row campuses-container">
+        <div
+          class="col-12 d-flex justify-content-center align-items-center p-sm-0"
+        >
+          <div class="row sec-p campuses-container">
             <div class="col-12">
               <h2 class="double-title">AOU <span>Campuses</span></h2>
             </div>
@@ -1035,7 +1049,6 @@
             <div class="col-12 campuses-map">
               <div class="map-pin-container egypt">
                 <a href="#" class="map-pin">
-                  <!-- <div class="country-flag"></div> -->
                   <img src="./src/img/flags/egypt.svg" alt="" />
                 </a>
                 <div class="campus-map__item">
@@ -1126,7 +1139,7 @@
 
         <!-- S-Numbers -->
         <div class="col-12">
-          <div class="row numbers">
+          <div class="row sec-p numbers">
             <div class="col-12">
               <div
                 class="row d-flex justify-content-center align-items-center numbers-upper"
@@ -1149,17 +1162,23 @@
             </div>
             <div class="col-12">
               <div class="row d-flex">
-                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                <div
+                  class="col-6 col-md-4 col-lg-2 icon-number-box py-2 py-lg-0"
+                >
                   <img src="./src/img/icons/numbers/campuses.svg" alt="" />
                   <span class="icon-number-box__no" data-target="20">0</span>
                   <span class="icon-number-box__title">Campuses</span>
                 </div>
-                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                <div
+                  class="col-6 col-md-4 col-lg-2 icon-number-box py-2 py-lg-0"
+                >
                   <img src="./src/img/icons/numbers/study-centers.svg" alt="" />
                   <span class="icon-number-box__no" data-target="200">0</span>
                   <span class="icon-number-box__title">Study Centers</span>
                 </div>
-                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                <div
+                  class="col-6 col-md-4 col-lg-2 icon-number-box py-2 py-lg-0"
+                >
                   <img
                     src="./src/img/icons/numbers/major-rgrammes.svg"
                     alt=""
@@ -1167,17 +1186,23 @@
                   <span class="icon-number-box__no" data-target="50">0</span>
                   <span class="icon-number-box__title">Major Programmes</span>
                 </div>
-                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                <div
+                  class="col-6 col-md-4 col-lg-2 icon-number-box py-2 py-lg-0"
+                >
                   <img src="./src/img/icons/numbers/nationalities.svg" alt="" />
                   <span class="icon-number-box__no" data-target="70">0</span>
                   <span class="icon-number-box__title">Nationalities</span>
                 </div>
-                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                <div
+                  class="col-6 col-md-4 col-lg-2 icon-number-box py-2 py-lg-0"
+                >
                   <img src="./src/img/icons/numbers/graduates.svg" alt="" />
                   <span class="icon-number-box__no" data-target="100">0</span>
                   <span class="icon-number-box__title">Graduates</span>
                 </div>
-                <div class="col-12 col-md-2 col-sm-6 icon-number-box">
+                <div
+                  class="col-6 col-md-4 col-lg-2 icon-number-box py-2 py-lg-0"
+                >
                   <img
                     src="./src/img/icons/numbers/served-students.svg"
                     alt=""
@@ -1193,10 +1218,11 @@
 
         <!-- S-Latest-News -->
         <div class="col-12">
-          <div class="row upcoming-events">
+          <div class="row sec-p upcoming-events">
             <div class="col-12">
               <div class="col-12 heading-box">
                 <h2 class="double-title">
+                  Latest
                   <span>News</span>
                 </h2>
                 <p>
@@ -1212,7 +1238,7 @@
             </div>
             <div class="col-12">
               <div class="row upcoming-events__cards position-relative">
-                <div class="col-12 col-sm-6 col-md-3 img-box-container">
+                <div class="col-12 col-md-6 col-lg-3 p-1 img-box-container">
                   <div class="img-box">
                     <div class="img-box__img">
                       <div class="img-box__date">May <span>21</span></div>
@@ -1229,7 +1255,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 img-box-container">
+                <div class="col-12 col-md-6 col-lg-3 p-1 img-box-container">
                   <div class="img-box">
                     <div class="img-box__img">
                       <div class="img-box__date">May <span>21</span></div>
@@ -1246,7 +1272,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 img-box-container">
+                <div class="col-12 col-md-6 col-lg-3 p-1 img-box-container">
                   <div class="img-box">
                     <div class="img-box__img">
                       <div class="img-box__date">May <span>21</span></div>
@@ -1263,7 +1289,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 img-box-container">
+                <div class="col-12 col-md-6 col-lg-3 p-1 img-box-container">
                   <div class="img-box">
                     <div class="img-box__img">
                       <div class="img-box__date">May <span>21</span></div>
@@ -1288,13 +1314,13 @@
 
         <!-- S-Events-&-Announcements -->
         <div class="col-12">
-          <div class="row events-announcements">
+          <div class="row sec-p events-announcements">
             <div class="col-12">
               <h2 class="double-title">Events <span>Announcements</span></h2>
             </div>
             <div class="col-12">
-              <div class="row">
-                <div class="col-12 col-md-6">
+              <div class="row events-announcements-wrapper">
+                <div class="col-12 col-md-6 p-0 p-md-2">
                   <div class="card">
                     <div class="card-body gap-5">
                       <div class="icon-box-h">
@@ -1308,145 +1334,179 @@
                       </div>
 
                       <div class="col-12">
-                        <div class="col-12">
-                          <div class="row event-info py-3">
-                            <div class="col-2 event-info__date">
-                              <div class="date-box-v">
-                                <span class="date-box-v__day">02</span>
-                                <span class="date-box-v__month">Sep</span>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="row event-info py-3">
+                              <div
+                                class="col-lg-2 col-12 px-0 event-info__date"
+                              >
+                                <div class="date-box-v">
+                                  <span class="date-box-v__day">02</span>
+                                  <span class="date-box-v__month">Sep</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-10 event-info__content">
-                              It’s all about Passion, self Confidence and
-                              Perseverance
+                              <div class="col-lg-10 col-12 event-info__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                              </div>
                             </div>
                           </div>
-                          <hr class="m-0" />
-                        </div>
-                        <div class="col-12">
-                          <div class="row event-info py-3">
-                            <div class="col-2 event-info__date">
-                              <div class="date-box-v">
-                                <span class="date-box-v__day">02</span>
-                                <span class="date-box-v__month">Sep</span>
+                          <hr />
+                          <div class="col-12">
+                            <div class="row event-info py-3">
+                              <div
+                                class="col-lg-2 col-12 px-0 event-info__date"
+                              >
+                                <div class="date-box-v">
+                                  <span class="date-box-v__day">02</span>
+                                  <span class="date-box-v__month">Sep</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-10 event-info__content">
-                              It’s all about Passion, self Confidence and
-                              Perseverance
+                              <div class="col-lg-10 col-12 event-info__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                              </div>
                             </div>
                           </div>
-                          <hr class="m-0" />
-                        </div>
-                        <div class="col-12">
-                          <div class="row event-info py-3">
-                            <div class="col-2 event-info__date">
-                              <div class="date-box-v">
-                                <span class="date-box-v__day">02</span>
-                                <span class="date-box-v__month">Sep</span>
+                          <hr />
+                          <div class="col-12">
+                            <div class="row event-info py-3">
+                              <div
+                                class="col-lg-2 col-12 px-0 event-info__date"
+                              >
+                                <div class="date-box-v">
+                                  <span class="date-box-v__day">02</span>
+                                  <span class="date-box-v__month">Sep</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-10 event-info__content">
-                              It’s all about Passion, self Confidence and
-                              Perseverance
+                              <div class="col-lg-10 col-12 event-info__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                              </div>
                             </div>
                           </div>
-                          <hr class="m-0" />
-                        </div>
-                        <div class="col-12">
-                          <div class="row event-info py-3">
-                            <div class="col-2 event-info__date">
-                              <div class="date-box-v">
-                                <span class="date-box-v__day">02</span>
-                                <span class="date-box-v__month">Sep</span>
+                          <hr />
+                          <div class="col-12">
+                            <div class="row event-info py-3">
+                              <div
+                                class="col-lg-2 col-12 px-0 event-info__date"
+                              >
+                                <div class="date-box-v">
+                                  <span class="date-box-v__day">02</span>
+                                  <span class="date-box-v__month">Sep</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-10 event-info__content">
-                              It’s all about Passion, self Confidence and
-                              Perseverance
+                              <div class="col-lg-10 col-12 event-info__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-
-                      <div class="col-12"></div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 pt-0 pt-lg-2 p-0 p-md-2">
                   <div class="card">
                     <div class="card-body gap-5">
                       <div class="icon-box-h">
                         <img
-                          src="./src/img/main-landing/mdi_events.svg"
+                          src="./src/img/main-landing/mingcute_announcement-line.svg"
                           width="48"
                           height="48"
                           alt=""
                         />
-                        <span>Upconmming Events</span>
+                        <span>Announcements</span>
                       </div>
+
                       <div class="col-12">
-                        <div class="col-12">
-                          <div class="row event-info py-3">
-                            <div class="col-2 event-info__date">
-                              <div class="date-box-v">
-                                <span class="date-box-v__day">02</span>
-                                <span class="date-box-v__month">Sep</span>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="row event-info py-3">
+                              <div
+                                class="col-lg-2 col-12 px-0 event-info__date"
+                              >
+                                <div class="date-box-v">
+                                  <span class="date-box-v__day">02</span>
+                                  <span class="date-box-v__month">Sep</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-10 event-info__content">
-                              It’s all about Passion, self Confidence and
-                              Perseverance
+                              <div class="col-lg-10 col-12 event-info__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                              </div>
                             </div>
                           </div>
-                          <hr class="m-0" />
-                        </div>
-                        <div class="col-12">
-                          <div class="row event-info py-3">
-                            <div class="col-2 event-info__date">
-                              <div class="date-box-v">
-                                <span class="date-box-v__day">02</span>
-                                <span class="date-box-v__month">Sep</span>
+                          <hr />
+                          <div class="col-12">
+                            <div class="row event-info py-3">
+                              <div
+                                class="col-lg-2 col-12 px-0 event-info__date"
+                              >
+                                <div class="date-box-v">
+                                  <span class="date-box-v__day">02</span>
+                                  <span class="date-box-v__month">Sep</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-10 event-info__content">
-                              It’s all about Passion, self Confidence and
-                              Perseverance
+                              <div class="col-lg-10 col-12 event-info__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                              </div>
                             </div>
                           </div>
-                          <hr class="m-0" />
-                        </div>
-                        <div class="col-12">
-                          <div class="row event-info py-3">
-                            <div class="col-2 event-info__date">
-                              <div class="date-box-v">
-                                <span class="date-box-v__day">02</span>
-                                <span class="date-box-v__month">Sep</span>
+                          <hr />
+                          <div class="col-12">
+                            <div class="row event-info py-3">
+                              <div
+                                class="col-lg-2 col-12 px-0 event-info__date"
+                              >
+                                <div class="date-box-v">
+                                  <span class="date-box-v__day">02</span>
+                                  <span class="date-box-v__month">Sep</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-10 event-info__content">
-                              It’s all about Passion, self Confidence and
-                              Perseverance
+                              <div class="col-lg-10 col-12 event-info__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                              </div>
                             </div>
                           </div>
-                          <hr class="m-0" />
-                        </div>
-                        <div class="col-12">
-                          <div class="row event-info py-3">
-                            <div class="col-2 event-info__date">
-                              <div class="date-box-v">
-                                <span class="date-box-v__day">02</span>
-                                <span class="date-box-v__month">Sep</span>
+                          <hr />
+                          <div class="col-12">
+                            <div class="row event-info py-3">
+                              <div
+                                class="col-lg-2 col-12 px-0 event-info__date"
+                              >
+                                <div class="date-box-v">
+                                  <span class="date-box-v__day">02</span>
+                                  <span class="date-box-v__month">Sep</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-10 event-info__content">
-                              It’s all about Passion, self Confidence and
-                              Perseverance
+                              <div class="col-lg-10 col-12 event-info__content">
+                                <p>
+                                  It’s all about Passion, self Confidence and
+                                  Perseverance
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-12"></div>
                     </div>
                   </div>
                 </div>
@@ -1458,7 +1518,7 @@
 
         <!-- S-Stay-Update -->
         <div class="col-12">
-          <div class="row stay-update">
+          <div class="row sec-p stay-update">
             <div class="col-12 heading-box">
               <h2 class="double-title">
                 Stay
@@ -1511,7 +1571,7 @@
 
         <!-- S-Success-Story -->
         <div class="col-12">
-          <div class="row success-stories-wrapper">
+          <div class="row sec-p success-stories-wrapper">
             <div class="col-12">
               <h2 class="double-title">
                 Success
@@ -1619,7 +1679,7 @@
         <!-- S-Our-Channel -->
         <div class="col-12 container">
           <div
-            class="row d-flex justify-content-center align-items-center our-channel-wrapper"
+            class="row sec-p d-flex justify-content-center align-items-center our-channel-wrapper"
           >
             <div class="col-12">
               <h2 class="double-title">

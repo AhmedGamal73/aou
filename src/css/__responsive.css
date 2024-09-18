@@ -1,0 +1,245 @@
+@media only screen and (min-width: 992px) {
+  /* Styles for devices with a width of 1024px or smaller */
+  .slide {
+    min-width: calc(100% / 2);
+  }
+  button.prev {
+    left: 6%;
+  }
+
+  button.next {
+    right: 6%;
+  }
+  .date-box-v {
+    width: 76px;
+  }
+  .col-megamenu img {
+    width: 260px !important;
+  }
+  .sec-p {
+    padding-inline: 20px;
+  }
+  .featured-pages__card span {
+    font-size: 14px !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for devices with a width of 768px or smaller (tablets) */
+  /* Custom Classes */
+  .sec-p {
+    padding-inline: 20px;
+    padding-block: 40px;
+  }
+
+  .slide {
+    min-width: calc(100% / 1);
+    padding: 32px;
+  }
+  button.prev {
+    left: 2%;
+  }
+
+  button.next {
+    right: 2%;
+  }
+  button.prev,
+  button.next {
+    top: 68%;
+  }
+
+  .accreditation img {
+    width: 90px;
+    height: auto;
+  }
+
+  .accreditation {
+    gap: 40px;
+  }
+
+  .accreditation div {
+    gap: 24px;
+  }
+
+  .our-channel__video-slider .slide {
+    padding: 4px;
+    border-radius: 18px;
+  }
+
+  .our-channel__stream {
+    width: 261px !important;
+    height: 146px !important;
+  }
+
+  .header {
+    padding-inline: 10px !important;
+  }
+  .hero-upper {
+    width: 100%;
+  }
+
+  .icon-box {
+    height: auto !important;
+  }
+  .icon-box__card {
+    width: 175px !important;
+  }
+
+  .newsteller,
+  .numbers-upper__line {
+    display: none !important;
+  }
+  .slide img {
+    padding: 24px;
+  }
+
+  .campuses-map {
+    background: url("../img/mob-map.png") 50% / contain no-repeat;
+    height: 200px;
+    background-size: contain;
+    width: 100% !important;
+    padding: 0;
+  }
+  .map-pin img {
+    width: 18px;
+  }
+  .map-pin {
+    width: 28px;
+    height: 28px;
+  }
+
+  .stay-update,
+  .campuses-container {
+    width: 100% !important;
+  }
+
+  .campuses__branches {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: start;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  .campus-item {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .icon-box {
+    flex-wrap: wrap;
+  }
+  .numbers-upper__title img {
+    width: 30px;
+  }
+
+  .success-stories__banner,
+  .success-stories__testamonial {
+    width: 100% !important;
+  }
+  .navbar-logo img {
+    width: 65%;
+  }
+  .hero-btn {
+    width: 100%;
+  }
+
+  .footer {
+    padding-inline: 12px;
+  }
+
+  .upper-ftr img {
+    width: 100%;
+    height: auto;
+  }
+
+  .upper-ftr-container {
+    flex-direction: column;
+  }
+  .newsteller {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .newsteller__input form {
+    flex-direction: column;
+    height: unset;
+    gap: 14px;
+    padding: 10px;
+  }
+
+  .img-box {
+    width: 100%;
+  }
+
+  .success-stories__banner .img {
+    height: 390px;
+  }
+
+  .success-stories__banner {
+    padding-inline-start: 3px;
+  }
+
+  .img-box-container {
+    padding-inline: 40px;
+  }
+
+  .success-stories__testamonial .wrapper {
+    padding-inline: 10px;
+    text-align: center;
+  }
+
+  .double-title {
+    font-size: 38px !important;
+  }
+
+  .event-info__date,
+  .event-info__content {
+    display: flex;
+    justify-content: center;
+  }
+  .event-info__content {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .icon-box-h {
+    flex-direction: column;
+  }
+
+  .events-announcements {
+    gap: 10px;
+  }
+
+  .date-box-v {
+    width: 76px;
+  }
+  .featured-pages__card {
+    width: 47% !important;
+  }
+  .featured-pages__card span {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .change-words-wrapper {
+    height: 40px;
+  }
+  .change-words__word {
+    font-size: 30px !important;
+  }
+  .hero-content__l h1 {
+    font-size: 24px;
+  }
+  .hero-content__r p {
+    font-size: 18px;
+  }
+
+  .hero-content {
+    flex-wrap: wrap;
+  }
+  .hero-content__l,
+  .hero-content__r {
+    width: 100%;
+  }
+  .hero-content__line {
+    display: none;
+  }
+}

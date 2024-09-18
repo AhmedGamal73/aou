@@ -17,7 +17,6 @@ body {
 }
 
 .off-canvas-btn {
-  background: white;
   text-align: end;
   font-size: 36px;
   color: var(--bs-primary);
@@ -178,7 +177,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: whit;
   column-gap: 8px;
 }
 
@@ -269,7 +267,7 @@ body {
 
 .featured-pages__card {
   display: flex;
-  width: 272px !important;
+  width: 272px;
   padding: 20px;
   flex-direction: column;
   align-items: center;
@@ -488,7 +486,7 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 48px;
+  gap: 22px;
   padding-inline: 48px;
   flex-shrink: 0;
   flex-wrap: wrap;
@@ -649,8 +647,8 @@ a.active-campus-item:hover {
 
 .numbers {
   background-color: var(--bs-primary);
-  padding-block: 50px;
-  padding-inline: 37px;
+  /* padding-block: 50px;
+  padding-inline: 37px; */
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -662,6 +660,7 @@ a.active-campus-item:hover {
 }
 
 .numbers-upper__title h2 {
+  font-size: 36px !important;
   color: white;
   display: flex;
   justify-content: center;
@@ -683,18 +682,22 @@ a.active-campus-item:hover {
   flex-direction: column;
   width: 264px;
   align-items: center;
-  gap: 18px;
+  gap: 8px;
   color: white;
+}
+
+.icon-number-box img {
+  width: 52px;
 }
 
 .icon-number-box__no {
   font-family: var(--popins-b) !important;
-  font-size: 48px !important;
+  font-size: 32px !important;
 }
 
 .icon-number-box__title {
   font-family: var(--popins-m) !important;
-  font-size: 26px !important;
+  font-size: 18px !important;
   text-align: center;
 }
 
@@ -702,9 +705,7 @@ a.active-campus-item:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding-block: 60px;
-  padding-inline: 143px;
+  gap: 16px;
 }
 
 .heading-box {
@@ -727,8 +728,6 @@ a.active-campus-item:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: 60px;
-  padding-inline: 143px;
 }
 
 .success-stories__banner {
@@ -786,8 +785,6 @@ a.active-campus-item:hover {
 }
 
 .our-channel-wrapper {
-  padding-block: 140px;
-  padding-inline: 143px;
   gap: 48px;
 }
 
@@ -856,8 +853,6 @@ a.active-campus-item:hover {
 }
 
 .upcoming-events {
-  padding-block: 60px;
-  padding-inline: 143px;
   gap: 44px;
 }
 
@@ -886,7 +881,7 @@ a.active-campus-item:hover {
   padding-inline: 8px;
 }
 .img-box__data h5 {
-  font-size: 24px !important;
+  font-size: 22px !important;
   color: #1d1d1d;
   font-family: var(--popins-m) !important;
 }
@@ -934,6 +929,7 @@ a.active-campus-item:hover {
   text-align: center;
   line-height: normal;
   font-family: var(--popins-r);
+  border-radius: 0 0 4px 0;
 }
 
 .img-box__data p {
@@ -970,9 +966,12 @@ a.active-campus-item:hover {
 }
 
 .events-announcements {
-  padding-inline: 143px;
   padding-block: 60px;
   gap: 60px;
+}
+
+.event-info {
+  padding-inline: 22px;
 }
 
 .event-info__content {
@@ -981,152 +980,14 @@ a.active-campus-item:hover {
   padding: 0 !important;
   color: var(--AOU-System-Dark, #1d1d1d);
   font-family: var(--popins-s);
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
-/* Styles for devices with a width of 1024px or smaller */
-@media only screen and (max-width: 1024px) {
-}
-
-/* Styles for devices with a width of 768px or smaller (tablets) */
-@media only screen and (max-width: 768px) {
-  .accreditation img {
-    width: 90px;
-    height: auto;
-  }
-
-  .accreditation {
-    gap: 40px;
-  }
-
-  .accreditation div {
-    gap: 24px;
-  }
-
-  .our-channel__video-slider .slide {
-    padding: 4px;
-    border-radius: 18px;
-  }
-
-  .our-channel__stream {
-    width: 261px !important;
-    height: 146px !important;
-  }
-
-  .header {
-    padding-inline: 0;
-  }
-  .hero-upper {
-    width: 100%;
-  }
-
-  .icon-box {
-    height: auto !important;
-  }
-  .icon-box__card {
-    width: 175px !important;
-  }
-
-  .campuses-map {
-    width: 100% !important;
-  }
-
-  .campuses__branches {
-    display: none !important;
-  }
-
-  .campuses__branches,
-  .newsteller,
-  .map-pin-container,
-  .hero-content,
-  .numbers-upper__line {
-    display: none !important;
-  }
-
-  .campuses-map {
-    background: url("../img/phone-arabic-world-map.png") 50% / contain no-repeat;
-    height: 280px;
-  }
-
-  .stay-update,
-  .campuses-container {
-    padding-inline: 0;
-  }
-
-  .icon-box {
-    flex-direction: column;
-  }
-  .numbers-upper__title img {
-    width: 30px;
-  }
-
-  .success-stories__banner,
-  .success-stories__testamonial {
-    width: 100% !important;
-  }
-  .navbar-logo img {
-    width: 80%;
-  }
-  .hero-btn {
-    width: 100%;
-  }
-
-  .footer {
-    padding-inline: 12px;
-  }
-
-  .upper-ftr img {
-    width: 100%;
-    height: auto;
-  }
-
-  .upper-ftr-container {
-    flex-direction: column;
-  }
-  .newsteller {
-    width: 100% !important;
-    flex-direction: column;
-  }
-  .newsteller__input form {
-    flex-direction: column;
-    height: unset;
-    gap: 14px;
-    padding: 10px;
-  }
-
-  .img-box {
-    width: 100%;
-  }
-
-  .success-stories__banner .img {
-    height: 390px;
-  }
-
-  .success-stories__banner {
-    padding-inline-start: 3px;
-  }
-
-  .img-box-container {
-    padding-inline: 40px;
-  }
-
-  .success-stories__testamonial .wrapper {
-    padding-inline: 10px;
-    text-align: center;
-  }
-
-  .double-title {
-    font-size: 54px;
-    display: flex;
-    flex-direction: column;
-    padding-inline: 8px;
-  }
-  .events-announcements {
-    padding-inline: 18px;
-  }
+.event-info__content p {
+  padding-inline: 1rem;
 }
 
 .dropdown {
@@ -1148,7 +1009,7 @@ a.active-campus-item:hover {
 .img-box__img {
   position: relative;
   width: 100%;
-  height: 245px;
+  height: 220px;
   background: url("../img/insta-feed.png") 100% / cover no-repeat;
   border-radius: 8px;
 }
