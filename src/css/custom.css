@@ -216,6 +216,10 @@ button {
 }
 
 /* Custom classes */
+.aou_mx-800 {
+  max-width: 800px;
+}
+
 .active_nav_item {
   color: white !important;
   border-radius: 8px;
