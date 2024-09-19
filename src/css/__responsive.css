@@ -243,3 +243,26 @@
     display: none;
   }
 }
+
+/* S-Section Our Channel */
+@media (max-width: 768px) {
+  .help-box img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  .stroke-grey-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .img-box__content h5 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .img-box {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+/* E-Section Our Channel */
+

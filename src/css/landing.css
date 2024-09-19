@@ -357,6 +357,10 @@ body {
   gap: 24px;
 }
 
+.special{
+  font-size: 20px;
+}
+
 footer {
   background: var(--bs-primary);
   color: white;
