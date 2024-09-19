@@ -222,7 +222,6 @@ button {
 }
 
 /* Custom classes */
-<<<<<<< HEAD
 .sec-p {
   padding-inline: 104px;
   padding-block: 60px;
@@ -332,10 +331,9 @@ button {
   font-size: 32px;
   font-style: normal;
   line-height: normal;
-=======
+}
 .aou_mx-800 {
   max-width: 800px;
->>>>>>> 1eb0289dffcd36b1e01e234ffa1992a99af29e7f
 }
 
 .active_nav_item {
