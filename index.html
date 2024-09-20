@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/custom.css" />
     <link rel="stylesheet" href="src/css/landing.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
     <!-- <link rel="stylesheet" href="src/css/aou_responsive.css" /> -->
 
     <link
@@ -24,108 +25,16 @@
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <style type="text/css">
-      .navbar .megamenu {
-        padding: 1rem;
-        padding-inline-start: 3rem;
-      }
-      /* ============ desktop view ============ */
-      @media all and (min-width: 992px) {
-        .mega-menu__item {
-          transform: translateX(0px);
-          transition: transform 0.1s ease-in-out;
-          padding-top: 8px;
-        }
-        .mega-menu__item a {
-          font-size: 12px !important;
-        }
-
-        .mega-menu__item a i {
-          padding-top: 4px;
-        }
-        .mega-menu__item a {
-          display: flex;
-          justify-content: start;
-          align-items: start;
-        }
-        .header {
-          padding-inline: 20px !important;
-        }
-        .mega-menu__item:hover {
-          transform: translateX(10px);
-        }
-        .navbar .has-megamenu {
-          position: relative !important;
-        }
-        .navbar .megamenu {
-          transition: top 0.2s ease;
-          display: none;
-          position: absolute;
-          width: 60vw;
-          top: 130%;
-          margin-top: 0;
-          left: -30vw;
-          right: 0;
-          margin: auto;
-          transform: translateY(30px);
-          transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth fade and upward movement */
-        }
-        .navbar .has-megamenu:hover .megamenu {
-          display: block !important;
-          top: 100%;
-          transform: translateY(0);
-        }
-
-        .nav-link {
-          border-radius: 8px;
-          transition: background-color 0.1s ease-in-out;
-        }
-
-        .navbar .has-megamenu:hover .dropdown-toggle::after {
-          transform: rotate(0deg) !important;
-        }
-
-        .navbar .has-megamenu:hover .nav-link {
-          background-color: var(--primary-II);
-          color: white !important;
-          border-radius: 8px;
-        }
-      }
-      /* ============ desktop view .end// ============ */
-
-      /* ============ mobile view ============ */
-      @media (max-width: 991px) {
-        .navbar.fixed-top .navbar-collapse,
-        .navbar.sticky-top .navbar-collapse {
-          overflow-y: auto;
-          max-height: 90vh;
-          margin-top: 10px;
-        }
-      }
-      /* ============ mobile view .end// ============ */
-    </style>
-
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function () {
-        /////// Prevent closing from click inside dropdown
-        document.querySelectorAll(".dropdown-menu").forEach(function (element) {
-          element.addEventListener("click", function (e) {
-            e.stopPropagation();
-          });
-        });
-      });
-      // DOMContentLoaded  end
-    </script>
-
     <title>Home</title>
   </head>
+
   <body>
     <!-- S-Header -->
     <header>
       <div class="container">
         <div class="row align-items-center py-18 header position-relative">
           <!-- Logo -->
-          <div class="col-6 col-lg-2">
+          <div class="col-6 col-md-2">
             <a href="#" class="navbar-logo w-100">
               <img src="./src/img/logo.png" alt="AOU Logo" />
             </a>
@@ -991,38 +900,56 @@
       <div class="row">
         <!-- S-Fetured-Pages -->
         <div class="col-12">
-          <div
-            class="row sec-p featured-pages d-flex justify-content-center align-items-center"
-          >
-            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
-              <img
-                width="60"
-                height="60"
-                src="./src/img/icons/Apply.png"
-                alt=""
-              />
-              <span>Apply Online</span>
-            </a>
-            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
-              <img src="./src/img/icons/Machine Learning.png" alt="" />
-              <span>e-Learning (LMS)</span>
-            </a>
-            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
-              <img src="./src/img/icons/featured-pages/exam.png" alt="" />
-              <span>Exam Schedule</span>
-            </a>
-            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
-              <img src="./src/img/icons/featured-pages/Calendar.png" alt="" />
-              <span>Academic Calendar</span>
-            </a>
-            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
-              <img src="./src/img/icons/featured-pages/Reinforce.png" alt="" />
-              <span>Reinforce</span>
-            </a>
-            <a href="#" class="col-md-3 col-12 col-lg-2 featured-pages__card">
-              <img src="./src/img/icons/Email Sign.png" alt="" />
-              <span>Email</span>
-            </a>
+          <div class="row sec-p featured-pages">
+            <div class="col-6 col-md-2 featured-pages__card-wrapper">
+              <a href="#" class="featured-pages__card">
+                <img
+                  width="60"
+                  height="60"
+                  src="./src/img/icons/Apply.png"
+                  alt=""
+                />
+                <span>Apply Online</span>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-2 featured-pages__card-wrapper">
+              <a href="#" class="featured-pages__card">
+                <img src="./src/img/icons/Machine Learning.png" alt="" />
+                <span>e-Learning (LMS)</span>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-2 featured-pages__card-wrapper">
+              <a href="#" class="featured-pages__card">
+                <img src="./src/img/icons/featured-pages/exam.png" alt="" />
+                <span>Exam Schedule</span>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-2 featured-pages__card-wrapper">
+              <a href="#" class="featured-pages__card">
+                <img src="./src/img/icons/featured-pages/Calendar.png" alt="" />
+                <span>Academic Calendar</span>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-2 featured-pages__card-wrapper">
+              <a href="#" class="featured-pages__card">
+                <img
+                  src="./src/img/icons/featured-pages/Reinforce.png"
+                  alt=""
+                />
+                <span>Reinforce</span>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-2 featured-pages__card-wrapper">
+              <a href="#" class="featured-pages__card">
+                <img src="./src/img/icons/Email Sign.png" alt="" />
+                <span>Email</span>
+              </a>
+            </div>
           </div>
         </div>
         <!-- E-Fetured-Pages -->
@@ -1238,7 +1165,7 @@
             </div>
             <div class="col-12">
               <div class="row upcoming-events__cards position-relative">
-                <div class="col-12 col-md-6 col-lg-3 p-1 img-box-container">
+                <div class="col-6 col-md-4 p-2 img-box-container">
                   <div class="img-box">
                     <div class="img-box__img">
                       <div class="img-box__date">May <span>21</span></div>
@@ -1250,12 +1177,12 @@
                           Sharpening Your Essay Writing Skills: Tricks and Tips
                           for Better Writing
                         </p>
-                        <a>Read More</a>
+                        <a href="#">Read More</a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 p-1 img-box-container">
+                <div class="col-6 col-md-4 p-2 img-box-container">
                   <div class="img-box">
                     <div class="img-box__img">
                       <div class="img-box__date">May <span>21</span></div>
@@ -1267,12 +1194,12 @@
                           Sharpening Your Essay Writing Skills: Tricks and Tips
                           for Better Writing
                         </p>
-                        <a>Read More</a>
+                        <a href="#">Read More</a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 p-1 img-box-container">
+                <div class="col-6 col-md-4 p-2 img-box-container">
                   <div class="img-box">
                     <div class="img-box__img">
                       <div class="img-box__date">May <span>21</span></div>
@@ -1284,12 +1211,12 @@
                           Sharpening Your Essay Writing Skills: Tricks and Tips
                           for Better Writing
                         </p>
-                        <a>Read More</a>
+                        <a href="#">Read More</a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 p-1 img-box-container">
+                <div class="col-6 col-md-4 p-2 img-box-container">
                   <div class="img-box">
                     <div class="img-box__img">
                       <div class="img-box__date">May <span>21</span></div>
@@ -1301,7 +1228,7 @@
                           Sharpening Your Essay Writing Skills: Tricks and Tips
                           for Better Writing
                         </p>
-                        <a>Read More</a>
+                        <a href="#">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -1585,16 +1512,23 @@
                     <div
                       class="col-12 d-flex justify-content-start gap-5 align-items-center"
                     >
-                      <img src="./src/img/success-stories-avatars.png" alt="" />
-                      <div
-                        class="d-flex flex-column justify-content-start align-items-start testamonial-title"
-                      >
-                        <span class="testamonial-title__slug"
-                          >Our Students are Our Future</span
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <img
+                            src="./src/img/success-stories-avatars.png"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="col-12 col-md-6 d-flex flex-column justify-content-start align-items-start testamonial-title"
                         >
-                        <span class="testamonial-title__name"
-                          >Dr. Nour Dakkak</span
-                        >
+                          <span class="testamonial-title__slug"
+                            >Our Students are Our Future</span
+                          >
+                          <span class="testamonial-title__name"
+                            >Dr. Nour Dakkak</span
+                          >
+                        </div>
                       </div>
                     </div>
                     <div class="col-12">
@@ -1602,25 +1536,38 @@
                         class="row d-flex justify-content-center align-items-center testamonial-content-wrapper"
                       >
                         <div
-                          class="col-2 d-flex flex-column justify-content-center align-items-center testamonial-btn-wrapper"
+                          class="col-12 col-md-2 d-flex flex-column justify-content-center align-items-center testamonial-btn-wrapper"
                         >
-                          <button class="testamonial-btn testamonial-btn__next">
-                            <img
-                              src="./src/img/icons/ic_round-navigate-next.svg"
-                              alt=""
-                            />
-                          </button>
-                          <button class="testamonial-btn active">1</button>
-                          <button class="testamonial-btn">2</button>
-
-                          <button class="testamonial-btn testamonial-btn__prev">
-                            <img
-                              src="./src//img/icons/ic_round-navigate-prev.svg"
-                              alt=""
-                            />
-                          </button>
+                          <div class="row">
+                            <div class="col-3 col-md-12">
+                              <button
+                                class="testamonial-btn testamonial-btn__next"
+                              >
+                                <img
+                                  src="./src/img/icons/ic_round-navigate-next.svg"
+                                  alt=""
+                                />
+                              </button>
+                            </div>
+                            <div class="col-3 col-md-12">
+                              <button class="testamonial-btn active">1</button>
+                            </div>
+                            <div class="col-3 col-md-12">
+                              <button class="testamonial-btn">2</button>
+                            </div>
+                            <div class="col-3 col-md-12">
+                              <button
+                                class="testamonial-btn testamonial-btn__prev"
+                              >
+                                <img
+                                  src="./src//img/icons/ic_round-navigate-prev.svg"
+                                  alt=""
+                                />
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-10">
+                        <div class="col-12 col-md-10">
                           <div class="row">
                             <div class="col-12 test-card-h">
                               <img
@@ -1630,11 +1577,11 @@
                                 alt=""
                               />
                               <div class="test-card-h__content">
-                                <p>
+                                <p class="content-title">
                                   It’s all about Passion, self Confidence and
                                   Perseverance
                                 </p>
-                                <p class="light-text">
+                                <p class="light-text content-desc">
                                   Rami Sarieddine is currently a Partner
                                   Technical Evangelist at Microsoft Corporation.
                                 </p>
@@ -1933,9 +1880,21 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <!-- E-Right -->
+            </div>
+          </div>
+          <!-- E-Upper -->
+
+          <!-- S-Middle -->
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-md-4"></div>
+
+              <div class="col-12 col-md-8">
                 <div class="col-12">
                   <div class="d-flex newsteller">
-                    <span class="col-21 col-md-4">Contact With Us Naw ! </span>
+                    <span class="col-12 col-md-4">Contact With Us Naw ! </span>
                     <div class="col-12 col-md-8 newsteller__input">
                       <form action="">
                         <input type="text" placeholder="Enter Your E-mail..." />
@@ -1945,22 +1904,19 @@
                   </div>
                 </div>
               </div>
-              <!-- E-Right -->
             </div>
-          </div>
-          <!-- E-Upper -->
-
-          <!-- S-Lower -->
-          <div
-            class="col-12 d-flex flex-column text-center justify-content-center align-items-center bottom-ftr"
-          >
-            <div class="h-line-1"></div>
-            <span
-              >Copyright 2022 © Arab Open University - Sudan. All Rights
-              Reserved.</span
+            <!-- S-Lower -->
+            <div
+              class="col-12 d-flex flex-column text-center justify-content-center align-items-center bottom-ftr"
             >
+              <div class="h-line-1"></div>
+              <span
+                >Copyright 2022 © Arab Open University - Sudan. All Rights
+                Reserved.</span
+              >
+            </div>
+            <!-- E-Lower -->
           </div>
-          <!-- E-Lower -->
         </div>
       </div>
     </footer>
@@ -1968,5 +1924,15 @@
     <script src="./src/js/numbers-counter.js"></script>
     <script src="./src/js/slider.js"></script>
     <script src="./src/js/typing-effect.js"></script>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".dropdown-menu").forEach(function (e) {
+          e.addEventListener("click", function (e) {
+            e.stopPropagation();
+          });
+        });
+      });
+    </script>
   </body>
 </html>

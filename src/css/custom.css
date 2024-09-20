@@ -101,6 +101,14 @@
   --tajawal-b: "tajawal-bold";
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit !important;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -386,6 +394,13 @@ button {
 
 .accent-btn:hover {
   background-color: var(--accent-I);
+}
+.btn-outline-secondary {
+  transition: background-color 0.2s ease, color 0.2 ease !important;
+}
+.btn-outline-secondary:hover {
+  background-color: var(--bg-light-I) !important;
+  color: var(--bs-headline-dark) !important;
 }
 
 .bg-light-I {

@@ -1,8 +1,5 @@
 @media only screen and (min-width: 992px) {
   /* Styles for devices with a width of 1024px or smaller */
-  .slide {
-    min-width: calc(100% / 2);
-  }
   button.prev {
     left: 6%;
   }
@@ -16,18 +13,71 @@
   .col-megamenu img {
     width: 260px !important;
   }
-  .sec-p {
-    padding-inline: 20px;
-  }
   .featured-pages__card span {
     font-size: 14px !important;
     white-space: nowrap !important;
+  }
+  .mega-menu__item {
+    transform: translateX(0px);
+    transition: transform 0.1s ease-in-out;
+    padding-top: 8px;
+  }
+  .mega-menu__item a {
+    font-size: 12px !important;
+  }
+
+  .mega-menu__item a i {
+    padding-top: 4px;
+  }
+  .mega-menu__item a {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .mega-menu__item:hover {
+    transform: translateX(10px);
+  }
+  .navbar .has-megamenu {
+    position: relative !important;
+  }
+  .navbar .has-megamenu:hover .megamenu {
+    display: block !important;
+    top: 162%;
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    border-radius: 8px;
+    transition: background-color 0.1s ease-in-out;
+  }
+
+  .navbar .has-megamenu:hover .dropdown-toggle::after {
+    transform: rotate(0deg) !important;
+  }
+
+  .navbar .has-megamenu:hover .nav-link {
+    background-color: var(--bg-light-I);
+    color: var(--bs-headline-dark) !important;
+    border-radius: 8px;
+  }
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   /* Styles for devices with a width of 768px or smaller (tablets) */
   /* Custom Classes */
+  .stroke-grey-btn {
+    font-size: 8px;
+  }
+  .stroke-grey-btn i {
+    width: 27px;
+    height: 30px;
+  }
   .sec-p {
     padding-inline: 20px;
     padding-block: 40px;
@@ -54,6 +104,10 @@
     height: auto;
   }
 
+  .map-pin-container {
+    display: none;
+  }
+
   .accreditation {
     gap: 40px;
   }
@@ -62,9 +116,31 @@
     gap: 24px;
   }
 
+  .our-channel-wrapper {
+    gap: 12px;
+  }
+
   .our-channel__video-slider .slide {
     padding: 4px;
     border-radius: 18px;
+  }
+
+  .our-channel__banner .banner {
+    height: 201px;
+  }
+  .our-channel__banner .help-box {
+    padding: 15px 10px 10px 10px;
+    gap: 8px;
+  }
+  .our-channel__banner .help-box img {
+    width: 30px;
+    height: 30px;
+  }
+  .our-channel__banner .help-box h5 {
+    font-size: 14px;
+  }
+  .our-channel__banner .help-box p {
+    font-size: 10px;
   }
 
   .our-channel__stream {
@@ -92,6 +168,12 @@
   }
   .slide img {
     padding: 24px;
+  }
+
+  .featured-pages__card-wrapper {
+    padding-block: 4px;
+    padding-right: 4px !important;
+    padding-left: 4px !important;
   }
 
   .campuses-map {
@@ -212,9 +294,7 @@
   .date-box-v {
     width: 76px;
   }
-  .featured-pages__card {
-    width: 47% !important;
-  }
+
   .featured-pages__card span {
     font-size: 14px;
     white-space: nowrap;
@@ -241,5 +321,23 @@
   }
   .hero-content__line {
     display: none;
+  }
+  .test-card-h img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .content-title {
+    color: var(--bs-headline-dark, #1d1d1d);
+    font-family: var(--popins-m);
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .cat-item-wrapper {
+    gap: 0;
+  }
+  .cat-item {
+    font-size: 14px;
   }
 }
