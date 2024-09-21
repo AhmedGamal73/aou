@@ -5,25 +5,23 @@ body {
   transition: top 0.2s ease;
   display: none;
   position: absolute;
-  width: 60vw;
+  width: 55vw;
   top: 0px;
   margin-top: 0;
-  left: -30vw;
+  left: -26vw;
   right: 0;
   margin: auto;
   transform: translateY(30px);
   transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth fade and upward movement */
+  padding: 1rem;
+  padding-inline-start: 1.5rem;
 }
 
 .header {
-  padding-inline: 140px;
+  padding-inline: 104px;
   background-color: white;
 }
 
-.navbar .megamenu {
-  padding: 1rem;
-  padding-inline-start: 3rem;
-}
 .dropdown-menu.megamenu {
   background-color: var(--bg-light-I);
 }
@@ -183,7 +181,7 @@ body {
 }
 
 .nav-item a {
-  font-size: 18px !important;
+  font-size: 16px !important;
   color: var(--bs-headline-dark) !important;
 }
 .nav-item.active {
@@ -811,7 +809,7 @@ a.active-campus-item:hover {
 }
 
 .our-channel-wrapper {
-  gap: 48px;
+  gap: 22px;
 }
 
 .our-channel p {
@@ -1068,8 +1066,8 @@ a.active-campus-item:hover {
 
 .testamonial-btn {
   display: flex;
+  width: 60px;
   height: 56px;
-  padding: 10px 24px;
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -1092,11 +1090,25 @@ a.active-campus-item:hover {
   padding-block: 37px;
 }
 
+.testamonial-img {
+  width: 100%;
+}
+.content-title {
+  font-size: 18px;
+}
+.content-desc {
+  font-size: 14px;
+}
+
 .test-card-h {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 32px;
+}
+.test-card-h img {
+  width: 120px;
+  height: auto;
 }
 
 .test-card-h__content {
@@ -1104,6 +1116,7 @@ a.active-campus-item:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
+  padding-inline-end: 32px;
 }
 
 .test-card-h__content span {
