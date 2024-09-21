@@ -71,6 +71,9 @@
 @media only screen and (max-width: 768px) {
   /* Styles for devices with a width of 768px or smaller (tablets) */
   /* Custom Classes */
+  h2 {
+    font-size: 32px !important;
+  }
   .stroke-grey-btn {
     font-size: 8px;
   }
@@ -220,7 +223,7 @@
     width: 100% !important;
   }
   .navbar-logo img {
-    width: 65%;
+    width: 90%;
   }
   .hero-btn {
     width: 100%;
@@ -230,14 +233,23 @@
     padding-inline: 12px;
   }
 
-  .upper-ftr img {
-    width: 100%;
+  .upper-ftr__logo {
+    width: 48%;
     height: auto;
   }
 
   .upper-ftr-container {
     flex-direction: column;
   }
+
+  .upper-ftr__right .row {
+    gap: 24px;
+  }
+
+  .upper-ftr-container {
+    gap: 48px;
+  }
+
   .newsteller {
     width: 100% !important;
     flex-direction: column;
@@ -283,8 +295,56 @@
     padding-top: 1rem;
     text-align: center;
   }
-  .icon-box-h {
-    flex-direction: column;
+
+  .icon-box-h span {
+    font-size: 14.8px;
+  }
+  .icon-box-h img {
+    width: 21px;
+    height: 21px;
+  }
+
+  .testamonial-img-wrapper,
+  .testamonial-title {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .success-stories-wrapper {
+    gap: 0px;
+  }
+  .testamonial-num {
+    padding: 8px !important;
+  }
+
+  .content-title {
+    font-size: 12px;
+  }
+
+  .test-card-h__content {
+    gap: 4px;
+  }
+
+  .content-desc {
+    font-size: 10px;
+  }
+
+  .testamonial-num button {
+    width: 34px;
+    height: 34px;
+  }
+
+  .testamonial-title span {
+    width: 100%;
+    text-align: center !important;
+    font-size: 12px;
+  }
+
+  .testamonial-img {
+    width: 190px;
+    height: auto;
+    margin: 0 auto;
   }
 
   .events-announcements {
@@ -300,11 +360,20 @@
     white-space: nowrap;
   }
   .change-words-wrapper {
-    height: 40px;
+    height: 45px;
   }
   .change-words__word {
     font-size: 30px !important;
+    line-height: 130px !important;
   }
+
+  .hero-content__l span {
+    line-height: 30px;
+  }
+  .hero-content {
+    height: auto;
+  }
+
   .hero-content__l h1 {
     font-size: 24px;
   }
@@ -321,6 +390,9 @@
   }
   .hero-content__line {
     display: none;
+  }
+  .test-card-h {
+    margin-top: 24px !important;
   }
   .test-card-h img {
     width: 50px;

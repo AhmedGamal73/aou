@@ -24,7 +24,19 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <!-- Include Slick Slider CSS and JS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>Home</title>
   </head>
 
@@ -1159,80 +1171,84 @@
                   global audience with access to your innovative work. This
                   repository is designed to increase the visibility and impact
                   of your research, fostering a collaborative and vibrant
-                  academic community
+                  academic community.
                 </p>
               </div>
             </div>
             <div class="col-12">
               <div class="row upcoming-events__cards position-relative">
-                <div class="col-6 col-md-4 p-2 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
+                <div class="col-12 slick-slider">
+                  <div class="img-box-container">
+                    <div class="img-box">
+                      <div class="img-box__img">
+                        <div class="img-box__date">May <span>21</span></div>
+                      </div>
+                      <div class="img-box__data">
+                        <div href="#" class="img-box__content">
+                          <h5>Information Technology & Computing</h5>
+                          <p>
+                            Sharpening Your Essay Writing Skills: Tricks and
+                            Tips for Better Writing
+                          </p>
+                          <a href="#">Read More</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a href="#">Read More</a>
+                  </div>
+                  <div class="img-box-container">
+                    <div class="img-box">
+                      <div class="img-box__img">
+                        <div class="img-box__date">May <span>21</span></div>
+                      </div>
+                      <div class="img-box__data">
+                        <div href="#" class="img-box__content">
+                          <h5>Information Technology & Computing</h5>
+                          <p>
+                            Sharpening Your Essay Writing Skills: Tricks and
+                            Tips for Better Writing
+                          </p>
+                          <a href="#">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-box-container">
+                    <div class="img-box">
+                      <div class="img-box__img">
+                        <div class="img-box__date">May <span>21</span></div>
+                      </div>
+                      <div class="img-box__data">
+                        <div href="#" class="img-box__content">
+                          <h5>Information Technology & Computing</h5>
+                          <p>
+                            Sharpening Your Essay Writing Skills: Tricks and
+                            Tips for Better Writing
+                          </p>
+                          <a href="#">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-box-container">
+                    <div class="img-box">
+                      <div class="img-box__img">
+                        <div class="img-box__date">May <span>21</span></div>
+                      </div>
+                      <div class="img-box__data">
+                        <div href="#" class="img-box__content">
+                          <h5>Information Technology & Computing</h5>
+                          <p>
+                            Sharpening Your Essay Writing Skills: Tricks and
+                            Tips for Better Writing
+                          </p>
+                          <a href="#">Read More</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-md-4 p-2 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
-                    </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 p-2 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
-                    </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 p-2 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
-                    </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <button id="prev" class="prev">❮</button>
+                <button id="next" class="next">❯</button>
               </div>
             </div>
           </div>
@@ -1242,12 +1258,17 @@
         <!-- S-Events-&-Announcements -->
         <div class="col-12">
           <div class="row sec-p events-announcements">
-            <div class="col-12">
+            <div class="col-12 d-none d-md-block">
               <h2 class="double-title">Events <span>Announcements</span></h2>
             </div>
+            <div class="col-12 d-block d-md-none">
+              <h2 class="text-center">ANNOUNCEMENTS</h2>
+            </div>
             <div class="col-12">
-              <div class="row events-announcements-wrapper">
-                <div class="col-12 col-md-6 p-0 p-md-2">
+              <div
+                class="row justify-content-center events-announcements-wrapper"
+              >
+                <div class="col-12 col-md-5 p-0 p-md-2">
                   <div class="card">
                     <div class="card-body gap-5">
                       <div class="icon-box-h">
@@ -1342,17 +1363,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 pt-0 pt-lg-2 p-0 p-md-2">
+                <div class="col-12 d-block d-md-none pt-4">
+                  <h2 class="text-center">EVENTS</h2>
+                </div>
+                <div class="col-12 col-md-5 pt-0 pt-lg-2 p-0 p-md-2">
                   <div class="card">
                     <div class="card-body gap-5">
                       <div class="icon-box-h">
                         <img
-                          src="./src/img/main-landing/mingcute_announcement-line.svg"
+                          src="./src/img/main-landing/mdi_events.svg"
                           width="48"
                           height="48"
                           alt=""
                         />
-                        <span>Announcements</span>
+                        <span>Upcoming Events</span>
                       </div>
 
                       <div class="col-12">
@@ -1444,7 +1468,7 @@
         <!-- E-Events-&-Announcements -->
 
         <!-- S-Stay-Update -->
-        <div class="col-12">
+        <div class="col-12 d-flex justify-content-center align-items-center">
           <div class="row sec-p stay-update">
             <div class="col-12 heading-box">
               <h2 class="double-title">
@@ -1513,10 +1537,11 @@
                       class="col-12 d-flex justify-content-start gap-5 align-items-center"
                     >
                       <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 testamonial-img-wrapper">
                           <img
                             src="./src/img/success-stories-avatars.png"
                             alt=""
+                            class="testamonial-img"
                           />
                         </div>
                         <div
@@ -1539,7 +1564,7 @@
                           class="col-12 col-md-2 d-flex flex-column justify-content-center align-items-center testamonial-btn-wrapper"
                         >
                           <div class="row">
-                            <div class="col-3 col-md-12">
+                            <div class="col-3 col-md-12 testamonial-num">
                               <button
                                 class="testamonial-btn testamonial-btn__next"
                               >
@@ -1549,13 +1574,13 @@
                                 />
                               </button>
                             </div>
-                            <div class="col-3 col-md-12">
+                            <div class="col-3 col-md-12 testamonial-num">
                               <button class="testamonial-btn active">1</button>
                             </div>
-                            <div class="col-3 col-md-12">
+                            <div class="col-3 col-md-12 testamonial-num">
                               <button class="testamonial-btn">2</button>
                             </div>
-                            <div class="col-3 col-md-12">
+                            <div class="col-3 col-md-12 testamonial-num">
                               <button
                                 class="testamonial-btn testamonial-btn__prev"
                               >
@@ -1595,11 +1620,11 @@
                                 alt=""
                               />
                               <div class="test-card-h__content">
-                                <p>
+                                <p class="content-title">
                                   It’s all about Passion, self Confidence and
                                   Perseverance
                                 </p>
-                                <p class="light-text">
+                                <p class="light-text content-desc">
                                   Rami Sarieddine is currently a Partner
                                   Technical Evangelist at Microsoft Corporation.
                                 </p>
@@ -1654,73 +1679,189 @@
             <div
               class="col-12 cat-items d-flex justify-content-center align-items-center gap-3"
             >
-              <button class="cat-item active">All</button>
-              <button class="cat-item">Students</button>
-              <button class="cat-item">Partners</button>
-              <button class="cat-item">University</button>
+              <button class="cat-item active" data-category="all">All</button>
+              <button class="cat-item" data-category="students">
+                Students
+              </button>
+              <button class="cat-item" data-category="partners">
+                Partners
+              </button>
+              <button class="cat-item" data-category="university">
+                University
+              </button>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 mt-4">
               <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <img src="./src/img/video-1.png" alt="" />
-                    </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a>Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
-                    </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a>Read More</a>
-                      </div>
+                <!-- First Card -->
+                <div
+                  class="col-12 col-sm-6 col-md-4 gap-4 mb-4 card-container"
+                  data-category="students"
+                >
+                  <div
+                    class="card shadow-sm rounded-top"
+                    style="width: 100%; height: 100%"
+                  >
+                    <img
+                      src="/src/img/video-1.png"
+                      class="card-img-top"
+                      alt="Video Thumbnail 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Partner as a Student</h5>
+                      <p class="card-text">
+                        Rami Saireddine is currently a Partner Technical
+                        Evangelist at Microsoft Corporation.
+                      </p>
+                      <a href="#" class="btn btn-link">Watch Video</a>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
+
+                <!-- Second Card -->
+                <div
+                  class="col-12 col-sm-6 col-md-4 gap-4 mb-4 card-container"
+                  data-category="partners"
+                >
+                  <div
+                    class="card shadow-sm rounded-top"
+                    style="width: 100%; height: 100%"
+                  >
+                    <img
+                      src="/src/img/video-1.png"
+                      class="card-img-top"
+                      alt="Video Thumbnail 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Partner as a Student</h5>
+                      <p class="card-text">
+                        Rami Saireddine is currently a Partner Technical
+                        Evangelist at Microsoft Corporation.
+                      </p>
+                      <a href="#" class="btn btn-link">Watch Video</a>
                     </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a>Read More</a>
-                      </div>
+                  </div>
+                </div>
+
+                <!-- Third Card -->
+                <div
+                  class="col-12 col-sm-6 col-md-4 gap-4 mb-4 card-container"
+                  data-category="university"
+                >
+                  <div
+                    class="card shadow-sm rounded-top"
+                    style="width: 100%; height: 100%"
+                  >
+                    <img
+                      src="/src/img/video-1.png"
+                      class="card-img-top"
+                      alt="Video Thumbnail 3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Partner as a Student</h5>
+                      <p class="card-text">
+                        Rami Saireddine is currently a Partner Technical
+                        Evangelist at Microsoft Corporation.
+                      </p>
+                      <a href="#" class="btn btn-link">Watch Video</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-12 container accreditation">
-              <h2 class="text-center">ACCREDITATION</h2>
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./src/img/logos/logo-ou.png" alt="" />
-                <img src="./src/img/logos/image.png" alt="" />
+            <!-- S-ACCREDITATION-->
+            <!-- First Carousel -->
+            <div
+              class="col-12 mt-5 d-flex justify-content-center align-items-center"
+            >
+              <div class="row">
+                <div
+                  class="col-12 d-flex justify-content-center align-items-center"
+                >
+                  <h3 class="fw-bold text-center" style="color: #2b4d46">
+                    ACCREDITATION
+                  </h3>
+                </div>
+                <div
+                  id="accreditationCarousel1"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  data-bs-interval="3000"
+                >
+                  <!-- Carousel slides -->
+                  <div class="carousel-inner col-12 mt-5">
+                    <div class="carousel-item active">
+                      <img
+                        src="/src/img/logos/logo-ou.png"
+                        class="d-block mx-auto mb-5"
+                        alt="The Open University"
+                        style="width: 150px"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="/src/img/logos/image.png"
+                        class="d-block mx-auto mb-5"
+                        alt="University 2"
+                        style="width: 100px"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="/src/img/logos/logo-ou.png"
+                        class="d-block mx-auto mb-5"
+                        alt="University 3"
+                        style="width: 150px"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Indicators -->
+                  <div class="carousel-indicators mb-0">
+                    <button
+                      type="button"
+                      data-bs-target="#accreditationCarousel1"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#accreditationCarousel1"
+                      data-bs-slide-to="1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#accreditationCarousel1"
+                      data-bs-slide-to="2"
+                    ></button>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#accreditationCarousel1"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#accreditationCarousel1"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1735,7 +1876,7 @@
         <div class="row footer">
           <!-- S-Upper -->
           <div class="col-12">
-            <div class="row upper-ftr-container">
+            <div class="row align-items-start upper-ftr-container">
               <!-- S-Left -->
               <div
                 class="col-12 col-md-4 d-flex flex-column justify-content-start upper-ftr"
@@ -1744,13 +1885,13 @@
                   src="./src/img/logos/aou-white-logo.png"
                   width="220"
                   height="85"
-                  alt=""
+                  class="upper-ftr__logo"
                 />
                 <p>
                   Our website is a digital library specialized in publishing and
                   documenting scientific theses and academic research.
                 </p>
-                <img src="./src/img/map.png" width="430" alt="" />
+                <img src="./src/img/arabic-world-map.png" width="430" alt="" />
                 <div
                   class="d-flex justify-content-start align-items-center gap-24 social-media"
                 >
@@ -1878,6 +2019,23 @@
                         </li>
                       </ul>
                     </div>
+
+                    <div class="col-12">
+                      <div class="d-flex newsteller">
+                        <span class="col-12 col-md-4"
+                          >Contact With Us Naw !
+                        </span>
+                        <div class="col-12 col-md-8 newsteller__input">
+                          <form action="">
+                            <input
+                              type="text"
+                              placeholder="Enter Your E-mail..."
+                            />
+                            <button>Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1886,37 +2044,17 @@
           </div>
           <!-- E-Upper -->
 
-          <!-- S-Middle -->
-          <div class="col-12">
-            <div class="row">
-              <div class="col-12 col-md-4"></div>
-
-              <div class="col-12 col-md-8">
-                <div class="col-12">
-                  <div class="d-flex newsteller">
-                    <span class="col-12 col-md-4">Contact With Us Naw ! </span>
-                    <div class="col-12 col-md-8 newsteller__input">
-                      <form action="">
-                        <input type="text" placeholder="Enter Your E-mail..." />
-                        <button>Submit</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- S-Lower -->
-            <div
-              class="col-12 d-flex flex-column text-center justify-content-center align-items-center bottom-ftr"
+          <!-- S-Lower -->
+          <div
+            class="col-12 d-flex flex-column text-center justify-content-center align-items-center bottom-ftr"
+          >
+            <div class="h-line-1"></div>
+            <span
+              >Copyright 2022 © Arab Open University - Sudan. All Rights
+              Reserved.</span
             >
-              <div class="h-line-1"></div>
-              <span
-                >Copyright 2022 © Arab Open University - Sudan. All Rights
-                Reserved.</span
-              >
-            </div>
-            <!-- E-Lower -->
           </div>
+          <!-- E-Lower -->
         </div>
       </div>
     </footer>

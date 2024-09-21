@@ -411,7 +411,6 @@ button {
 /****** S-Slider ******/
 /* Slider container */
 .slider {
-  width: 1400px !important; /* Set width to display 3 images (3 * image width) */
   overflow: hidden !important;
   margin: auto;
 }

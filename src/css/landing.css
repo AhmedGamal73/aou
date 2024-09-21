@@ -383,11 +383,14 @@ footer {
 }
 
 .upper-ftr-container {
-  padding-bottom: 110px;
   justify-content: center;
   align-items: center;
   gap: 145px;
   flex-wrap: nowrap !important;
+}
+
+.middle-ftr-container {
+  gap: 145px;
 }
 
 .upper-ftr-container div {
@@ -423,6 +426,10 @@ footer {
   font-size: 20px;
   font-style: normal;
   line-height: normal;
+}
+
+.bottom-ftr {
+  padding-top: 110px;
 }
 
 .bottom-ftr span {
@@ -492,6 +499,10 @@ footer {
 
 .upper-ftr__right {
   gap: 85px;
+}
+
+.upper-ftr__right .row {
+  row-gap: 56px;
 }
 
 /* Campuses*/
@@ -1093,7 +1104,6 @@ a.active-campus-item:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
-  flex-shrink: 0;
 }
 
 .test-card-h__content span {
@@ -1114,4 +1124,37 @@ a.active-campus-item:hover {
 
 .cat-item.active {
   color: black;
+}
+
+/*S-Slider in ACCREDITATION */
+
+.carousel-indicators [data-bs-target] {
+  background-color: #194c45;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #194c45;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/*E-Slider in ACCREDITATION */
+/* S-Slider Section Latest New */
+/* Hide navigation buttons on desktop */
+@media (min-width: 769px) {
+  #prev,
+  #next {
+    display: none;
+  }
+}
+/* E-Slider Section Latest New */
+
+/* ADD: When I clicked to this list make filter to this card */
+.card-container {
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.card-container.active {
+  opacity: 1;
 }
