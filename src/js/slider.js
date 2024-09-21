@@ -31,3 +31,4 @@ prevButton.addEventListener("click", () => {
   }
   console.log("prev clicked");
 });
+
