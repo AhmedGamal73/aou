@@ -85,13 +85,13 @@ document.addEventListener("DOMContentLoaded", function () {
           target === "all" ||
           container.getAttribute("data-category") === target
         ) {
-          container.style.opacity = "1";
+          container.style.display = "block";
           container.style.maxHeight = "1000px"; // Set a high value for max-height
-          container.style.overflow = "hidden";
+          // container.style.overflow = "hidden";
         } else {
-          container.style.opacity = "0";
-          container.style.maxHeight = "0";
-          container.style.overflow = "hidden";
+          container.style.display = "none";
+          // container.style.maxHeight = "0";
+          // container.style.overflow = "hidden";
         }
       });
     });

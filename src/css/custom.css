@@ -235,13 +235,13 @@ button {
   padding-block: 60px;
 }
 
-.stroke-grey-btn {
+/* .stroke-grey-btn {
   background: transparent;
   display: flex;
   align-items: center;
-}
+} */
 
-.stroke-grey-btn i {
+/* .stroke-grey-btn i {
   display: flex;
   width: 44px;
   height: 45px;
@@ -272,6 +272,49 @@ button {
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+} */
+
+.stroke-grey-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stroke-grey-btn i {
+  font-size: 16px;
+  padding: 14.5px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--heading-gray);
+  border-radius: 0 12px 12px 0;
+  border-inline-start: none;
+}
+.span_b {
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--heading-gray);
+  border-radius: 12px 0 0 12px;
+  padding: 12px 14px;
+}
+.stroke-grey-btn:hover .span_b {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-radius: 50px;
+  color: #fff;
+}
+
+.stroke-grey-btn:hover i {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+}
+.stroke-grey-btn:hover .bx-right-arrow-alt {
+  transform: rotate(300deg);
+  transform: scale(1) translate(10px, -10px) rotate(300deg);
 }
 
 .light-text {
