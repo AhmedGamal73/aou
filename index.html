@@ -24,6 +24,19 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Slick Slider CSS and JS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <title>Home</title>
   </head>
@@ -1198,84 +1211,97 @@
                   global audience with access to your innovative work. This
                   repository is designed to increase the visibility and impact
                   of your research, fostering a collaborative and vibrant
-                  academic community
+                  academic community.
                 </p>
               </div>
             </div>
             <div class="col-12">
               <div class="row upcoming-events__cards position-relative">
-                <div class="col-6 col-md-4 p-2 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
+                <div class="col-12 slick-slider">
+                  <div class="img-box-container">
+                    <div class="img-box">
+                      <div class="img-box__img">
+                        <div class="img-box__date">May <span>21</span></div>
+                      </div>
+                      <div class="img-box__data">
+                        <div href="#" class="img-box__content">
+                          <h5>Information Technology & Computing</h5>
+                          <p>
+                            Sharpening Your Essay Writing Skills: Tricks and
+                            Tips for Better Writing
+                          </p>
+                          <a href="#">Read More</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a href="#">Read More</a>
+                  </div>
+                  <div class="img-box-container">
+                    <div class="img-box">
+                      <div class="img-box__img">
+                        <div class="img-box__date">May <span>21</span></div>
+                      </div>
+                      <div class="img-box__data">
+                        <div href="#" class="img-box__content">
+                          <h5>Information Technology & Computing</h5>
+                          <p>
+                            Sharpening Your Essay Writing Skills: Tricks and
+                            Tips for Better Writing
+                          </p>
+                          <a href="#">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-box-container">
+                    <div class="img-box">
+                      <div class="img-box__img">
+                        <div class="img-box__date">May <span>21</span></div>
+                      </div>
+                      <div class="img-box__data">
+                        <div href="#" class="img-box__content">
+                          <h5>Information Technology & Computing</h5>
+                          <p>
+                            Sharpening Your Essay Writing Skills: Tricks and
+                            Tips for Better Writing
+                          </p>
+                          <a href="#">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-box-container">
+                    <div class="img-box">
+                      <div class="img-box__img">
+                        <div class="img-box__date">May <span>21</span></div>
+                      </div>
+                      <div class="img-box__data">
+                        <div href="#" class="img-box__content">
+                          <h5>Information Technology & Computing</h5>
+                          <p>
+                            Sharpening Your Essay Writing Skills: Tricks and
+                            Tips for Better Writing
+                          </p>
+                          <a href="#">Read More</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-md-4 p-2 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
-                    </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 p-2 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
-                    </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-4 p-2 img-box-container">
-                  <div class="img-box">
-                    <div class="img-box__img">
-                      <div class="img-box__date">May <span>21</span></div>
-                    </div>
-                    <div class="img-box__data">
-                      <div href="#" class="img-box__content">
-                        <h5>Information Technology & Computing</h5>
-                        <p>
-                          Sharpening Your Essay Writing Skills: Tricks and Tips
-                          for Better Writing
-                        </p>
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <button id="prev" class="prev">❮</button>
+                <button id="next" class="next">❯</button>
               </div>
             </div>
           </div>
         </div>
+        <style>
+          /* Hide navigation buttons on desktop */
+          @media (min-width: 769px) {
+            #prev,
+            #next {
+              display: none;
+            }
+          }
+        </style>
         <!-- E-Latest- -->
 
         <!-- S-Events-&-Announcements -->
@@ -1686,26 +1712,67 @@
                   <h5>How We Help?</h5>
                   <p class="light-text">Stay Updated with our latest videos</p>
                   <button class="stroke-grey-btn">
-                    <span>Partner With us</span>
-                    <i class="bx bx-right-arrow-alt"></i>
+                    <span class="span_b">Partner With us</span>
+                    <i class="bx bx-right-arrow-alt icon-transition"></i>
                   </button>
                 </div>
               </div>
             </div>
+            <style>
+              .stroke-grey-btn {
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                border-radius: 8px;
+                color: #000;
+                font-size: 16px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+              }
 
+              .stroke-grey-btn i {
+                font-size: 16px;
+                padding: 21.5px;
+                transition: all 0.3s ease;
+              }
+              .span_b {
+                transition: all 0.3s ease;
+              }
+              .span_b:hover {
+                color: #fff;
+                background-color: var(--bs-primary);
+                border-radius: 50px;
+                color: #fff;
+              }
+
+              .stroke-grey-btn:hover i {
+                color: #fff;
+                background-color: var(--bs-primary);
+                border-radius: 50%;
+              }
+              .stroke-grey-btn:hover .bx-right-arrow-alt {
+                transform: rotate(300deg);
+                transform: scale(1) translate(10px, -10px) rotate(300deg);
+              }
+            </style>
             <div
               class="col-12 cat-items d-flex justify-content-center align-items-center gap-3 flex-wrap"
             >
-              <button class="cat-item active">All</button>
-              <button class="cat-item">Students</button>
-              <button class="cat-item">Partners</button>
-              <button class="cat-item">University</button>
+              <button class="cat-item active" data-target="all">All</button>
+              <button class="cat-item" data-target="students">Students</button>
+              <button class="cat-item" data-target="partners">Partners</button>
+              <button class="cat-item" data-target="university">
+                University
+              </button>
             </div>
 
             <div class="col-12 mt-4">
               <div class="row">
                 <!-- First Card -->
-                <div class="col-12 col-sm-6 col-md-4 gap-4 mb-4">
+                <div
+                  class="col-12 col-sm-6 col-md-4 gap-4 mb-4 card-container"
+                  data-category="students"
+                >
                   <div
                     class="card shadow-sm rounded-top"
                     style="width: 100%; height: 100%"
@@ -1727,7 +1794,10 @@
                 </div>
 
                 <!-- Second Card -->
-                <div class="col-12 col-sm-6 col-md-4 gap-4 mb-4">
+                <div
+                  class="col-12 col-sm-6 col-md-4 gap-4 mb-4 card-container"
+                  data-category="partners"
+                >
                   <div
                     class="card shadow-sm rounded-top"
                     style="width: 100%; height: 100%"
@@ -1749,7 +1819,10 @@
                 </div>
 
                 <!-- Third Card -->
-                <div class="col-12 col-sm-6 col-md-4 gap-4 mb-4">
+                <div
+                  class="col-12 col-sm-6 col-md-4 gap-4 mb-4 card-container"
+                  data-category="university"
+                >
                   <div
                     class="card shadow-sm rounded-top"
                     style="width: 100%; height: 100%"
@@ -1771,6 +1844,49 @@
                 </div>
               </div>
             </div>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const catItems = document.querySelectorAll(".cat-item");
+                const cardContainers =
+                  document.querySelectorAll(".card-container");
+
+                catItems.forEach((item) => {
+                  item.addEventListener("click", function () {
+                    const target = this.getAttribute("data-target");
+
+                    // Remove active class from all buttons
+                    catItems.forEach((btn) => btn.classList.remove("active"));
+                    // Add active class to the clicked button
+                    this.classList.add("active");
+
+                    // Show/hide cards based on the clicked button with smooth transition
+                    cardContainers.forEach((container) => {
+                      if (
+                        target === "all" ||
+                        container.getAttribute("data-category") === target
+                      ) {
+                        container.style.opacity = "1";
+                        container.style.maxHeight = "1000px"; // Set a high value for max-height
+                        container.style.overflow = "hidden";
+                      } else {
+                        container.style.opacity = "0";
+                        container.style.maxHeight = "0";
+                        container.style.overflow = "hidden";
+                      }
+                    });
+                  });
+                });
+              });
+            </script>
+            <style>
+              .card-container {
+                transition: opacity 0.5s ease, max-height 0.5s ease;
+              }
+
+              .card-container.active {
+                opacity: 1;
+              }
+            </style>
             <!-- S-ACCREDITATION-->
             <!-- Carousel -->
             <div class="container">
@@ -2042,6 +2158,7 @@
     <script src="./src/js/numbers-counter.js"></script>
     <script src="./src/js/slider.js"></script>
     <script src="./src/js/typing-effect.js"></script>
+    <script src="./src/js/new.js"></script>
 
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function () {
