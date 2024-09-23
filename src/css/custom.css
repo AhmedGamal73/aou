@@ -165,13 +165,10 @@ h5 {
 }
 
 span,
-p {
-  font-family: var(--popins-m) !important;
-  margin: 0 !important;
-}
-
+p,
 a {
   font-family: var(--popins-r) !important;
+  margin: 0 !important;
 }
 
 button {
@@ -234,45 +231,6 @@ button {
   padding-inline: 104px;
   padding-block: 60px;
 }
-
-/* .stroke-grey-btn {
-  background: transparent;
-  display: flex;
-  align-items: center;
-} */
-
-/* .stroke-grey-btn i {
-  display: flex;
-  width: 44px;
-  height: 45px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0px 100px 100px 0px;
-  border-top: 1px solid var(--AOU-System-Gray, #929292);
-  border-right: 1px solid var(--AOU-System-Gray, #929292);
-  border-bottom: 1px solid var(--AOU-System-Gray, #929292);
-  background: var(--AOU-System-Light, #fcf9f0);
-}
-
-.stroke-grey-btn span {
-  border-radius: 100px 0px 0px 100px;
-  border: 1px solid var(--AOU-System-Gray, #929292);
-  background: var(--AOU-System-Light, #fcf9f0);
-  display: flex;
-  width: 158px;
-  padding: 9px 0px;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 10px;
-  color: var(--AOU-System-Gray, #929292);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: capitalize;
-} */
 
 .stroke-grey-btn {
   display: flex;

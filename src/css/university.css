@@ -1,0 +1,172 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+.sidebar {
+  position: absolute !important;
+  top: 8.6rem;
+  left: 104px;
+  min-height: 85vh;
+  height: 85vh;
+  overflow-y: auto;
+}
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+aside {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+aside {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+main {
+  padding-inline: 104px;
+}
+
+.sidebar-item a {
+  font-size: 14px !important;
+}
+
+.m__icon-card-box-v__title {
+  font-size: 14px !important;
+}
+.m__icon-card-box-v__desc {
+  font-size: 10px !important;
+}
+.aou_person-info-v {
+  width: 410px;
+}
+.nav-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  transform: translateX(10px);
+}
+.collapse {
+  transition: height 0.3s ease, opacity 0.3s ease;
+  z-index: 999 !important;
+  top: 0;
+}
+.navbar-toggler {
+  z-index: 999 !important;
+}
+/* Icon rotation animation */
+.rotate-icon {
+  transition: transform 0.3s ease;
+}
+.rotate-icon-up {
+  transform: rotate(180deg);
+}
+/* Custom CSS for sidebar collapse */
+.rotate-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 0 1rem;
+  }
+}
+.auo_his {
+  color: #002d57 !important;
+}
+.fw-bold {
+  font-size: 36px;
+  font-family: Poppins;
+  color: #002d57 !important;
+}
+.list-group {
+  list-style: initial !important;
+  margin-left: 25px;
+  line-height: 37px;
+}
+.list {
+  margin-right: 200px;
+}
+/* Startgy */
+.click-details {
+  color: #007bff;
+  cursor: pointer;
+}
+/* Arrow */
+.click-details {
+  transition: color 0.3s ease;
+}
+
+.click-details:hover {
+  color: #002d57;
+}
+.click-details img {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.click-details:hover img {
+  transform: translateX(5px);
+}
+h5 {
+  color: #1d1d1d !important;
+  font-size: 16px !important;
+  font-family: Poppins !important;
+  font-weight: 600 !important;
+  word-wrap: break-word !important;
+}
+img .icon {
+  width: 50px;
+}
+
+/* Start "Top Management" to open dropdown */
+.nav-link {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+nav:hover {
+  color: #fff;
+}
+
+/* Dropdown icon styling */
+.dropdown-icon {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Rotate the icon when dropdown is open */
+.collapse.show + a .dropdown-icon {
+  transform: rotate(180deg);
+  background-color: #007bff; /* Blue when dropdown open */
+}
+
+/* Sliding animation for dropdown options */
+.collapse {
+  transition: height 0.3s ease;
+}
+
+/* Hover effect for dropdown options */
+.option-item {
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.option-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+/* End "Top Management" to open dropdown */
+
+/* Card Persons */
+.card-person {
+  width: 410px;
+  height: 350px;
+}

@@ -1,0 +1,3115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Flow</title>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="../src/css/custom.css" />
+    <link rel="stylesheet" href="../src/css/landing.css" />
+    <link rel="stylesheet" href="../src/css/compenets.css" />
+    <link rel="stylesheet" href="../src/css/university.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- BoxIcons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+
+  <body>
+    <!-- S-Header -->
+    <header>
+      <div class="container">
+        <div class="row align-items-center py-18 header position-relative">
+          <!-- Logo -->
+          <div class="col-6 col-lg-2">
+            <a href="../index.html" class="navbar-logo w-100">
+              <img src="../src/img/logo.png" alt="AOU Logo" />
+            </a>
+          </div>
+
+          <!-- S-Off-Canvas -->
+          <button
+            class="col-6 d-block d-lg-none off-canvas-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            <i class="bx bx-menu"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                Colored with scrolling
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasWithBackdrop"
+            aria-labelledby="offcanvasWithBackdropLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+                Offcanvas with backdrop
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>.....</p>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                Backdroped with scrolling
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p>
+            </div>
+          </div>
+          <!-- E-Off-Canvas -->
+
+          <!-- Navbar -->
+          <div class="col-12 col-md-8 d-none d-lg-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav">
+                    <!-- S-Home -->
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home </a>
+                    </li>
+                    <!-- E-Home -->
+
+                    <!-- S-University -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        University
+                      </a>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <!-- S-row -->
+                        <div class="row g-3">
+                          <div class="col-12 help"></div>
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+
+                          <!-- S-col-2 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- S-col-3 -->
+
+                          <!-- S-col-4Img -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-4Img -->
+                        </div>
+                        <!-- E-row -->
+                      </div>
+                    </li>
+                    <!-- E-University -->
+
+                    <!-- S-Student -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#"> Student </a>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <!-- S-col-2 -->
+                          <div class="col-12 help"></div>
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
+                    </li>
+                    <!-- E-Student -->
+
+                    <!-- S-Academics -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        Academics
+                      </a>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <!-- S-col-2 -->
+                          <div class="col-12 help"></div>
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
+                    </li>
+                    <!-- E-Academics -->
+
+                    <!-- S-Admission -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        Admission
+                      </a>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <div class="col-12 help"></div>
+                          <!-- S-col-2 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
+                    </li>
+                    <!-- E-Admission -->
+
+                    <!-- S-Research -->
+                    <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        Research
+                      </a>
+                      <div class="dropdown-menu megamenu" role="menu">
+                        <div class="row g-3">
+                          <div class="col-12 help"></div>
+                          <!-- S-col-2 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    OU Partnership
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    International Relations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Publications
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Regulations
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Gallery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-2 -->
+
+                          <!-- S-col-3 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Our History
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Vision, Mission and Values
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Strategic Plan
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Annual Report
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- col-megamenu.// -->
+                          </div>
+                          <!-- E-col-3 -->
+
+                          <!-- S-col-4 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <ul class="list-unstyled">
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Board of Trustees
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    University Governance
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Organizational Structure
+                                  </a>
+                                </li>
+                                <li class="mega-menu__item">
+                                  <a href="#">
+                                    <i class="bx bx-chevron-right"></i>
+                                    Units and Departments
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- S-col-1 -->
+                          <div class="col-lg-3 col-6">
+                            <div class="col-megamenu">
+                              <img
+                                src="./src/img/mega-menu-university.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <!-- E-col-1 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
+                    </li>
+                    <!-- E-Research -->
+                  </ul>
+                </div>
+                <!-- navbar-collapse.// -->
+              </div>
+              <!-- container-fluid.// -->
+            </nav>
+          </div>
+
+          <!-- Lang switcher -->
+          <div
+            class="col-md-2 d-none d-lg-flex align-items-center justify-content-end lang-switcher"
+          >
+            <img
+              src="../src/img/flags/sudan.svg"
+              alt="sudan flag"
+              class="me-2"
+            />
+            <button
+              class="btn btn-outline-secondary lang-switcher__btn btn-sm btn-md-lg w-md-auto"
+            >
+              اللغة العربية
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- E-Header -->
+
+    <div class="container-fluid">
+      <div class="row sec-p">
+        <!-- Sidebar for Mobile and Desktop -->
+        <aside
+          class="col-md-3 bg-light border shadow p-3 mb-5 bg-white rounded position-fixed sidebar"
+          id="sidebar"
+        >
+          <!-- Navbar for Mobile View -->
+          <nav class="navbar navbar-light bg-light d-md-none">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#sidebarMenu"
+              aria-controls="sidebarMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bx bx-chevron-down rotate-icon" id="chevronIcon"></i>
+            </button>
+          </nav>
+
+          <!-- Collapsible Sidebar Menu -->
+          <div class="collapse d-md-block" id="sidebarMenu">
+            <aside class="rounded">
+              <ul class="nav flex-column">
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link active link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#history"
+                    >Our History</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#vision"
+                    >Vision, Mission and Values</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#strategic"
+                    >Strategic Plan</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#annual"
+                    >Annual Report</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#top"
+                    >Top Management
+                  </a>
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#"
+                    >University Governance</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#"
+                    >Organizational Structure</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#"
+                    >Units and Departments</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#"
+                    >OU Partnership</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#"
+                    >International Relations</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#"
+                    >Publications</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#"
+                    >Regulations</a
+                  >
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a
+                    class="nav-link link-secondary text-dark fw-bold mb-2 rounded p-2"
+                    href="#"
+                    >Gallery</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="col-md-8 offset-md-4">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="card shadow p-3 mb-5 bg-white rounded mx-auto aou_mx-800"
+              >
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center mb-4"
+                  >
+                    <img
+                      src="../src/img/flow/main.png"
+                      alt="Profile Picture"
+                      class="rounded-circle me-3"
+                    />
+                    <div>
+                      <h4 class="card-title mb-0">
+                        Prof. Mohammad bin Ibrahim Zakari
+                      </h4>
+                      <p class="text-muted mb-0">
+                        President of the Arab Open University
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      It is an honour to be part of the Arab Open University
+                      (AOU) which was initiated by the late HRH Prince Talal bin
+                      Abdul Aziz in 1996 to be a unique educational and
+                      developmental project in terms of its goals and teaching
+                      methods. The establishment of the AOU stems from the
+                      belief that every human being in the Arab world has the
+                      right and capability to contribute to the national
+                      development in his/her country.
+                    </p>
+                    <br />
+                    <p>
+                      Before the inception of the AOU, many individuals, females
+                      and males, unfortunately, did not have an educational
+                      opportunity that would help them to contribute to their
+                      country's development due to economic and social reasons,
+                      living in remote areas, time barriers, unavailability of
+                      time to study in traditional universities, etc. All these
+                      factors led to the birth of the idea of AOU as a higher
+                      educational institution under the umbrella of a non-profit
+                      developmental program (AGFUND) with the aim of building
+                      capable individuals in the Arab societies, who are
+                      equipped with science, knowledge and applied practices.
+                    </p>
+                    <br />
+                    <p>
+                      In order to achieve AOU's unique objectives, the
+                      University adopted an educational system, the first of its
+                      kind in the Arab world. It is the Open Learning system,
+                      which utilizes modern technologies and digital means of
+                      communication, and eliminates time and space barriers. The
+                      AOU has succeeded in strengthening this learning system in
+                      the Arab world in partnership with the Open University in
+                      the UK which offers a wide range of accredited programs
+                      locally and internationally. AOU's graduates have proved
+                      their competence through gaining awards in local and
+                      regional competitions.
+                    </p>
+                    <br />
+                    <p>
+                      The University is pleased to provide educational services
+                      with reasonable tuition to the students of the Arab world
+                      in nine Arab countries. AOU will continue to achieve
+                      educational excellence and progress in spreading across
+                      the Arab countries, promoting its goals and unique
+                      mission. Thanks to the founder, and all of the
+                      contributors to shaping AOU's journey, as well as the AOU
+                      successive presidents, and all academic and staff members.
+                      We pray to Allah Almighty to assist us in serving the
+                      University.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Our History Section -->
+            <div class="col-12 py-5" id="history">
+              <div
+                class="card shadow p-3 mb-2 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <li class="breadcrumb-item px-2 d-flex align-items-center">
+                      <i class="bx bx-chevron-right"></i>
+                    </li>
+                    <li class="active" aria-current="page">
+                      Our <span class="auo_his">History</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <div class="container my-3">
+                  <div class="d-flex justify-content-center">
+                    <span class="text-dark fw-bold pe-1">Our </span>
+                    <span class="fw-bold">History</span>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <img
+                        src="/src/img/flow/Mask group.svg"
+                        alt="Historical artifact"
+                        class="img-fluid rounded-top-circle"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <p class="text-muted">
+                        The idea of establishing a non-profit Open University in
+                        the Arab world was initiated by HRH Prince Talal Bin
+                        Abdulaziz President of the Arab Gulf Development
+                        Programme (AGFUND) in 1996. HRH Prince Talal officially
+                        announced the concept of establishing the Arab Open
+                        University as a non-conventional academic institution
+                        and as a foundation which contributes to steering
+                        development in scientific, social and cultural spheres.
+                        This initiative developed to a full pledged Arab Open
+                        University in 2002 in a strategic partnership with the
+                        Open University in the United Kingdom. The AOU
+                        headquarter is located in the state of Kuwait.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Our Vision Section -->
+            <div class="col-12" id="vision">
+              <div
+                class="card shadow p-3 mb-3 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <li class="breadcrumb-item px-2 d-flex align-items-center">
+                      <i class="bx bx-chevron-right"></i>
+                    </li>
+                    <li class="active auo_his" aria-current="page">
+                      Vision, Mission and Values
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <div class="row">
+                      <div
+                        class="d-flex justify-content-center align-items-center mb-4"
+                      >
+                        <img
+                          src="../src/img/flow/Vision.svg"
+                          alt="Vision Icon"
+                          class="img-fluid me-4"
+                          width="60"
+                          height="60"
+                        />
+                        <div class="d-flex flex-column align-items-start gap-3">
+                          <div>
+                            <span class="text-dark fw-bold">Our</span>
+                            <span class="fw-bold">Vision</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p class="text-muted">
+                      Arab open university is a pioneer in the quality of
+                      education for all and the development of a knowledge
+                      society
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Our Mission Section -->
+            <div class="col-12 py-5" id="mission">
+              <div
+                class="card shadow p-3 mb-3 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <div class="row align-items-center">
+                        <div
+                          class="d-flex justify-content-center align-items-center mb-4"
+                        >
+                          <img
+                            src="../src/img/flow/Goal.svg"
+                            alt="Vision Icon"
+                            class="img-fluid me-4"
+                            width="60"
+                            height="60"
+                          />
+                          <div
+                            class="d-flex flex-column align-items-start gap-2"
+                          >
+                            <div>
+                              <span class="text-dark fw-bold">Our</span>
+                              <span class="fw-bold">Mission</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <p class="text-muted">
+                        Providing high-quality education to all segments of
+                        society and providing them with labour market skills.
+                        Through an attractive advanced technical learning
+                        environment and a flexible educational model that
+                        transcends time and space obstacles; working on
+                        developing the science and knowledge society by
+                        providing a stimulating environment for scientific
+                        research and an incubator for innovation; Contribute to
+                        achieving sustainable development in Arab societies
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Our Share Section -->
+            <div class="col-12 py-5" id="share">
+              <div
+                class="card shadow p-3 mb-3 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column justify-content-between align-items-center"
+                >
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <div class="row align-items-center">
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="../src/img/flow/fluent_people-team-24-filled.svg"
+                            alt="Vision Icon"
+                            class="img-fluid me-4"
+                            width="60"
+                            height="60"
+                          />
+                          <div
+                            class="d-flex flex-column align-items-start gap-2"
+                          >
+                            <div>
+                              <span class="text-dark fw-bold">Shared</span>
+                              <span class="fw-bold">Values</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 list">
+                      <ul class="list-group">
+                        <li>Cooperation</li>
+                        <li>Transparency</li>
+                        <li>Integrity</li>
+                        <li>Perfection</li>
+                        <li>Justice</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Strategic Section -->
+              <div class="col-12 py-5" id="strategic">
+                <div
+                  class="card shadow p-3 mb-2 bg-white rounded aou_mx-800 mx-auto"
+                >
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                  >
+                    <!-- Breadcrumb Navigation -->
+                    <ol
+                      class="breadcrumb mb-2 mb-md-0 d-flex align-items-center"
+                    >
+                      <li>
+                        <a href="#" class="text-decoration-underline"
+                          >University</a
+                        >
+                      </li>
+                      <li
+                        class="breadcrumb-item px-2 d-flex align-items-center"
+                      >
+                        <i class="bx bx-chevron-right"></i>
+                      </li>
+                      <li class="active" aria-current="page">
+                        <span class="auo_his">Strategic Plan</span>
+                      </li>
+                    </ol>
+                    <!-- Icons -->
+                    <div class="d-flex">
+                      <a href="#" class="me-2">
+                        <img
+                          src="../src/img/flow/material-symbols_print-outline.svg"
+                          alt="Print"
+                        />
+                      </a>
+                      <a href="#" class="me-2">
+                        <img
+                          src="../src/img/flow/ic_outline-share.svg"
+                          alt="Share"
+                        />
+                      </a>
+                      <a href="#">
+                        <img
+                          src="../src/img/flow/mdi_favorite-add-outline.svg"
+                          alt="Favorite"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="container mt-5">
+                    <!-- Strategic Plan Elements Section -->
+                    <h2 class="text-center section-title">
+                      <span class="text-dark fw-bold">Strategic</span>
+                      <span class="fw-bold">Plan Elements</span>
+                    </h2>
+                    <p class="text-center">
+                      Providing high-quality education to all segments of
+                      society and providing them with labour market skills.
+                    </p>
+                    <div class="row text-center mb-5">
+                      <!-- Start icon-box-card-grid -->
+                      <div class="container mt-5">
+                        <div class="row">
+                          <!-- Card 1 -->
+                          <div
+                            class="col-md-3 d-flex justify-content-center p-0"
+                          >
+                            <div
+                              class="card text-center shadow p-3 mb-5 bg-white rounded m__icon-card-box-v"
+                            >
+                              <div class="card-body p-0">
+                                <!-- Icon at the top -->
+                                <div class="mb-3">
+                                  <img
+                                    src="../src/img/flow/Quality.svg"
+                                    alt="Icon"
+                                    class="img-fluid"
+                                    style="width: 50px"
+                                  />
+                                </div>
+                                <!-- Title -->
+                                <h5 class="m__icon-card-box-v__title">
+                                  Academic Quality
+                                </h5>
+                                <!-- Description -->
+                                <p
+                                  class="text-muted link-txt m__icon-card-box-v__desc"
+                                >
+                                  Raising the level of academic programs and
+                                  enhancing the quality of teaching.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Card 2 -->
+                          <div
+                            class="col-md-3 d-flex justify-content-center p-0"
+                          >
+                            <div
+                              class="card text-center shadow p-3 mb-5 bg-white rounded m__icon-card-box-v"
+                            >
+                              <div class="card-body p-0">
+                                <!-- Icon at the top -->
+                                <div class="mb-3">
+                                  <img
+                                    src="../src/img/flow/Neuroscience Experiment.svg"
+                                    alt="Icon"
+                                    class="img-fluid"
+                                    style="width: 50px"
+                                  />
+                                </div>
+                                <!-- Title -->
+                                <h5 class="m__icon-card-box-v__title">
+                                  Promoting Scientific Research
+                                </h5>
+                                <!-- Description -->
+                                <p
+                                  class="card-text text-muted link-txt m__icon-card-box-v__desc"
+                                >
+                                  Support research projects that contribute to
+                                  the development of knowledge
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Card 3 -->
+                          <div
+                            class="col-md-3 d-flex justify-content-center p-0"
+                          >
+                            <div
+                              class="card text-center shadow p-3 mb-5 bg-white rounded m__icon-card-box-v"
+                            >
+                              <div class="card-body p-0">
+                                <!-- Icon at the top -->
+                                <div class="mb-3">
+                                  <img
+                                    src="../src/img/flow/International Music.svg"
+                                    alt="Icon"
+                                    class="img-fluid icon"
+                                    width="60"
+                                    height="60"
+                                  />
+                                </div>
+                                <!-- Title -->
+                                <h5 class="m__icon-card-box-v__title">
+                                  Expanding International Partnerships
+                                </h5>
+                                <!-- Description -->
+                                <p
+                                  class="card-text text-muted link-txt m__icon-card-box-v__desc"
+                                >
+                                  Building partnerships with global institutions
+                                  to exchange expertise.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Card 4 -->
+                          <div
+                            class="col-md-3 d-flex justify-content-center p-0"
+                          >
+                            <div
+                              class="card text-center shadow p-3 mb-5 bg-white rounded m__icon-card-box-v"
+                            >
+                              <div class="card-body p-0 gap-14">
+                                <!-- Icon at the top -->
+                                <div class="mb-3">
+                                  <img
+                                    src="../src/img/flow/Internship.svg"
+                                    alt="Icon"
+                                    class="img-fluid"
+                                    style="width: 50px"
+                                  />
+                                </div>
+                                <!-- Title -->
+                                <h5 class="m__icon-card-box-v__title">
+                                  Promoting Scientific Research
+                                </h5>
+                                <!-- Description -->
+                                <p
+                                  class="card-text text-muted link-txt m__icon-card-box-v__desc"
+                                >
+                                  Ensuring an integrated educational experience
+                                  that meets students’ expectations.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End icon-box-card-grid -->
+                    </div>
+                    <p class="text-center click-details py-2">
+                      Click to view details
+                      <img src="../src/img/flow/Right Arrow.svg" alt="" />
+                    </p>
+
+                    <!-- Strategic Objectives Section -->
+                    <h2 class="text-center section-title">
+                      <span class="text-dark fw-bold">Strategic</span>
+                      <span class="fw-bold">Objectives</span>
+                    </h2>
+                    <p class="text-center">
+                      Our strategic plan aims to achieve a set of pivotal
+                      objectives that ensure the development of the university
+                      in the academic, research and service fields.
+                    </p>
+                    <ul class="objectives-list">
+                      <li>1. Achieving excellence in teaching and learning.</li>
+                      <li>2. Increasing research productivity.</li>
+                      <li>3. Expanding international cooperation.</li>
+                      <li>4. Improving university infrastructure.</li>
+                    </ul>
+                    <p class="text-center click-details">
+                      Click to view details
+                      <img
+                        class="img-fluid"
+                        src="../src/img/flow/Right Arrow.svg"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Annaul Section -->
+            <div class="col-12" id="annual">
+              <div
+                class="card shadow p-3 mb-2 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <li class="breadcrumb-item px-2 d-flex align-items-center">
+                      <i class="bx bx-chevron-right"></i>
+                    </li>
+                    <li class="active" aria-current="page">
+                      <span class="auo_his">Annual Report</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <div class="container">
+                  <!-- Strategic Plan Elements Section -->
+                  <h2 class="text-center section-title">
+                    <span class="text-dark fw-bold">Annual</span>
+                    <span class="fw-bold">Report</span>
+                  </h2>
+                  <div
+                    class="d-flex justify-content-center align-items-center p-2 border rounded"
+                  >
+                    <!-- PDF Icon -->
+                    <img
+                      src="../src/img/flow/vscode-icons_file-type-pdf2.svg"
+                      alt="PDF Icon"
+                      class="me-2"
+                      style="width: 30px; height: auto"
+                    />
+                    <!-- File Description -->
+                    <div>
+                      <a href="#" class="text-decoration-none text-muted mb-1"
+                        >Annual Report 2022–2023.pdf</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-center align-items-center p-2 border rounded"
+                  >
+                    <!-- PDF Icon -->
+                    <img
+                      src="../src/img/flow/vscode-icons_file-type-pdf2.svg"
+                      alt="PDF Icon"
+                      class="me-2"
+                      style="width: 30px; height: auto"
+                    />
+                    <!-- File Description -->
+                    <div>
+                      <a href="#" class="text-decoration-none text-muted"
+                        >Annual Report 2021–2022.pdf</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-center align-items-center p-2 border rounded"
+                  >
+                    <!-- PDF Icon -->
+                    <img
+                      src="../src/img/flow/vscode-icons_file-type-pdf2.svg"
+                      alt="PDF Icon"
+                      class="me-2"
+                      style="width: 30px; height: auto"
+                    />
+                    <!-- File Description -->
+                    <div>
+                      <a href="#" class="text-decoration-none text-muted"
+                        >Annual Report 2020–2021.pdf</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-center align-items-center p-2 border rounded"
+                  >
+                    <!-- PDF Icon -->
+                    <img
+                      src="../src/img/flow/vscode-icons_file-type-pdf2.svg"
+                      alt="PDF Icon"
+                      class="me-2"
+                      style="width: 30px; height: auto"
+                    />
+                    <!-- File Description -->
+                    <div>
+                      <a href="#" class="text-decoration-none text-muted"
+                        >Annual Report 2019–2020.pdf</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p class="text-center click-details mt-4">
+                  Click to view details
+                  <img src="../src/img/flow/Right Arrow.svg" alt="" />
+                </p>
+              </div>
+            </div>
+            <!-- Top Manager Section -->
+            <div class="col-12" id="top">
+              <div
+                class="card shadow p-3 mb-2 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University Governance</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li class="breadcrumb-item px-2 d-flex align-items-center">
+                      <span class="auo_his">Top Management</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <!-- Start person-info-card-v -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-center section-title">
+                        <span class="text-dark fw-bold">Top</span>
+                        <span class="fw-bold">Management</span>
+                      </h2>
+                    </div>
+                    <div
+                      class="col-12 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="card shadow p-3 mb-2 bg-white rounded aou_person-info-v"
+                      >
+                        <div class="card-body">
+                          <h5 class="card-title text-center">President</h5>
+                          <img
+                            src="../src/img/flow/Rectangle 205.png"
+                            alt="Profile Image"
+                            class="image-circle mx-auto d-block my-3"
+                          />
+                          <p class="card-text text-center">
+                            Prof. Mohammad Al-Zakari
+                          </p>
+                          <div class="d-flex justify-content-center gap-4">
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary btn-custom"
+                            >
+                              <img src="../src/img/flow/Resume.svg" alt="CV" />
+                              CV
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary btn-custom"
+                            >
+                              <img
+                                src="../src/img/flow/dashicons_portfolio.svg"
+                                alt="Biography"
+                                class="me-2"
+                              />
+                              Biography
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Vice President for Academic Affairs & Scientific
+                                Research
+                              </h5>
+                              <img
+                                src="../src/img/flow/Rectangle 206.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Naif Almutairi
+                              </p>
+                              <div class="d-flex justify-content-center gap-4">
+                                <a
+                                  href="#"
+                                  class="btn btn-outline-secondary btn-custom"
+                                >
+                                  <img
+                                    src="../src/img/flow/Resume.svg"
+                                    alt="CV"
+                                  />
+                                  CV
+                                </a>
+                                <a
+                                  href="#"
+                                  class="btn btn-outline-secondary btn-custom"
+                                >
+                                  <img
+                                    src="../src/img/flow/dashicons_portfolio.svg"
+                                    alt="Biography"
+                                    class="me-2"
+                                  />
+                                  Biography
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Vice President for Planning and Development
+                              </h5>
+                              <img
+                                src="../src/img/flow/Rectangle 87.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Omar Al-Jarrah
+                              </p>
+                              <div class="d-flex justify-content-center gap-4">
+                                <a
+                                  href="#"
+                                  class="btn btn-outline-secondary btn-custom"
+                                >
+                                  <img
+                                    src="../src/img/flow/Resume.svg"
+                                    alt="CV"
+                                  />
+                                  CV
+                                </a>
+                                <a
+                                  href="#"
+                                  class="btn btn-outline-secondary btn-custom"
+                                >
+                                  <img
+                                    src="../src/img/flow/dashicons_portfolio.svg"
+                                    alt="Biography"
+                                    class="me-2"
+                                  />
+                                  Biography
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End person-info-card-v -->
+              </div>
+            </div>
+            <!-- S-Board of Trustees -->
+            <div class="col-12" id="board">
+              <div
+                class="card shadow p-3 mb-2 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University Governance</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li class="breadcrumb-item px-2 d-flex align-items-center">
+                      <span class="auo_his">Board of Trustees</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <!-- Start Board of Trustees-v -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-center section-title">
+                        <span class="text-dark fw-bold">Board of</span>
+                        <span class="fw-bold">Trustees</span>
+                      </h2>
+                    </div>
+                    <!-- Card 1 -->
+                    <div
+                      class="col-12 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="card shadow p-3 mb-2 bg-white rounded aou_person-info-v"
+                      >
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Chairman</h5>
+                          <img
+                            src="../src/img/flow/person1.png"
+                            alt="Profile Image"
+                            class="image-circle mx-auto d-block my-3"
+                          />
+                          <p class="card-text text-center">
+                            HRH Prince Abdulaziz bin Talal bin Abdulaziz AL Saud
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row">
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                The Hashemite Kingdom of Jordan Co-Chair
+                              </h5>
+                              <img
+                                src="../src/img/flow/person2.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                HM Queen Rania Al Abdullah
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                President of the Executive Committee at AOU,
+                                Bahrain
+                              </h5>
+                              <img
+                                src="../src/img/flow/person3.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Ali Fakhro
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                President of the Arab Open University
+                              </h5>
+                              <img
+                                src="../src/img/flow/Rectangle 205.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Mohammad bin Ibrahim Zakari
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                UAB Secretary General
+                              </h5>
+                              <img
+                                src="../src/img/flow/person5.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Ali Fakhro
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Former Minister of Higher Education Egypt
+                              </h5>
+                              <img
+                                src="../src/img/flow/person6.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Moufid Shehab
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Advisor of Economic Affairs to HH the Amir of
+                                the State of Kuwait
+                              </h5>
+                              <img
+                                src="../src/img/flow/person7.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Yousef Al Ebraheem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Former Minister of Education and Higher
+                                Education, Kuwait
+                              </h5>
+                              <img
+                                src="../src/img/flow/person8.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Musaa'd Al-Haroon
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 9 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                President of Alghanim Industries State of Kuwait
+                              </h5>
+                              <img
+                                src="../src/img/flow/person9.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Abdel Moneim Osman
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 10 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Director of UNESCO Regional Office - Lebanon
+                              </h5>
+                              <img
+                                src="../src/img/flow/person10.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Abdel Moneim Osman
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 11 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Minster of State - United Arab Emirates
+                              </h5>
+                              <img
+                                src="../src/img/flow/person11.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Maitha Al-Shamsi
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 12 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                CEO – Oman Development Bank
+                              </h5>
+                              <img
+                                src="../src/img/flow/person12.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. AbdulAziz Alhinai
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 13 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Chairman, Bugshan Group, KSA
+                              </h5>
+                              <img
+                                src="../src/img/flow/person13.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Eng. Abdallah Al-Bukshan
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 14 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Vice President of The Saudi Fund for Development
+                              </h5>
+                              <img
+                                src="../src/img/flow/person14.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Eng. Yousef Al Bassam
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 15 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Chief Executive Officer of AGFUND, Kingdom of
+                                Saudi Arabia
+                              </h5>
+                              <img
+                                src="../src/img/flow/person15.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Mr. Nasser Al Qahtani
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Board of Trustees-v -->
+              </div>
+            </div>
+            <!-- E-Board of Trustees -->
+            <!-- S-University Council -->
+            <div class="col-12" id="council">
+              <div
+                class="card shadow p-3 mb-2 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University Governance</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li class="breadcrumb-item px-2 d-flex align-items-center">
+                      <span class="auo_his"> University Council</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <!-- Start Board of Trustees-v -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-center section-title">
+                        <span class="text-dark fw-bold">University</span>
+                        <span class="fw-bold">Council</span>
+                      </h2>
+                    </div>
+                    <!-- Card 1 -->
+                    <div
+                      class="col-12 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="card shadow p-3 mb-2 bg-white rounded aou_person-info-v"
+                      >
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Chairman</h5>
+                          <img
+                            src="../src/img/flow/person1.png"
+                            alt="Profile Image"
+                            class="image-circle mx-auto d-block my-3"
+                          />
+                          <p class="card-text text-center">
+                            HRH Prince Abdulaziz bin Talal bin Abdulaziz AL Saud
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row">
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                The Hashemite Kingdom of Jordan Co-Chair
+                              </h5>
+                              <img
+                                src="../src/img/flow/person2.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                HM Queen Rania Al Abdullah
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                President of the Executive Committee at AOU,
+                                Bahrain
+                              </h5>
+                              <img
+                                src="../src/img/flow/person3.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Ali Fakhro
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                President of the Arab Open University
+                              </h5>
+                              <img
+                                src="../src/img/flow/Rectangle 205.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Mohammad bin Ibrahim Zakari
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Director of UNESCO Regional Office - Lebanon
+                              </h5>
+                              <img
+                                src="../src/img/flow/person10.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Abdel Moneim Osman
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Advisor of Economic Affairs to HH the Amir of
+                                the State of Kuwait
+                              </h5>
+                              <img
+                                src="../src/img/flow/person7.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Yousef Al Ebraheem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Chief Executive Officer of AGFUND, Kingdom of
+                                Saudi Arabia
+                              </h5>
+                              <img
+                                src="../src/img/flow/person15.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Mr. Nasser Al Qahtani
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Former Minister of Higher Education Egypt
+                              </h5>
+                              <img
+                                src="../src/img/flow/person6.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Moufid Shehab
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 9 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Former Minister of Education and Higher
+                                Education, Kuwait
+                              </h5>
+                              <img
+                                src="../src/img/flow/person8.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Musaa'd Al-Haroon
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 10 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                UAB Secretary General
+                              </h5>
+                              <img
+                                src="../src/img/flow/person5.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Wissam H. Fattouh
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 11 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                President of Alghanim Industries State of Kuwait
+                              </h5>
+                              <img
+                                src="../src/img/flow/person9.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Abdel Moneim Osman
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 12 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Minster of State - United Arab Emirates
+                              </h5>
+                              <img
+                                src="../src/img/flow/person11.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Maitha Al-Shamsi
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 13 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Vice President of The Saudi Fund for Development
+                              </h5>
+                              <img
+                                src="../src/img/flow/person14.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Eng. Yousef Al Bassam
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 14 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                CEO – Oman Development Bank
+                              </h5>
+                              <img
+                                src="../src/img/flow/person12.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. AbdulAziz Alhinai
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 15 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Chairman, Bugshan Group, KSA
+                              </h5>
+                              <img
+                                src="../src/img/flow/person13.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Eng. Abdallah Al-Bukshan
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Board of Trustees-v -->
+              </div>
+            </div>
+            <!-- E-University Council -->
+            <!-- S-Deans -->
+            <div class="col-12" id="deans">
+              <div
+                class="card shadow p-3 mb-2 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University Governance</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li class="breadcrumb-item px-2 d-flex align-items-center">
+                      <span class="auo_his"> Deans</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <!-- Start Deans-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-center section-title">
+                        <span class="fw-bold">Deans</span>
+                      </h2>
+                    </div>
+                    <div class="col-12">
+                      <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Language Studies
+                              </h5>
+                              <img
+                                src="../src/img/flow/person16.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Aziz Thabit Saeed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Computer Studies - Acting
+                              </h5>
+                              <img
+                                src="../src/img/flow/person17.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Omar Al-Jarrah
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Education
+                              </h5>
+                              <img
+                                src="../src/img/flow/person18.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Walid Aburia
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Business Studies - Acting
+                              </h5>
+                              <img
+                                src="../src/img/flow/person19.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Jarrah Fahad Al Mansour
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Media
+                              </h5>
+                              <img
+                                src="../src/img/flow/person20.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Nermin Khedr
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Law - Acting
+                              </h5>
+                              <img
+                                src="../src/img/flow/person21.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Hussain said Saif AL Ghafri
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Board of Trustees-v -->
+              </div>
+            </div>
+            <!-- E-Deans -->
+            <!-- S-Branch Directors -->
+            <div class="col-12" id="branch">
+              <div
+                class="card shadow p-3 mb-2 bg-white rounded aou_mx-800 mx-auto"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University Governance</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li class="breadcrumb-item px-2 d-flex align-items-center">
+                      <span class="auo_his"> Branch Directors</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <!-- Start Branch Directors-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-center section-title">
+                        <span class="fw-bold text-dark">Branch</span>
+                        <span class="fw-bold auo_his">Directors</span>
+                      </h2>
+                    </div>
+                    <div class="col-12">
+                      <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Language Studies
+                              </h5>
+                              <img
+                                src="../src/img/flow/person16.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Aziz Thabit Saeed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Computer Studies - Acting
+                              </h5>
+                              <img
+                                src="../src/img/flow/person17.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Omar Al-Jarrah
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Education
+                              </h5>
+                              <img
+                                src="../src/img/flow/person18.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Walid Aburia
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Business Studies - Acting
+                              </h5>
+                              <img
+                                src="../src/img/flow/person19.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Jarrah Fahad Al Mansour
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Media
+                              </h5>
+                              <img
+                                src="../src/img/flow/person20.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Prof. Nermin Khedr
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6">
+                          <div class="card shadow mb-2 bg-white rounded">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">
+                                Faculty of Law - Acting
+                              </h5>
+                              <img
+                                src="../src/img/flow/person21.png"
+                                alt="Profile Image"
+                                class="image-circle mx-auto d-block my-3"
+                              />
+                              <p class="card-text text-center">
+                                Dr. Hussain said Saif AL Ghafri
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Branch Directors-v -->
+              </div>
+            </div>
+            <!-- E-Branch Directors -->
+            <!-- S-Branch Directors -->
+            <div class="col-12" id="organizational">
+              <div class="card shadow p-3 mb-2 bg-white rounded mx-auto">
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li class="breadcrumb-item d-flex align-items-center">
+                      <span class="auo_his">Organizational Structure</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <div class="col-12">
+                  <h2 class="text-center section-title mb-0">
+                    <span class="text-dark fw-bold">Organizational</span>
+                    <span class="fw-bold">Structure</span>
+                  </h2>
+                </div>
+                <!-- Card -->
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="ps--0 mb-2 bg-white text-center">
+                    <div class="p-0">
+                      <!-- First Image (Centered) -->
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="../src/img/flow/unit1.png"
+                          alt="Profile Image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <div class="p-0 mt-2">
+                      <!-- Second Image (Centered) -->
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="../src/img/flow/unit2.png"
+                          alt="Profile Image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- S-Units and Departments -->
+            <div class="col-12 mt-5">
+              <div class="card shadow p-3 mb-2 bg-white rounded mx-auto">
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                >
+                  <!-- Breadcrumb Navigation -->
+                  <ol class="breadcrumb mb-2 mb-md-0 d-flex align-items-center">
+                    <li>
+                      <a href="#" class="text-decoration-underline"
+                        >University</a
+                      >
+                    </li>
+                    <i class="bx bx-chevron-right"></i>
+                    <li class="breadcrumb-item d-flex align-items-center">
+                      <span class="auo_his">Units and Departments</span>
+                    </li>
+                  </ol>
+                  <!-- Icons -->
+                  <div class="d-flex">
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/material-symbols_print-outline.svg"
+                        alt="Print"
+                      />
+                    </a>
+                    <a href="#" class="me-2">
+                      <img
+                        src="../src/img/flow/ic_outline-share.svg"
+                        alt="Share"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/flow/mdi_favorite-add-outline.svg"
+                        alt="Favorite"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <div class="col-12">
+                  <h2 class="text-center section-title mb-0">
+                    <span class="text-dark fw-bold">Units and </span>
+                    <span class="fw-bold">Departments</span>
+                  </h2>
+                </div>
+                <ul class="list-group">
+                  <!-- First Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    President Office
+                  </li>
+
+                  <!-- Second Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    Community Engagement and Marketing
+                  </li>
+
+                  <!-- Third Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    Financial Affairs
+                  </li>
+
+                  <!-- Fourth Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    Human Resources and Administration
+                  </li>
+
+                  <!-- Fifth Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    Information Technology
+                  </li>
+
+                  <!-- Sixth Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    Internal Audit
+                  </li>
+
+                  <!-- Seventh Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    IT Manager: Shatha Habra
+                  </li>
+                  <!-- Eightth Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                     Learning Materials
+                  </li>
+                  <!-- nineth Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    Operation and Maintenance
+                  </li>
+                  <!-- tenth Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    Quality Assurance and Accreditation
+                  </li>
+                  <!-- elventh Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    Registration and Examinations
+                  </li>
+                  <!-- telwevth Item -->
+                  <li class="list-group-item d-flex align-items-center">
+                    <img
+                      src="../src/img/flow/Vector.svg"
+                      alt="Icon"
+                      class="me-3"
+                      style="width: 24px; height: 24px"
+                    />
+                    University Facilities and Buildings
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- E-Units and Departments -->
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- JS Files -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const aside = document.getElementById("sidebar");
+        const scrollPosition = window.scrollY; // Current scroll position
+        const stickyPoint = 80; // The scroll position in pixels after which it sticks (4.8rem ~ 60px)
+
+        if (scrollPosition > stickyPoint) {
+          aside.style.top = "3.6rem"; // Stick at 4.8rem after scrolling
+        } else {
+          aside.style.top = "8.6rem"; // Original position when not scrolling past sticky point
+        }
+      });
+    </script>
+    <script src="../src/js/numbers-counter.js"></script>
+    <script src="../src/js/slider.js"></script>
+    <script src="../src/js/typing-effect.js"></script>
+    <script src="../src/js/university.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
