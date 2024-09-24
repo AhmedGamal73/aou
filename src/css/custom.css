@@ -409,6 +409,10 @@ button {
 }
 /* Custom classes */
 
+.fs-14 {
+  font-size: 14px !important;
+}
+
 /****** S-Slider ******/
 /* Slider container */
 .slider {

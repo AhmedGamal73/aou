@@ -14,6 +14,11 @@ aside::-webkit-scrollbar {
   display: none;
 }
 
+.governance-drop-down {
+  margin-top: -10px !important;
+  padding-top: 0 !important;
+}
+
 aside {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -169,4 +174,27 @@ nav:hover {
 .card-person {
   width: 410px;
   height: 350px;
+}
+.governance-drop-down {
+  display: none;
+  background: #f8f9fa !important;
+  border-radius: 12px;
+}
+
+.sidebar-item-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-end: 22px;
+  padding-block: 4px;
+}
+
+.sidebar-item-dropdown.active {
+  background: var(--bs-primary);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.sidebar-item-dropdown.active i {
+  transform: rotate(90deg);
 }
