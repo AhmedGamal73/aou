@@ -476,4 +476,7 @@ button.next {
 .offcanvas.show {
   transform: translateX(0) !important; /* Ensure it moves smoothly */
 }
+
+
 /****** E-Slider ******/
+

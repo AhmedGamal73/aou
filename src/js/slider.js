@@ -62,6 +62,13 @@ $(document).ready(function () {
   $("#next").click(function () {
     $slider.slick("slickNext");
   });
+  $("#prevv").click(function () {
+    $slider.slick("slickPrev");
+  });
+
+  $("#nextt").click(function () {
+    $slider.slick("slickNext");
+  });
 });
 
 // ADD: When I clicked to this list make filter to this card
@@ -97,3 +104,105 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const sliderWrapper = document.querySelector(".slider-wrapper");
+const nextBtn = document.getElementById("nextt");
+const prevBtn = document.getElementById("prevv");
+
+// Pause the animation on hover
+document.querySelector(".slider").addEventListener("mouseover", () => {
+  sliderWrapper.style.animationPlayState = "paused";
+});
+
+// Resume the animation when not hovering
+document.querySelector(".slider").addEventListener("mouseout", () => {
+  sliderWrapper.style.animationPlayState = "running";
+});
+
+// Manually control next/prev buttons to skip or reset animation
+nextBtn.addEventListener("click", () => {
+  sliderWrapper.style.animation = "none";
+  sliderWrapper.style.transform = "translateX(-100%)";
+  setTimeout(() => {
+    sliderWrapper.style.animation = "slide-infinite 20s linear infinite";
+  }, 200);
+});
+
+prevBtn.addEventListener("click", () => {
+  sliderWrapper.style.animation = "none";
+  sliderWrapper.style.transform = "translateX(0)";
+  setTimeout(() => {
+    sliderWrapper.style.animation = "slide-infinite 20s linear infinite";
+  }, 500);
+});
+
+// Success Stories
+$(document).ready(function () {
+  $("#test-next").on("click", function () {
+    let current = $(".testamonial-btn.active");
+    let next = current.next(".testamonial-btn");
+
+    if (next.length) {
+      current.removeClass("active");
+      next.addClass("active");
+      console.log(current.length);
+    }
+  });
+
+  $("#test-prev").on("click", function () {
+    let current = $(".testamonial-btn.active");
+    let prev = current.prev(".testamonial-btn");
+
+    if (prev.length) {
+      current.removeClass("active");
+      prev.addClass("active");
+    }
+  });
+});
+
+// Section Success
+// const testamonials = document.querySelectorAll('.test-card-h');
+// const buttons = document.querySelectorAll('.testamonial-btn:not(#btn-next):not(#btn-prev)');
+// let currentStart = 0;
+// const itemsPerPage = 2;
+
+// function showTestamonials(startIndex) {
+//   testamonials.forEach((testamonial, index) => {
+//     if (index >= startIndex && index < startIndex + itemsPerPage) {
+//       testamonial.classList.add('active');
+//     } else {
+//       testamonial.classList.remove('active');
+//     }
+//   });
+
+//   buttons.forEach((button, index) => {
+//     if (index === (startIndex / itemsPerPage)) {
+//       button.classList.add('active');
+//     } else {
+//       button.classList.remove('active');
+//     }
+//   });
+// }
+
+// showTestamonials(currentStart);
+
+// document.getElementById('btn-next').addEventListener('click', function () {
+//   if (currentStart + itemsPerPage < testamonials.length) {
+//     currentStart += itemsPerPage;
+//     showTestamonials(currentStart);
+//   }
+// });
+
+// document.getElementById('btn-prev').addEventListener('click', function () {
+//   if (currentStart - itemsPerPage >= 0) {
+//     currentStart -= itemsPerPage;
+//     showTestamonials(currentStart);
+//   }
+// });
+
+// buttons.forEach((button, index) => {
+//   button.addEventListener('click', () => {
+//     currentStart = index * itemsPerPage;
+//     showTestamonials(currentStart);
+//   });
+// });

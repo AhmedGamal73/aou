@@ -1060,10 +1060,6 @@ a.active-campus-item:hover {
   gap: 32px;
 }
 
-.testamonial-btn-wrapper {
-  gap: 16px;
-}
-
 .testamonial-btn {
   display: flex;
   width: 50px;
@@ -1162,7 +1158,65 @@ a.active-campus-item:hover {
     display: none;
   }
 }
+@media (min-width: 769px) {
+  #prevv,
+  #nextt {
+    display: none;
+  }
+}
 /* E-Slider Section Latest New */
+.slider {
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  animation: slide-infinite 20s linear infinite; /* Smooth, infinite animation */
+}
+
+@keyframes slide-infinite {
+  0% {
+    transform: translateX(0); /* Start at the first slide */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the end of all slides */
+  }
+}
+
+.slide {
+  box-sizing: border-box;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.test-card-h-wrapper {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.test-card-h-wrapper.test-active {
+  display: block;
+  opacity: 1;
+}
 
 /* ADD: When I clicked to this list make filter to this card */
 .card-container {
@@ -1205,15 +1259,15 @@ a.active-campus-item:hover {
 }
 /* Custom Scrollbar for WebKit browsers */
 .channel-data-wrapper::-webkit-scrollbar {
-  width: 2px !important; /* Width of the scrollbar */
+  width: 2px !important;
   scrollbar-width: thin;
 }
 
 .channel-data-wrapper::-webkit-scrollbar-thumb {
-  background-color: var(--bs-primary); /* Color of the scrollbar */
-  border-radius: 10px; /* Rounded corners for the scrollbar */
+  background-color: var(--bs-primary);
+  border-radius: 10px;
 }
 
 .channel-data-wrapper::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Color of the scrollbar track (background) */
+  background-color: #f1f1f1;
 }
